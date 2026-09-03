@@ -138,10 +138,13 @@ def main() -> int:
     caption = item["caption"].rstrip()
     if item.get("source"):
         caption += "\n\n" + item["source"]
-    # 항목별 태그 + 공통 태그, 중복 제거(대소문자 무시)
+    # 항목별 태그 5개 + (초반 한정) 그날 주제 관련 태그 5개. 중복 제거(대소문자 무시).
+    pool = list(item.get("hashtags", []))
+    if len(state.get("published", [])) < int(cfg.get("extra_hashtags_until_post", 0)):
+        pool += list(item.get("extra_hashtags", []))
     tags: list[str] = []
     seen: set[str] = set()
-    for t in list(item.get("hashtags", [])) + list(cfg.get("base_hashtags", [])):
+    for t in pool:
         k = t.lower()
         if k not in seen:
             seen.add(k)
