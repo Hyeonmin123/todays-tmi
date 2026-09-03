@@ -1,0 +1,52 @@
+name: 자동 발행
+
+on:
+  schedule:
+    # 매일 23:00 UTC = 08:00 KST 실행. 실제 발행 여부는 run_daily 가 interval_days 로 판단.
+    - cron: "0 23 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "발행일이 아니어도 강제 발행"
+        type: boolean
+        default: false
+      dry_run:
+        description: "렌더까지만 (발행 안 함)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - run: pip install -r requirements.txt
+
+      - name: run
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+        run: |
+          ARGS=""
+          if [ "${{ inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          python -m src.run_daily $ARGS

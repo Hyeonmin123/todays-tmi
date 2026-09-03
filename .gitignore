@@ -1,0 +1,17 @@
+# 비밀값
+config/secrets.env
+*.env
+!config/secrets.example.env
+
+# 파이썬
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 렌더 미리보기(수동 확인용, 발행 대상 아님)
+output/preview/
+
+# OS
+.DS_Store
+Thumbs.db

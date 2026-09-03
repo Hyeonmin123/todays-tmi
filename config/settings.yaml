@@ -1,0 +1,49 @@
+# 별 - 인스타그램 자동 발행 설정
+# 이 파일은 저장소에 커밋됩니다. 비밀값(토큰)은 여기 두지 말고 GitHub Actions Secrets 에 넣으세요.
+
+# 계정 핸들 (이미지 워터마크에 표시). @ 포함해서 입력.
+# ↓ 실제로 가입한 인스타그램 아이디로 바꾸세요.
+handle: "@today.tminformation"
+
+# 발행 간격(일). 1 = 매일, 2 = 2일에 1개, 3 = 3일에 1개.
+interval_days: 2
+
+# 큐에서 트랙을 꺼내는 순환 순서.
+# A = 오늘의 TMI(신기한 사실, 메인), B = 생활 꿀팁(서브). A 3번마다 B 1번.
+rotation: [A, A, A, B]
+
+# 큐(미발행 문구)가 이 개수 미만이면 GitHub 이슈로 "문구 보충" 알림.
+low_queue_threshold: 5
+
+# Instagram API 설정 (Instagram 로그인 방식)
+api_base: "https://graph.instagram.com"
+graph_api_version: v21.0
+
+# 발행 시각(참고용, KST). 실제 트리거는 워크플로 cron 에서 UTC 로 설정.
+publish_hour_kst: 8
+
+# 이미지 크기 (인스타 세로형 4:5 권장)
+size: [1080, 1350]
+
+# 안전 여백(px)
+margin: 96
+
+# 트랙별 비주얼 테마 (칩 라벨은 둘 다 "오늘의 TMI" 로 통일)
+tracks:
+  A:
+    name: "오늘의 TMI"
+    bg: "#FFFFFF"
+    fg: "#1A1A1A"
+    accent: "#1F6FEB"
+    sub: "#8A8F98"
+  B:
+    name: "오늘의 TMI"
+    bg: "#FFFFFF"
+    fg: "#1A1A1A"
+    accent: "#1F6FEB"
+    sub: "#8A8F98"
+
+# 폰트 파일 경로 (assets/fonts/ 기준)
+fonts:
+  bold: "Pretendard-Bold.otf"
+  regular: "Pretendard-Regular.otf"
