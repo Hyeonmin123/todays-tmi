@@ -6,7 +6,7 @@
 handle: "@today.tminformation"
 
 # 발행 간격(일). 1 = 매일, 2 = 2일에 1개, 3 = 3일에 1개.
-interval_days: 2
+interval_days: 1
 
 # 큐에서 트랙을 꺼내는 순환 순서.
 # A = 오늘의 TMI(신기한 사실, 메인), B = 생활 꿀팁(서브). A 3번마다 B 1번.
