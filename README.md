@@ -11,14 +11,13 @@
 
 ## 콘텐츠
 
-| 트랙 | 주제 | 비중 | 파일 |
-|---|---|---|---|
-| **A** | 오늘의 TMI — 신기한 사실·잡학 (역사·동물·우주·과학·상식 교정) | 메인 (4번 중 3) | `content/bank_A.json` |
-| **B** | 생활 꿀팁 — 바로 쓰는 실용 팁 (청소·세탁·주방·몸) | 서브 (4번째) | `content/bank_B.json` |
+| 트랙 | 주제 | 파일 |
+|---|---|---|
+| **A** | 오늘의 TMI — 신기한 사실·잡학 (역사·동물·우주·과학·상식 교정). 각 카드에 출처 표기. | `content/bank_A.json` |
 
-- 순서·비중은 `config/settings.yaml` 의 `rotation: [A, A, A, B]` 로 조절.
-- 카드 좌상단 칩은 둘 다 **"오늘의 TMI"** 로 통일 (`tracks.*.name`).
-- `content/bank_B.parked.json` 은 더 이전에 보류된 '문해력' 트랙 (비활성, 무시됨).
+- 단일 트랙 (`config/settings.yaml` 의 `rotation: [A]`).
+- 보류된 트랙: `content/bank_kkultip.parked.json`(생활 꿀팁 34개), `content/bank_B.parked.json`(문해력). 둘 다 비활성.
+- 되살리려면 스키마 확인 후 `bank_B.json` 등으로 이름 바꾸고 `rotation` 에 추가.
 
 ---
 
@@ -26,9 +25,9 @@
 
 ```
 config/settings.yaml      발행 간격·핸들·색·rotation
-content/bank_A.json        오늘의 TMI / 신기한 사실 (지금 15개, 메인)
-content/bank_B.json        생활 꿀팁 (지금 34개, 서브)
-content/bank_B.parked.json 더 이전에 보류된 문해력 트랙 (비활성)
+content/bank_A.json        오늘의 TMI / 신기한 사실 (지금 15개) — 유일한 활성 트랙
+content/bank_kkultip.parked.json  생활 꿀팁 34개 (보류, 비활성)
+content/bank_B.parked.json 문해력 트랙 (보류, 비활성)
 content/SCHEMA.md          항목 작성법
 src/render.py              항목 1개 -> 카드 JPG 1장 (항목 6개 초과 시 2장)
 src/queue.py               다음 발행 항목 선택
@@ -46,8 +45,9 @@ output/<날짜>_<slug>/      발행된 카드 이미지 (자동 커밋)
 ## 자주 하는 일
 
 ### 콘텐츠 추가 (주 10분)
-TMI는 `content/bank_A.json`, 생활 꿀팁은 `content/bank_B.json` **아래쪽에** 붙이고 commit & push.
-형식은 `content/SCHEMA.md`. 추가 전에 미리보기로 확인:
+새 TMI 항목을 `content/bank_A.json` **아래쪽에** 붙이고 commit & push.
+형식은 `content/SCHEMA.md`. 사실은 반드시 출처 확인 후 `source` 필드에 표기.
+추가 전에 미리보기로 확인:
 ```bash
 python -m src.render --preview "content/bank_A.json#-1"   # 마지막 항목
 ```

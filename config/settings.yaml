@@ -8,9 +8,9 @@ handle: "@today.tminformation"
 # 발행 간격(일). 1 = 매일, 2 = 2일에 1개, 3 = 3일에 1개.
 interval_days: 1
 
-# 큐에서 트랙을 꺼내는 순환 순서.
-# A = 오늘의 TMI(신기한 사실, 메인), B = 생활 꿀팁(서브). A 3번마다 B 1번.
-rotation: [A, A, A, B]
+# 큐에서 트랙을 꺼내는 순환 순서. 지금은 TMI(A) 단일 트랙.
+# (생활 꿀팁은 content/bank_kkultip.parked.json 으로 보류됨)
+rotation: [A]
 
 # 큐(미발행 문구)가 이 개수 미만이면 GitHub 이슈로 "문구 보충" 알림.
 low_queue_threshold: 5
