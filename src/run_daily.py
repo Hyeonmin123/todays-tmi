@@ -74,9 +74,29 @@ def git_commit_push(paths: list[str], message: str) -> None:
     _run(["git", "push"])
 
 
+def _repo_from_git() -> str:
+    """git origin URL 에서 'owner/repo' 추출 (로컬 실행용)."""
+    try:
+        url = subprocess.run(["git", "remote", "get-url", "origin"], cwd=ROOT,
+                             capture_output=True, text=True).stdout.strip()
+    except Exception:
+        return ""
+    if not url:
+        return ""
+    url = url.removesuffix(".git")
+    if url.startswith("git@"):          # git@github.com:owner/repo
+        url = url.split(":", 1)[-1]
+    else:                               # https://github.com/owner/repo
+        url = "/".join(url.split("/")[-2:])
+    return url
+
+
 def raw_base() -> str:
-    repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
-    branch = os.environ.get("GITHUB_REF_NAME", "").strip() or "main"
+    repo = os.environ.get("GITHUB_REPOSITORY", "").strip() or _repo_from_git()
+    branch = (os.environ.get("GITHUB_REF_NAME", "").strip()
+              or subprocess.run(["git", "branch", "--show-current"], cwd=ROOT,
+                                capture_output=True, text=True).stdout.strip()
+              or "main")
     if not repo:
         repo = "USER/REPO"
     return f"https://raw.githubusercontent.com/{repo}/{branch}"
