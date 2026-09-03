@@ -1,11 +1,8 @@
-"""문구 항목 1개를 '잘 꾸민 카드 한 장'(JPG)으로 렌더링한다.
+"""문구 항목 1개를 '노트/필기' 스타일 카드(JPG) 한 장으로 렌더링한다.
 
-레이아웃 (위 -> 아래):
-  키커 칩  ·  제목(키워드 형광펜 강조)  ·  강조 바
-  본문(번호 단계 / 불릿 / 문단)
-  아웃트로 박스(저장 유도)  ·  하단 핸들/출처
-
-내용이 많으면 자동으로 2장까지 나눈다(본문 항목을 나눠 담음).
+- 따뜻한 종이색 + 점 그리드 배경
+- 손글씨체(Gaegu), 제목 키워드에 형광펜, 손그림 밑줄, 링 불릿
+- 위→아래로 내용이 카드를 꽉 채우도록 본문 글씨/간격을 자동 확대
 
 사용:
   python -m src.render --preview "content/bank_A.json#0"
@@ -14,6 +11,7 @@
 from __future__ import annotations
 
 import argparse
+import math
 import shutil
 from pathlib import Path
 
@@ -22,7 +20,7 @@ from PIL import Image, ImageDraw, ImageFont
 from .common import FONT_DIR, OUTPUT_DIR, load_all_items, load_settings
 
 
-# ---------- 색/폰트 유틸 ----------
+# ---------- 유틸 ----------
 def _rgb(h: str) -> tuple[int, int, int]:
     h = h.lstrip("#")
     return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))  # type: ignore
@@ -37,223 +35,167 @@ def _font(name: str, size: int) -> ImageFont.FreeTypeFont:
     return ImageFont.truetype(str(FONT_DIR / name), size)
 
 
-def _wrap(draw: ImageDraw.ImageDraw, text: str, font, max_w: float) -> list[str]:
-    """'\\n' 은 강제 줄바꿈. 그 외에는 공백 우선, 안 되면 글자 단위로 max_w 안에 맞춤."""
+def _wrap(d: ImageDraw.ImageDraw, text: str, font, max_w: float) -> list[str]:
     out: list[str] = []
     for para in text.split("\n"):
-        if draw.textlength(para, font=font) <= max_w:
+        if d.textlength(para, font=font) <= max_w:
             out.append(para)
             continue
         cur = ""
         for w in para.split(" "):
-            trial = w if not cur else cur + " " + w
-            if draw.textlength(trial, font=font) <= max_w:
-                cur = trial
-                continue
-            if cur:
-                out.append(cur)
-            if draw.textlength(w, font=font) <= max_w:
-                cur = w
+            t = (cur + " " + w).strip()
+            if d.textlength(t, font=font) <= max_w:
+                cur = t
             else:
-                piece = ""
-                for ch in w:
-                    if draw.textlength(piece + ch, font=font) <= max_w:
-                        piece += ch
-                    else:
-                        out.append(piece)
-                        piece = ch
-                cur = piece
+                if cur:
+                    out.append(cur)
+                cur = w
         out.append(cur)
     return out
 
 
-def _fit_title(draw, text, font_name, max_w, max_h, sizes, line_ratio=1.24):
-    """제목: 명시한 줄바꿈(\\n)이 그대로 유지되는 가장 큰 크기를 우선.
-    (어느 줄이 너무 길어 강제로 더 접히면 그 크기는 건너뜀)"""
-    explicit = text.split("\n")
-    best_clean = None   # 강제 줄바꿈 없이 높이도 맞는 것
-    best_any = None      # 최소한 높이는 맞는 것
+def _fit_title(d, text, fname, max_w, max_h, sizes):
+    """명시한 줄바꿈이 유지되면서 max_h 안에 드는 가장 큰 크기."""
+    exp = text.split("\n")
+    best = None
     for s in sizes:
-        f = _font(font_name, s)
-        lines = _wrap(draw, text, f, max_w)
+        f = _font(fname, s)
+        lines = _wrap(d, text, f, max_w)
         asc, desc = f.getmetrics()
-        lh = int((asc + desc) * line_ratio)
-        if lh * len(lines) > max_h:
-            break
-        best_any = (f, lines, lh)
-        if len(lines) == len(explicit):
-            best_clean = (f, lines, lh)
-    if best_clean:
-        return best_clean
-    if best_any:
-        return best_any
-    f = _font(font_name, sizes[0])
-    lines = _wrap(draw, text, f, max_w)
+        lh = int((asc + desc) * 1.16)
+        if len(lines) == len(exp) and lh * len(lines) <= max_h:
+            best = (f, lines, lh)
+    if best:
+        return best
+    f = _font(fname, sizes[0])
+    lines = _wrap(d, text, f, max_w)
     asc, desc = f.getmetrics()
-    return (f, lines, int((asc + desc) * line_ratio))
+    return (f, lines, int((asc + desc) * 1.16))
 
 
-# ---------- 본문 블록 ----------
-def _body_units(body: dict) -> tuple[str, list[str]]:
-    t = body.get("type", "steps")
-    if t == "text":
-        return "text", [body.get("text", "")]
-    return t, list(body.get("items", []))
+def _dot_grid(d: ImageDraw.ImageDraw, w: int, h: int, color, step: int = 46):
+    for gx in range(step // 2, w, step):
+        for gy in range(step // 2, h, step):
+            d.ellipse([gx - 1.4, gy - 1.4, gx + 1.4, gy + 1.4], fill=color)
 
 
-def _measure_body(draw, units, btype, font_name_reg, font_name_bold, size,
-                  max_w, x0) -> tuple[list, float, dict]:
-    bf = _font(font_name_reg, size)
-    asc, desc = bf.getmetrics()
-    lh = int((asc + desc) * 1.32)
-    badge = round(size * 1.9) if btype == "steps" else round(size * 0.62)
-    text_indent = (badge + 26) if btype != "text" else 0
-    inner_w = max_w - text_indent
-    gap = round(size * 1.05)
-    blocks = []
-    total = 0.0
-    for u in units:
-        lines = _wrap(draw, u, bf, inner_w)
-        bh = lh * len(lines)
-        blocks.append(lines)
-        total += bh + gap
-    total = max(0.0, total - gap)
-    meta = {"lh": lh, "badge": badge, "text_indent": text_indent, "gap": gap,
-            "font": bf, "font_bold": _font(font_name_bold, max(size - 1, 12))}
-    return blocks, total, meta
+def _wavy(d: ImageDraw.ImageDraw, x0: float, x1: float, y: float, color,
+          amp: float = 2.4, width: int = 5, period: float = 34):
+    pts = []
+    x = x0
+    while x <= x1:
+        pts.append((x, y + math.sin((x - x0) / period * math.pi) * amp))
+        x += 6
+    if len(pts) >= 2:
+        d.line(pts, fill=color, width=width, joint="curve")
 
 
-def _draw_body(d, x, y, units, blocks, btype, meta, fg, accent, bg):
-    lh, badge, indent, gap = meta["lh"], meta["badge"], meta["text_indent"], meta["gap"]
-    bf, bnf = meta["font"], meta["font_bold"]
-    asc, _ = bf.getmetrics()
-    for i, lines in enumerate(blocks):
-        by = y
-        if btype == "steps":
-            cy = by + asc / 2
-            d.ellipse([x, cy - badge / 2, x + badge, cy + badge / 2], fill=accent)
-            num = str(i + 1)
-            nf = _font(bnf.path, round(badge * 0.52))
-            nb = d.textbbox((0, 0), num, font=nf)
-            d.text((x + (badge - (nb[2] - nb[0])) / 2 - nb[0],
-                    cy - (nb[3] - nb[1]) / 2 - nb[1]), num, font=nf, fill=bg)
-        elif btype == "bullets":
-            cy = by + asc / 2
-            d.ellipse([x + 2, cy - badge / 2, x + 2 + badge, cy + badge / 2], fill=accent)
-        for ln in lines:
-            d.text((x + indent, by), ln, font=bf, fill=fg)
-            by += lh
-        y = by + gap
-    return y
+def _dot(d: ImageDraw.ImageDraw, cx: float, cy: float, r: float, color):
+    d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=color)
 
 
-# ---------- 카드 1장 ----------
+def _marker(width: int, height: int, color) -> Image.Image:
+    """형광펜 한 획 (반투명, 끝이 살짝 둥근). 회전시켜 붙일 것."""
+    pad = 6
+    im = Image.new("RGBA", (width + pad * 2, height + pad * 2), (0, 0, 0, 0))
+    dd = ImageDraw.Draw(im)
+    r, g, b = _rgb(color) if isinstance(color, str) else color
+    dd.rounded_rectangle([pad, pad, pad + width, pad + height],
+                         radius=height // 2, fill=(r, g, b, 150))
+    return im.rotate(-1.2, expand=True, resample=Image.BICUBIC)
+
+
+# ---------- 카드 ----------
 def _render_one(item: dict, cfg: dict, units: list[str], part: int, parts: int) -> Image.Image:
     W, H = cfg["size"]
-    m = cfg.get("margin", 80)
+    m = cfg.get("margin", 90)
     th = cfg["tracks"][item["track"]]
-    bg, fg, accent, sub = th["bg"], th["fg"], th["accent"], th.get("sub", "#999999")
-    F = cfg["fonts"]
-    btype = item.get("body", {}).get("type", "steps")
+    bg, fg, accent, sub = th["bg"], th["fg"], th["accent"], th.get("sub", "#8A7A5C")
+    Fb, Fr = cfg["fonts"]["bold"], cfg["fonts"]["regular"]
 
     img = Image.new("RGB", (W, H), bg)
     d = ImageDraw.Draw(img)
+    _dot_grid(d, W, H, _blend(sub, bg, 0.16))
     x = m
     max_w = W - 2 * m
-    y = m
 
-    # 키커 칩
+    # 키커
     kicker = item.get("kicker") or th.get("name", "")
     if parts > 1:
         kicker = f"{kicker}  ({part}/{parts})"
-    if kicker:
-        kf = _font(F["bold"], 27)
-        tw = d.textlength(kicker, font=kf)
-        ph, pv = 22, 13
-        ch = 27 + pv * 2
-        d.rounded_rectangle([x, y, x + tw + ph * 2, y + ch], radius=ch // 2, fill=accent)
-        d.text((x + ph, y + pv - 2), kicker, font=kf, fill=bg)
-        y += ch + 40
+    kf = _font(Fb, 30)
+    d.text((x, m), kicker, font=kf, fill=sub)
+    y = m + 30 + 34
 
-    # 제목 (part 1 에만 크게, 이후 장은 작게)
-    title = item["title"]
-    if part == 1:
-        tf, tlines, tlh = _fit_title(d, title, F["bold"], max_w, 440,
-                                     list(range(54, 90, 2)))
-    else:
-        tf, tlines, tlh = _fit_title(d, title, F["bold"], max_w, 240,
-                                     list(range(40, 60, 2)))
+    # 제목 (+ 형광펜)
+    tsize = range(46, 84, 2) if part == 1 else range(38, 60, 2)
+    tf, tlines, tlh = _fit_title(d, item["title"], Fb, max_w, 380, tsize)
     hl = item.get("title_highlight")
     for ln in tlines:
-        if hl and hl in ln:
-            pre = ln[:ln.index(hl)]
-            px = x + d.textlength(pre, font=tf)
+        if hl and hl in ln and d.textlength(ln, font=tf) <= max_w:
+            pre = d.textlength(ln[:ln.index(hl)], font=tf)
             hw = d.textlength(hl, font=tf)
             asc, _ = tf.getmetrics()
-            ub = round(tf.size * 0.11)          # 밑줄 두께
-            uy = y + asc + round(tf.size * 0.06)
-            d.rounded_rectangle([px - 2, uy, px + hw + 2, uy + ub],
-                                radius=ub // 2, fill=_blend(accent, bg, 0.55))
+            mk = _marker(int(hw + 20), int(asc * 0.60), accent)
+            img.paste(mk, (int(x + pre - 12), int(y + asc * 0.40)), mk)
         d.text((x, y), ln, font=tf, fill=fg)
         y += tlh
-    y += 26
+    y += 12
+    _wavy(d, x, x + min(max_w * 0.46, 300), y, sub, amp=2.6, width=4)
+    y += 40
 
-    # 강조 바
-    d.rounded_rectangle([x, y, x + 88, y + 7], radius=3, fill=accent)
-    y += 7 + 46
-
-    # 하단 구역 계산
-    footer_y = H - 54
+    # 본문 + 아웃트로가 아래 여백까지 꽉 차도록 크기·간격 자동 확대
+    footer_h = 44
+    bottom = H - m - footer_h
+    avail = bottom - y
     outro = item.get("outro") if part == parts else None
-    if outro:
-        outro_bottom = H - 96
-        outro_h = 128
-        outro_top = outro_bottom - outro_h
-        body_bottom = outro_top - 28
-    else:
-        body_bottom = H - 96
-    avail_h = body_bottom - y
 
-    # 본문: 큰 폰트부터 줄여가며 맞춤
-    blocks = meta = None
-    total = 0.0
-    for s in range(46, 27, -2):
-        blocks, total, meta = _measure_body(d, units, btype, F["regular"], F["bold"],
-                                            s, max_w, x)
-        if total <= avail_h:
+    chosen = None
+    for bs in range(52, 27, -2):
+        bf = _font(Fr, bs)
+        a1, d1 = bf.getmetrics()
+        lh = int((a1 + d1) * 1.34)
+        wrapped = [_wrap(d, u, bf, max_w - 46) for u in units]
+        body_core = sum(lh * len(w) for w in wrapped)
+        of = _font(Fb, max(bs - 3, 26))
+        a2, d2 = of.getmetrics()
+        olh = int((a2 + d2) * 1.3)
+        owrap = _wrap(d, outro, of, max_w) if outro else []
+        outro_core = olh * len(owrap)
+        n_gaps = len(units) + (1 if outro else 0)
+        if body_core + outro_core + 18 * n_gaps <= avail or bs == 30:
+            chosen = (bf, lh, wrapped, of, olh, owrap, body_core, outro_core, n_gaps)
             break
-    # 남는 공간이 있으면 본문 블록을 세로 중앙에 (너무 아래로 쏠리지 않게 최대 90px)
-    if total < avail_h:
-        y += min((avail_h - total) / 2, 90)
-    _draw_body(d, x, y, units, blocks, btype, meta, fg, accent, bg)
 
-    # 아웃트로 박스
+    bf, lh, wrapped, of, olh, owrap, body_core, outro_core, n_gaps = chosen
+    slack = avail - body_core - outro_core
+    gap = max(20, min(slack / max(n_gaps, 1), 110))
+
+    for w in wrapped:
+        cy = y + bf.getmetrics()[0] * 0.52
+        _dot(d, x + 8, cy, 7, sub)
+        for ln in w:
+            d.text((x + 46, y), ln, font=bf, fill=_blend(fg, bg, 0.92))
+            y += lh
+        y += gap
+
     if outro:
-        d.rounded_rectangle([x, outro_top, W - m, outro_bottom], radius=20,
-                            fill=_blend(accent, bg, 0.12))
-        of = _font(F["bold"], 33)
-        ow = d.textlength(outro, font=of)
-        of_lines = _wrap(d, outro, of, max_w - 64)
-        oy = outro_top + (outro_h - len(of_lines) * (of.getmetrics()[0] + of.getmetrics()[1])) / 2
-        for ln in of_lines:
-            lw = d.textlength(ln, font=of)
-            d.text(((W - lw) / 2, oy), ln, font=of, fill=_blend(accent, bg, 0.95))
-            oy += of.getmetrics()[0] + of.getmetrics()[1]
+        for ln in owrap:
+            d.text((x, y), ln, font=of, fill=fg)
+            ow = d.textlength(ln, font=of)
+            _wavy(d, x, x + ow, y + of.getmetrics()[0] + 6, accent, amp=3.2,
+                  width=8, period=26)
+            y += olh
 
-    # 하단: 출처(좌) / 핸들(우)
-    sf = _font(F["regular"], 25)
-    src = item.get("source")
-    if src:
-        d.text((x, footer_y), src, font=sf, fill=sub)
+    # 핸들
+    hf = _font(Fr, 25)
     handle = cfg.get("handle", "@your_handle")
-    d.text((W - m - d.textlength(handle, font=sf), footer_y), handle, font=sf, fill=sub)
-
+    d.text((W - m - d.textlength(handle, font=hf), H - m - 2), handle, font=hf, fill=sub)
     return img
 
 
-def _split_units(units: list[str], max_first: int = 4) -> list[list[str]]:
-    """항목이 너무 많으면 두 장으로. (지금은 5개 이하면 1장)"""
-    if len(units) <= 5:
+def _split_units(units: list[str]) -> list[list[str]]:
+    if len(units) <= 6:
         return [units]
     half = (len(units) + 1) // 2
     return [units[:half], units[half:]]
@@ -261,8 +203,11 @@ def _split_units(units: list[str], max_first: int = 4) -> list[list[str]]:
 
 def render_item(item: dict, out_dir: Path, cfg: dict | None = None) -> list[Path]:
     cfg = cfg or load_settings()
-    btype, units = _body_units(item.get("body", {"type": "text", "text": ""}))
-    groups = _split_units(units) if btype != "text" else [units]
+    body = item.get("body", {"type": "text", "text": ""})
+    if body.get("type") == "text":
+        groups = [[body.get("text", "")]]
+    else:
+        groups = _split_units(list(body.get("items", [])))
     out_dir.mkdir(parents=True, exist_ok=True)
     paths: list[Path] = []
     for i, g in enumerate(groups):

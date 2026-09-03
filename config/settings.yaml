@@ -28,22 +28,22 @@ size: [1080, 1350]
 # 안전 여백(px)
 margin: 96
 
-# 트랙별 비주얼 테마 (칩 라벨은 둘 다 "오늘의 TMI" 로 통일)
+# 비주얼 테마 (노트/필기 스타일). 칩 라벨은 둘 다 "오늘의 TMI" 로 통일.
 tracks:
   A:
     name: "오늘의 TMI"
-    bg: "#FFFFFF"
-    fg: "#1A1A1A"
-    accent: "#1F6FEB"
-    sub: "#8A8F98"
+    bg: "#FCFBF6"      # 따뜻한 종이색
+    fg: "#2B2A25"      # 잉크
+    accent: "#FFD64A"  # 형광펜
+    sub: "#8A7A5C"     # 라벨·밑줄·핸들
   B:
     name: "오늘의 TMI"
-    bg: "#FFFFFF"
-    fg: "#1A1A1A"
-    accent: "#1F6FEB"
-    sub: "#8A8F98"
+    bg: "#FCFBF6"
+    fg: "#2B2A25"
+    accent: "#FFD64A"
+    sub: "#8A7A5C"
 
-# 폰트 파일 경로 (assets/fonts/ 기준)
+# 폰트 파일 경로 (assets/fonts/ 기준) — 노트/필기 스타일: Gaegu
 fonts:
-  bold: "Pretendard-Bold.otf"
-  regular: "Pretendard-Regular.otf"
+  bold: "Gaegu-Bold.ttf"
+  regular: "Gaegu-Regular.ttf"

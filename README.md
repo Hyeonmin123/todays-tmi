@@ -1,6 +1,6 @@
 # 오늘의 잡다한 정보 (@today.tminformation)
 
-'잘 꾸민 카드 한 장'(제목 + 항목 + 한 줄 정리 + 출처) + 캡션을 **2일에 1개**(조절 가능)
+'노트/필기' 스타일 카드 한 장(손글씨체 + 점 그리드 + 형광펜 강조) + 상세 캡션을 **2일에 1개**(조절 가능)
 자동으로 인스타그램에 올리는 파이프라인. GitHub Actions가 매일 점검해서 발행일이면
 렌더 → 발행 → 이력 기록까지 한다.
 
@@ -116,4 +116,4 @@ python -m src.run_daily --no-git --force
 - 이미지 URL은 공개 접근 가능해야 함 → 저장소는 Public. **토큰은 저장소가 아니라 Actions Secrets** 에만.
 - Graph API 발행 한도 25건/24시간 (현재 계획엔 여유).
 - 자동 발행은 꾸준함을 보장할 뿐, 팔로워 성장은 문구의 질에 달렸다.
-- 폰트: Pretendard (SIL Open Font License, 상업적 사용·재배포 허용) — `assets/fonts/LICENSE-OFL.txt`.
+- 폰트: Gaegu(카드 본문·제목), Pretendard(예비) — 둘 다 SIL Open Font License, 상업적 사용·재배포 허용.
