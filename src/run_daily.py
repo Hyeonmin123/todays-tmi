@@ -43,6 +43,17 @@ def _posts_today(state: dict) -> int:
                if str(p.get("published_at", ""))[:10] == today)
 
 
+def _hours_since_last(state: dict) -> float:
+    pub = state.get("published", [])
+    if not pub:
+        return 1e9
+    try:
+        last = dt.datetime.fromisoformat(pub[-1]["published_at"])
+    except (KeyError, ValueError):
+        return 1e9
+    return (dt.datetime.now(KST) - last).total_seconds() / 3600
+
+
 def target_today(state: dict, cfg: dict) -> int:
     """오늘 발행해야 할 총 개수.
     - boost_until(포함) 이전이면 boost_per_day 개
@@ -133,6 +144,11 @@ def main() -> int:
         have = _posts_today(state)
         if have >= want:
             print(f"오늘({today_kst()}) 발행 목표 {want}개 중 {have}개 완료 → 스킵.")
+            return 0
+        min_gap = float(cfg.get("min_hours_between_posts", 0))
+        since = _hours_since_last(state)
+        if since < min_gap:
+            print(f"직전 발행에서 {since:.1f}시간 경과 (최소 {min_gap}시간) → 스킵.")
             return 0
         print(f"오늘({today_kst()}) 발행 {have}/{want} → 1개 진행.")
 

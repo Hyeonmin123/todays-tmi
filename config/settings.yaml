@@ -13,6 +13,10 @@ interval_days: 1
 boost_until: "2026-09-09"
 boost_per_day: 3
 
+# 직전 발행에서 이 시간(h)이 안 지났으면 목표 미달이어도 스킵.
+# cron 슬롯이 6시간 간격이라 5로 두면 슬롯은 통과, 실수로 몰아 올리는 건 차단.
+min_hours_between_posts: 5
+
 # 큐에서 트랙을 꺼내는 순환 순서. 지금은 TMI(A) 단일 트랙.
 # (생활 꿀팁은 content/bank_kkultip.parked.json 으로 보류됨)
 rotation: [A]
