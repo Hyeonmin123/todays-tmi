@@ -138,7 +138,15 @@ def main() -> int:
     caption = item["caption"].rstrip()
     if item.get("source"):
         caption += "\n\n" + item["source"]
-    caption += "\n\n" + " ".join(item.get("hashtags", []))
+    # 항목별 태그 + 공통 태그, 중복 제거(대소문자 무시)
+    tags: list[str] = []
+    seen: set[str] = set()
+    for t in list(item.get("hashtags", [])) + list(cfg.get("base_hashtags", [])):
+        k = t.lower()
+        if k not in seen:
+            seen.add(k)
+            tags.append(t)
+    caption += "\n\n" + " ".join(tags)
     urls = [f"{raw_base()}/{rp}" for rp in rel_paths]
 
     if args.dry_run:

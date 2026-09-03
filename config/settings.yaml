@@ -15,6 +15,20 @@ rotation: [A]
 # 큐(미발행 문구)가 이 개수 미만이면 GitHub 이슈로 "문구 보충" 알림.
 low_queue_threshold: 5
 
+# 모든 게시물에 공통으로 붙는 해시태그. 항목별 태그와 합쳐 중복 제거 후 사용.
+# (인스타 최대 30개. 2026년엔 12~15개 정도가 무난)
+base_hashtags:
+  - "#잡학상식"
+  - "#알쓸신잡"
+  - "#상식"
+  - "#지식"
+  - "#교양"
+  - "#흥미로운사실"
+  - "#오늘의지식"
+  - "#배움스타그램"
+  - "#카드뉴스"
+  - "#꿀정보"
+
 # Instagram API 설정 (Instagram 로그인 방식)
 api_base: "https://graph.instagram.com"
 graph_api_version: v21.0
