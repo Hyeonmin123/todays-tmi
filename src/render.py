@@ -187,10 +187,16 @@ def _render_one(item: dict, cfg: dict, units: list[str], part: int, parts: int) 
                   width=8, period=26)
             y += olh
 
-    # 핸들
-    hf = _font(Fr, 25)
+    # 하단: 출처(좌) / 핸들(우)
+    hf = _font(Fr, 24)
+    fy = H - m - 2
+    src = item.get("source")
+    if src:
+        while src and d.textlength(src, font=hf) > max_w * 0.60:
+            src = src[:-1]
+        d.text((x, fy), src, font=hf, fill=sub)
     handle = cfg.get("handle", "@your_handle")
-    d.text((W - m - d.textlength(handle, font=hf), H - m - 2), handle, font=hf, fill=sub)
+    d.text((W - m - d.textlength(handle, font=hf), fy), handle, font=hf, fill=sub)
     return img
 
 

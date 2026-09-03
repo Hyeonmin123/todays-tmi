@@ -135,7 +135,10 @@ def main() -> int:
     rel_paths = [p.relative_to(ROOT).as_posix() for p in paths]
     print("렌더 완료:", *rel_paths, sep="\n  ")
 
-    caption = item["caption"].rstrip() + "\n\n" + " ".join(item.get("hashtags", []))
+    caption = item["caption"].rstrip()
+    if item.get("source"):
+        caption += "\n\n" + item["source"]
+    caption += "\n\n" + " ".join(item.get("hashtags", []))
     urls = [f"{raw_base()}/{rp}" for rp in rel_paths]
 
     if args.dry_run:
