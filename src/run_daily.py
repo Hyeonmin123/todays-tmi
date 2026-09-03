@@ -1,7 +1,8 @@
 """매일 실행되는 오케스트레이터.
 
 흐름:
-  1. 오늘이 발행일인지 판단 (마지막 발행일 + interval_days). 아니면 종료.
+  1. 오늘 발행 목표(target_today) 대비 오늘 이미 올린 개수를 비교. 다 채웠으면 종료.
+     (부스트 기간이면 boost_per_day 개, 아니면 interval_days 마다 1개)
   2. 큐에서 다음 문구 선택. 없으면 알림 후 종료.
   3. 카드 PNG 렌더 -> output/<날짜>_<slug>/
   4. (Actions) 이미지 커밋 & push  -> raw.githubusercontent.com URL 확보
@@ -36,12 +37,26 @@ def today_kst() -> dt.date:
     return dt.datetime.now(KST).date()
 
 
-def is_publish_day(state: dict, interval_days: int) -> bool:
+def _posts_today(state: dict) -> int:
+    today = today_kst().isoformat()
+    return sum(1 for p in state.get("published", [])
+               if str(p.get("published_at", ""))[:10] == today)
+
+
+def target_today(state: dict, cfg: dict) -> int:
+    """오늘 발행해야 할 총 개수.
+    - boost_until(포함) 이전이면 boost_per_day 개
+    - 그 외에는 interval_days 마다 1개
+    """
+    today = today_kst()
+    boost_until = cfg.get("boost_until")
+    if boost_until and today <= dt.date.fromisoformat(str(boost_until)[:10]):
+        return int(cfg.get("boost_per_day", 1))
     last = state.get("last_published_at")
     if not last:
-        return True
-    last_date = dt.date.fromisoformat(last[:10])
-    return (today_kst() - last_date).days >= interval_days
+        return 1
+    gap = (today - dt.date.fromisoformat(str(last)[:10])).days
+    return 1 if gap >= int(cfg.get("interval_days", 1)) else 0
 
 
 def _run(cmd: list[str]) -> str:
@@ -112,12 +127,14 @@ def main() -> int:
     load_dotenv()
     cfg = load_settings()
     state = load_state()
-    interval = int(cfg.get("interval_days", 2))
 
-    if not args.force and not args.dry_run and not is_publish_day(state, interval):
-        last = state.get("last_published_at")
-        print(f"오늘({today_kst()})은 발행일 아님. 마지막 발행 {last}, 간격 {interval}일.")
-        return 0
+    if not args.force and not args.dry_run:
+        want = target_today(state, cfg)
+        have = _posts_today(state)
+        if have >= want:
+            print(f"오늘({today_kst()}) 발행 목표 {want}개 중 {have}개 완료 → 스킵.")
+            return 0
+        print(f"오늘({today_kst()}) 발행 {have}/{want} → 1개 진행.")
 
     item = pick_next(state, cfg)
     if not item:

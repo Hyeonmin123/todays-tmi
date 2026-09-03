@@ -2,8 +2,10 @@ name: 자동 발행
 
 on:
   schedule:
-    # 매일 23:00 UTC = 08:00 KST 실행. 실제 발행 여부는 run_daily 가 interval_days 로 판단.
+    # KST 08:00 / 14:00 / 20:00 (UTC-9). run_daily 가 '오늘 목표 개수'까지만 발행.
     - cron: "0 23 * * *"
+    - cron: "0 5 * * *"
+    - cron: "0 11 * * *"
   workflow_dispatch:
     inputs:
       force:
