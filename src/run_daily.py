@@ -160,10 +160,11 @@ def main() -> int:
 
     print(f"발행 대상: [{item['track']}] {item['slug']}")
 
-    # 3. 렌더
+    # 3. 렌더 (dry-run 은 gitignore 되는 미리보기 폴더로)
     from .render import render_item
     date_str = today_kst().isoformat()
-    out_dir = OUTPUT_DIR / f"{date_str}_{item['slug']}"
+    out_dir = (OUTPUT_DIR / "preview" / "_dryrun" if args.dry_run
+               else OUTPUT_DIR / f"{date_str}_{item['slug']}")
     paths = render_item(item, out_dir, cfg)
     rel_paths = [p.relative_to(ROOT).as_posix() for p in paths]
     print("렌더 완료:", *rel_paths, sep="\n  ")
