@@ -56,8 +56,14 @@ def _wrap(d: ImageDraw.ImageDraw, text: str, font, max_w: float) -> list[str]:
     return out
 
 
+def _safe_title(text: str) -> str:
+    """제목용 고딕 폰트(DoHyeon)에 없는 글자 치환."""
+    return text.replace("·", ",").replace("・", ",").replace("–", "-").replace("—", "-")
+
+
 def _fit(d, text, fname, max_w, max_h, sizes, ratio=1.16):
     """명시한 줄바꿈이 유지되면서 max_w x max_h 에 드는 가장 큰 크기."""
+    text = _safe_title(text)
     exp = text.split("\n")
     best = None
     for s in sizes:
