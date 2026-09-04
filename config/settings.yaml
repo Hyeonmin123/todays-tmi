@@ -8,13 +8,15 @@ handle: "@today.tminformation"
 # 평상시 발행 간격(일). 1 = 매일, 2 = 2일에 1개.
 interval_days: 1
 
-# 부스트: 이 날짜(포함)까지는 하루 boost_per_day 개씩 발행. (극초반 유입용)
-# 지나면 자동으로 interval_days 규칙으로 복귀. 끄려면 날짜를 과거로.
+# 발행 시각(KST). 부스트 기간엔 boost_slots_kst, 그 외엔 slots_kst 를 쓴다.
+# 슬롯 시각 s 이후 slot_tolerance_hours 안에 실행되면 그 슬롯 발행분으로 인정.
+# 그 시간을 넘겨 실행되면(스케줄러 지연 등) 그 슬롯은 건너뜀 → 발행 시각이 크게 안 튄다.
 boost_until: "2026-09-09"
-boost_per_day: 3
+boost_slots_kst: [8, 14, 20]
+slots_kst: [8]
+slot_tolerance_hours: 3.5
 
-# 직전 발행에서 이 시간(h)이 안 지났으면 목표 미달이어도 스킵.
-# cron 슬롯이 6시간 간격이라 5로 두면 슬롯은 통과, 실수로 몰아 올리는 건 차단.
+# 직전 발행에서 이 시간(h)이 안 지났으면 스킵 (몰아 올리기 방지).
 min_hours_between_posts: 5
 
 # 큐에서 트랙을 꺼내는 순환 순서. 지금은 TMI(A) 단일 트랙.

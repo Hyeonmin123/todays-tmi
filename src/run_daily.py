@@ -37,12 +37,6 @@ def today_kst() -> dt.date:
     return dt.datetime.now(KST).date()
 
 
-def _posts_today(state: dict) -> int:
-    today = today_kst().isoformat()
-    return sum(1 for p in state.get("published", [])
-               if str(p.get("published_at", ""))[:10] == today)
-
-
 def _hours_since_last(state: dict) -> float:
     pub = state.get("published", [])
     if not pub:
@@ -54,20 +48,41 @@ def _hours_since_last(state: dict) -> float:
     return (dt.datetime.now(KST) - last).total_seconds() / 3600
 
 
-def target_today(state: dict, cfg: dict) -> int:
-    """오늘 발행해야 할 총 개수.
-    - boost_until(포함) 이전이면 boost_per_day 개
-    - 그 외에는 interval_days 마다 1개
+def slot_check(state: dict, cfg: dict) -> tuple[float | None, str]:
+    """지금이 발행 슬롯 시간대인지 판단.
+    반환: (활성 슬롯 시각 or None, 사유)
+    - 슬롯 시각 s 이후 slot_tolerance_hours 안이면 그 슬롯으로 발행 가능
+    - 오늘 그 슬롯 발행분이 이미 있으면 스킵
+    - 비부스트 기간엔 interval_days 도 함께 본다
     """
-    today = today_kst()
+    now = dt.datetime.now(KST)
+    h = now.hour + now.minute / 60
+    today = now.date().isoformat()
+    tol = float(cfg.get("slot_tolerance_hours", 4.5))
+
     boost_until = cfg.get("boost_until")
-    if boost_until and today <= dt.date.fromisoformat(str(boost_until)[:10]):
-        return int(cfg.get("boost_per_day", 1))
-    last = state.get("last_published_at")
-    if not last:
-        return 1
-    gap = (today - dt.date.fromisoformat(str(last)[:10])).days
-    return 1 if gap >= int(cfg.get("interval_days", 1)) else 0
+    in_boost = bool(boost_until and now.date()
+                    <= dt.date.fromisoformat(str(boost_until)[:10]))
+    slots = sorted(cfg.get("boost_slots_kst" if in_boost else "slots_kst", [8]))
+
+    if not in_boost:
+        last = state.get("last_published_at")
+        if last:
+            gap = (now.date() - dt.date.fromisoformat(str(last)[:10])).days
+            if gap < int(cfg.get("interval_days", 1)):
+                return None, f"발행 간격일 아님 (마지막 {last}, 간격 {cfg.get('interval_days',1)}일)"
+
+    active = next((s for s in slots if s <= h < s + tol), None)
+    if active is None:
+        return None, f"발행 시간대 아님 (현재 {h:.1f}시 KST, 슬롯 {slots}, 여유 {tol}h)"
+
+    for p in state.get("published", []):
+        pat = str(p.get("published_at", ""))
+        if pat[:10] == today and len(pat) >= 16:
+            ph = int(pat[11:13]) + int(pat[14:16]) / 60
+            if active <= ph < active + tol:
+                return None, f"{active}시 슬롯 발행분이 이미 있음 ({pat[11:16]})"
+    return active, f"{active}시 슬롯"
 
 
 def _run(cmd: list[str]) -> str:
@@ -140,17 +155,16 @@ def main() -> int:
     state = load_state()
 
     if not args.force and not args.dry_run:
-        want = target_today(state, cfg)
-        have = _posts_today(state)
-        if have >= want:
-            print(f"오늘({today_kst()}) 발행 목표 {want}개 중 {have}개 완료 → 스킵.")
+        slot, reason = slot_check(state, cfg)
+        if slot is None:
+            print(f"발행 안 함 → {reason}")
             return 0
         min_gap = float(cfg.get("min_hours_between_posts", 0))
         since = _hours_since_last(state)
         if since < min_gap:
-            print(f"직전 발행에서 {since:.1f}시간 경과 (최소 {min_gap}시간) → 스킵.")
+            print(f"직전 발행에서 {since:.1f}시간 (최소 {min_gap}h) → 스킵.")
             return 0
-        print(f"오늘({today_kst()}) 발행 {have}/{want} → 1개 진행.")
+        print(f"발행 진행 → {reason} (현재 {today_kst()})")
 
     item = pick_next(state, cfg)
     if not item:
