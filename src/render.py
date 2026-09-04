@@ -228,10 +228,12 @@ def _content(item: dict, cfg: dict, units: list[str], part: int, parts: int) -> 
             y += lh
         y += gap
     if outro:
+        oasc, odesc = of.getmetrics()
         for ln in owrap:
             d.text((x, y), ln, font=of, fill=fg)
             ow = d.textlength(ln, font=of)
-            _wavy(d, x, x + ow, y + of.getmetrics()[0] + 6, accent, amp=3.2, width=8, period=26)
+            uy = y + oasc + odesc * 0.55 + 8   # 글자 아래로 충분히 내림
+            _wavy(d, x, x + ow, uy, accent, amp=2.6, width=7, period=26)
             y += olh
 
     _footer(d, cfg, th, item, part, parts)
