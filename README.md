@@ -1,8 +1,8 @@
 # 오늘의 잡다한 정보 (@today.tminformation)
 
-'노트/필기' 스타일 카드 한 장(손글씨체 + 점 그리드 + 형광펜 강조) + 상세 캡션을 **2일에 1개**(조절 가능)
-자동으로 인스타그램에 올리는 파이프라인. GitHub Actions가 매일 점검해서 발행일이면
-렌더 → 발행 → 이력 기록까지 한다.
+'노트/필기' 스타일 **2장 캐러셀**(1장=제목만 크게, 2장=내용) + 상세 캡션을 자동으로 올리는 파이프라인.
+같은 내용을 **릴스(세로 영상)로도** 발행. GitHub Actions가 하루 여러 번 점검해서
+목표 개수까지 렌더 → 발행 → 이력 기록한다.
 
 - 최초 준비(계정/토큰/저장소): **[SETUP.md](SETUP.md)**
 - 설계 배경(초기 버전): **[docs/PLAN.md](docs/PLAN.md)** — 주제는 이후 'TMI/신기한 사실'로 변경됨
@@ -29,15 +29,16 @@ content/bank_A.json        오늘의 TMI / 신기한 사실 (지금 15개) — �
 content/bank_kkultip.parked.json  생활 꿀팁 34개 (보류, 비활성)
 content/bank_B.parked.json 문해력 트랙 (보류, 비활성)
 content/SCHEMA.md          항목 작성법
-src/render.py              항목 1개 -> 카드 JPG 1장 (항목 6개 초과 시 2장)
+src/render.py              항목 1개 -> 2장 캐러셀 (커버 + 내용)
+src/reel.py                2장을 세로 영상(mp4)으로 -> 릴스용
 src/queue.py               다음 발행 항목 선택
-src/publish.py             Instagram Graph API 캐러셀 발행
+src/publish.py             Instagram API 캐러셀/릴스 발행
 src/run_daily.py           오케스트레이터 (Actions가 실행)
 src/notify.py              큐 소진 시 GitHub 이슈 알림
-src/refresh_token.py       장기 토큰 갱신(시스템 토큰이면 불필요)
-.github/workflows/publish.yml   매일 23:00 UTC(=08:00 KST) 실행
+src/refresh_token.py       토큰 갱신(60일마다)
+.github/workflows/publish.yml   KST 08:00 / 14:00 / 20:00 실행
 state/log.json             발행 이력 (자동 갱신)
-output/<날짜>_<slug>/      발행된 카드 이미지 (자동 커밋)
+output/<날짜>_<slug>/      발행된 카드·영상 (자동 커밋)
 ```
 
 ---
@@ -116,4 +117,8 @@ python -m src.run_daily --no-git --force
 - 이미지 URL은 공개 접근 가능해야 함 → 저장소는 Public. **토큰은 저장소가 아니라 Actions Secrets** 에만.
 - Graph API 발행 한도 25건/24시간 (현재 계획엔 여유).
 - 자동 발행은 꾸준함을 보장할 뿐, 팔로워 성장은 문구의 질에 달렸다.
-- 폰트: Gaegu(카드 본문·제목), Pretendard(예비) — 둘 다 SIL Open Font License, 상업적 사용·재배포 허용.
+- **릴스는 무음으로 올라감.** 올라온 뒤 인스타 앱에서 릴스 열어 트렌딩 오디오를 붙이면
+  도달에 유리. 또는 `assets/audio/loop.mp3` 를 두고 `config` 의 `reel_audio` 에 경로를 넣으면
+  그 음악이 깔림(저작권 프리만).
+- 폰트: DoHyeon(제목)·Gaegu(본문)·Pretendard(예비) — 모두 SIL Open Font License.
+- ffmpeg 는 `imageio-ffmpeg` 가 번들 (시스템 설치 불필요).

@@ -217,6 +217,29 @@ def main() -> int:
     if not args.no_git:
         git_commit_push(["state/log.json"], f"post: mark published {item['slug']} ({date_str})")
 
+    # 6-b. 릴스도 발행 (설정 시)
+    if cfg.get("also_post_reel"):
+        try:
+            from .reel import render_reel
+            from .publish import publish_reel
+            mp4 = render_reel(item, out_dir, cfg)
+            rel_mp4 = mp4.relative_to(ROOT).as_posix()
+            print("릴스 렌더 완료:", rel_mp4)
+            if not args.no_git:
+                git_commit_push([rel_mp4], f"post: reel {item['slug']} ({date_str})")
+                time.sleep(12)
+            reel_url = f"{raw_base()}/{rel_mp4}"
+            rres = publish_reel(reel_url, caption, cfg)
+            print("릴스 발행 결과:", rres)
+            state["published"][-1]["reel_media_id"] = rres.get("media_id")
+            state["published"][-1]["reel_permalink"] = rres.get("permalink")
+            save_state(state)
+            if not args.no_git:
+                git_commit_push(["state/log.json"],
+                                f"post: mark reel {item['slug']} ({date_str})")
+        except Exception as e:  # 릴스 실패해도 캐러셀은 이미 올라갔으니 치명적 아님
+            print(f"[릴스 실패] {e}")
+
     # 7. 큐 소진 알림
     rem = remaining(state)
     print(f"남은 문구: A {rem['A']} / B {rem['B']} / 합계 {rem['total']}")

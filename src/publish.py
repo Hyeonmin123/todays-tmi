@@ -124,6 +124,44 @@ def publish_carousel(image_urls: list[str], caption: str,
     return result
 
 
+def publish_reel(video_url: str, caption: str, cfg: dict | None = None, *,
+                 dry_run: bool = False) -> dict:
+    """세로 영상을 릴스로 발행. 피드 중복을 막으려고 share_to_feed=false."""
+    cfg = cfg or load_settings()
+    uid, token = _token()
+    version = cfg.get("graph_api_version", "v21.0")
+    api_base = cfg.get("api_base", DEFAULT_BASE).rstrip("/")
+    root = f"{api_base}/{version}"
+    base = f"{root}/{uid}"
+
+    cont = _post(f"{base}/media", {
+        "media_type": "REELS",
+        "video_url": video_url,
+        "caption": caption,
+        "share_to_feed": "false",
+        "access_token": token,
+    })
+    container_id = cont["id"]
+    result = {"type": "REELS", "container": container_id}
+    if dry_run:
+        result["dry_run"] = True
+        return result
+
+    # 영상 처리는 오래 걸릴 수 있음
+    _wait_ready(root, container_id, token, timeout=420)
+    pub = _post(f"{base}/media_publish",
+                {"creation_id": container_id, "access_token": token})
+    media_id = pub["id"]
+    permalink = None
+    try:
+        permalink = _get(f"{root}/{media_id}",
+                         {"fields": "permalink", "access_token": token}).get("permalink")
+    except PublishError:
+        pass
+    result.update({"media_id": media_id, "permalink": permalink})
+    return result
+
+
 def check_token(cfg: dict | None = None) -> dict:
     """토큰이 유효하고 IG_USER_ID 와 일치하는지 확인."""
     cfg = cfg or load_settings()

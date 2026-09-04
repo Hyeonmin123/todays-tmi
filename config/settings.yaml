@@ -33,6 +33,11 @@ extra_hashtags_until_post: 30
 api_base: "https://graph.instagram.com"
 graph_api_version: v21.0
 
+# 캐러셀과 함께 같은 내용을 릴스(세로 영상)로도 발행.
+also_post_reel: true
+# 릴스 배경음악 mp3 경로(저장소 기준). 비우면 무음 → 인스타 앱에서 오디오 추가 권장.
+reel_audio: ""
+
 # 발행 시각(참고용, KST). 실제 트리거는 워크플로 cron 에서 UTC 로 설정.
 publish_hour_kst: 8
 
