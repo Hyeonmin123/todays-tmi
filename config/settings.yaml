@@ -57,7 +57,8 @@ tracks:
     accent: "#FFD64A"
     sub: "#8A7A5C"
 
-# 폰트 파일 경로 (assets/fonts/ 기준) — 노트/필기 스타일: Gaegu
+# 폰트 (assets/fonts/ 기준). 제목=굵은 고딕, 본문=손글씨
 fonts:
+  title: "DoHyeon-Regular.ttf"
   bold: "Gaegu-Bold.ttf"
   regular: "Gaegu-Regular.ttf"
