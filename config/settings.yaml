@@ -14,7 +14,7 @@ interval_days: 1
 boost_until: "2026-09-09"
 boost_slots_kst: [8, 14, 20]
 slots_kst: [8]
-slot_tolerance_hours: 3.5
+slot_tolerance_hours: 4.5
 
 # 직전 발행에서 이 시간(h)이 안 지났으면 스킵 (몰아 올리기 방지).
 min_hours_between_posts: 5
