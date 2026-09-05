@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-09-04",
+  "last_published_at": "2026-09-05",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -30,6 +30,13 @@
       "permalink": "https://www.instagram.com/p/Dc3CluHiNDV/",
       "reel_media_id": "17991262343840105",
       "reel_permalink": "https://www.instagram.com/reel/Dc3GKVPFA3y/"
+    },
+    {
+      "slug": "venus-day-longer",
+      "track": "A",
+      "published_at": "2026-09-05T09:45:17+09:00",
+      "media_id": "18102354629262251",
+      "permalink": "https://www.instagram.com/p/Dc4tFmNCfz4/"
     }
   ]
 }
