@@ -51,3 +51,12 @@ python -m src.render --preview-all                         # 전체 -> output/pr
 
 > `content/bank_B.parked.json` 은 예전에 보류한 '문해력' 트랙(옛 스키마). 지금은 안 쓴다.
 > 되살리려면 이 스키마에 맞게 고쳐 별도 트랙(C 등)으로 붙이고 `rotation` 에 넣으면 된다.
+
+## 예비 폴더 (`content/reserve/pool.json`)
+
+썩 끌리지 않아서 활성 뱅크(`bank_A.json`)에서 뺀 항목을 저장해두는 곳. 스키마는 동일.
+
+- 큐는 평소엔 `bank_A.json` 만 소비한다.
+- `bank_A.json` 이 전부 소진됐는데 **그 시점까지 새 항목을 추가하라고 지시받지 않았으면**,
+  자동으로 `reserve/pool.json` 에서 꺼내 쓴다 (`src/queue.py` 의 `pick_next`).
+- 항목을 예비로 보낼 때는 `bank_A.json` 에서 잘라 `reserve/pool.json` 배열에 붙이면 된다.

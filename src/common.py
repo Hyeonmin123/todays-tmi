@@ -10,6 +10,7 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG = ROOT / "config" / "settings.yaml"
 CONTENT_DIR = ROOT / "content"
+RESERVE_FILE = CONTENT_DIR / "reserve" / "pool.json"
 OUTPUT_DIR = ROOT / "output"
 STATE_FILE = ROOT / "state" / "log.json"
 FONT_DIR = ROOT / "assets" / "fonts"
@@ -33,6 +34,26 @@ def load_bank(track: str) -> list[dict]:
 
 def load_all_items() -> list[dict]:
     return load_bank("A") + load_bank("B")
+
+
+def load_reserve() -> list[dict]:
+    """예비 주제 풀. 활성 뱅크가 소진됐을 때만 큐에서 꺼내 쓴다."""
+    if not RESERVE_FILE.exists():
+        return []
+    with open(RESERVE_FILE, encoding="utf-8") as f:
+        items = json.load(f)
+    for it in items:
+        it.setdefault("track", "A")
+    return items
+
+
+def add_to_reserve(items: list[dict]) -> None:
+    RESERVE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    existing = load_reserve()
+    existing.extend(items)
+    with open(RESERVE_FILE, "w", encoding="utf-8") as f:
+        json.dump(existing, f, ensure_ascii=False, indent=2)
+        f.write("\n")
 
 
 def load_state() -> dict:
