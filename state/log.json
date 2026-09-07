@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-09-06",
+  "last_published_at": "2026-09-07",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -84,6 +84,13 @@
       "permalink": "https://www.instagram.com/p/Dc8hsQbk18d/",
       "reel_media_id": "18117522053511012",
       "reel_permalink": "https://www.instagram.com/reel/Dc8h2DFjJPB/"
+    },
+    {
+      "slug": "carrots-were-purple",
+      "track": "A",
+      "published_at": "2026-09-07T09:56:21+09:00",
+      "media_id": "18353866990247277",
+      "permalink": "https://www.instagram.com/p/Dc9377mjiVb/"
     }
   ]
 }
