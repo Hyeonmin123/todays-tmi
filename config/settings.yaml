@@ -12,7 +12,7 @@ interval_days: 1
 # 슬롯 시각 s 이후 slot_tolerance_hours 안에 실행되면 그 슬롯 발행분으로 인정.
 # 그 시간을 넘겨 실행되면(스케줄러 지연 등) 그 슬롯은 건너뜀 → 발행 시각이 크게 안 튄다.
 boost_until: "2026-09-09"
-boost_slots_kst: [8, 14, 20]
+boost_slots_kst: [8, 11, 20]
 slots_kst: [8]
 slot_tolerance_hours: 4.5
 
