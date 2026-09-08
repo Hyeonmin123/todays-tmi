@@ -72,7 +72,11 @@ def slot_check(state: dict, cfg: dict) -> tuple[float | None, str]:
             if gap < int(cfg.get("interval_days", 1)):
                 return None, f"발행 간격일 아님 (마지막 {last}, 간격 {cfg.get('interval_days',1)}일)"
 
-    active = next((s for s in slots if s <= h < s + tol), None)
+    # 외부 스케줄러가 몇 초~몇 분 일찍 쏠 수 있어 슬롯 직전 grace(0.2h≈12분) 허용.
+    # 슬롯 관용시간이 겹칠 때(예: 11:05 는 8시·11시 창 모두 포함)는 "가장 최근에
+    # 시작된 슬롯"을 고른다. next()(가장 이른 슬롯)면 11시 슬롯이 영영 안 잡힌다.
+    grace = 0.2
+    active = max((s for s in slots if s - grace <= h < s + tol), default=None)
     if active is None:
         return None, f"발행 시간대 아님 (현재 {h:.1f}시 KST, 슬롯 {slots}, 여유 {tol}h)"
 
@@ -80,7 +84,7 @@ def slot_check(state: dict, cfg: dict) -> tuple[float | None, str]:
         pat = str(p.get("published_at", ""))
         if pat[:10] == today and len(pat) >= 16:
             ph = int(pat[11:13]) + int(pat[14:16]) / 60
-            if active <= ph < active + tol:
+            if active - grace <= ph < active + tol:
                 return None, f"{active}시 슬롯 발행분이 이미 있음 ({pat[11:16]})"
     return active, f"{active}시 슬롯"
 

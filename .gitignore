@@ -18,3 +18,4 @@ Thumbs.db
 
 # 손상된 git 백업 (수동 삭제 예정)
 .git.corrupt/
+.git.corrupt*/

@@ -17,7 +17,9 @@ slots_kst: [8]
 slot_tolerance_hours: 4.5
 
 # 직전 발행에서 이 시간(h)이 안 지났으면 스킵 (몰아 올리기 방지).
-min_hours_between_posts: 5
+# 부스트 슬롯 간격이 8->11시(3h)라 5로 두면 11시 슬롯이 항상 막힌다.
+# 2.5 면 정시 발행(3h/9h 간격)은 통과하고, 30분 간격 재시도 크론만 걸러진다.
+min_hours_between_posts: 2.5
 
 # 큐에서 트랙을 꺼내는 순환 순서. 지금은 TMI(A) 단일 트랙.
 # (생활 꿀팁은 content/bank_kkultip.parked.json 으로 보류됨)
