@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-09-07",
+  "last_published_at": "2026-09-08",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -102,6 +102,13 @@
       "permalink": "https://www.instagram.com/p/Dc-nuoDE2fG/",
       "reel_media_id": "17965542477172500",
       "reel_permalink": "https://www.instagram.com/reel/Dc-n3W5iHGe/"
+    },
+    {
+      "slug": "chimborazo",
+      "track": "A",
+      "published_at": "2026-09-08T10:08:32+09:00",
+      "media_id": "18029427407849939",
+      "permalink": "https://www.instagram.com/p/DdAeIHTFUwE/"
     }
   ]
 }
