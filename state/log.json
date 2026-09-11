@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-09-10",
+  "last_published_at": "2026-09-11",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -165,6 +165,13 @@
       "permalink": "https://www.instagram.com/p/DdHGoBElY27/",
       "reel_media_id": "18136065943623507",
       "reel_permalink": "https://www.instagram.com/reel/DdHGt6IjGKx/"
+    },
+    {
+      "slug": "barbie-bild-lilli",
+      "track": "A",
+      "published_at": "2026-09-11T10:00:25+09:00",
+      "media_id": "18194862613391110",
+      "permalink": "https://www.instagram.com/p/DdILlLhFtcr/"
     }
   ]
 }
