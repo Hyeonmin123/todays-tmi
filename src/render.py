@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import math
+import re
 import shutil
 from pathlib import Path
 
@@ -37,14 +38,24 @@ def _font(name: str, size: int) -> ImageFont.FreeTypeFont:
     return ImageFont.truetype(str(FONT_DIR / name), size)
 
 
-def _wrap(d: ImageDraw.ImageDraw, text: str, font, max_w: float) -> list[str]:
+def _tokens(para: str, protect: str | None) -> list[str]:
+    """공백 기준 분리하되, protect 문구(내부에 공백 있을 수 있음)는 한 토큰으로 묶는다."""
+    if not protect or protect not in para:
+        return para.split(" ")
+    i = para.index(protect)
+    before, after = para[:i].rstrip(" "), para[i + len(protect):].lstrip(" ")
+    toks = (before.split(" ") if before else []) + [protect] + (after.split(" ") if after else [])
+    return toks
+
+
+def _wrap(d: ImageDraw.ImageDraw, text: str, font, max_w: float, protect: str | None = None) -> list[str]:
     out: list[str] = []
     for para in text.split("\n"):
         if d.textlength(para, font=font) <= max_w:
             out.append(para)
             continue
         cur = ""
-        for w in para.split(" "):
+        for w in _tokens(para, protect):
             t = (cur + " " + w).strip()
             if d.textlength(t, font=font) <= max_w:
                 cur = t
@@ -54,6 +65,17 @@ def _wrap(d: ImageDraw.ImageDraw, text: str, font, max_w: float) -> list[str]:
                 cur = w
         out.append(cur)
     return out
+
+
+_HL_RE = re.compile(r"\*\*(.+?)\*\*")
+
+
+def _split_highlight(text: str) -> tuple[str, str | None]:
+    """본문 불릿의 '**강조**' 표시를 뽑아 (평문, 강조구) 로 분리."""
+    m = _HL_RE.search(text)
+    if not m:
+        return text, None
+    return text[:m.start()] + m.group(1) + text[m.end():], m.group(1)
 
 
 def _safe_title(text: str) -> str:
@@ -242,13 +264,17 @@ def _content(item: dict, cfg: dict, units: list[str], part: int, parts: int) -> 
     bottom = H - m - footer_h
     outro = item.get("outro") if part == parts else None
 
+    split = [_split_highlight(u) for u in units]
+    clean_units = [c for c, _ in split]
+    hl_list = [h for _, h in split]
+
     chosen = None
     total = 0.0
     for bs in range(52, 27, -2):
         bf = _font(Fr, bs)
         a1, d1 = bf.getmetrics()
         lh = int((a1 + d1) * 1.34)
-        wrapped = [_wrap(d, u, bf, max_w - 46) for u in units]
+        wrapped = [_wrap(d, u, bf, max_w - 46, protect=h) for u, h in zip(clean_units, hl_list)]
         body_core = sum(lh * len(w) for w in wrapped)
         of = _font(Fb, max(bs - 3, 26))
         a2, d2 = of.getmetrics()
@@ -262,13 +288,30 @@ def _content(item: dict, cfg: dict, units: list[str], part: int, parts: int) -> 
             break
 
     bf, lh, wrapped, of, olh, owrap, n_gaps = chosen
+    bfb = _font(Fb, bf.size)
+    basc = bfb.getmetrics()[0]
     slack = (bottom - y) - total
     gap = max(20, min(slack / max(n_gaps, 1), 96))
-    for w in wrapped:
+    for idx, w in enumerate(wrapped):
+        hl = hl_list[idx]
         cy = y + bf.getmetrics()[0] * 0.52
         _dot(d, x + 8, cy, 7, sub)
         for ln in w:
-            d.text((x + 46, y), ln, font=bf, fill=_blend(fg, bg, 0.92))
+            px = x + 46
+            if hl and hl in ln:
+                pre, suf = ln.split(hl, 1)
+                if pre:
+                    d.text((px, y), pre, font=bf, fill=_blend(fg, bg, 0.92))
+                    px += d.textlength(pre, font=bf)
+                hl_w = d.textlength(hl, font=bfb)
+                mk = _marker(int(hl_w + 14), int(basc * 0.56), accent)
+                img.paste(mk, (int(px - 6), int(y + basc * 0.22)), mk)
+                d.text((px, y), hl, font=bfb, fill=fg)
+                px += hl_w
+                if suf:
+                    d.text((px, y), suf, font=bf, fill=_blend(fg, bg, 0.92))
+            else:
+                d.text((px, y), ln, font=bf, fill=_blend(fg, bg, 0.92))
             y += lh
         y += gap
     if outro:
