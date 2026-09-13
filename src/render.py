@@ -110,6 +110,46 @@ def _marker(width: int, height: int, color) -> Image.Image:
     return im.rotate(-1.2, expand=True, resample=Image.BICUBIC)
 
 
+def _kicker_badge(d, x, y, text, font, fg, bg):
+    """카드 좌상단 '오늘의 TMI' 태그를 얇은 테두리 알약 배지로."""
+    tw = d.textlength(text, font=font)
+    pad_x, h = 18, 44
+    d.rounded_rectangle([x, y, x + tw + pad_x * 2, y + h], radius=h // 2,
+                         outline=_blend(fg, bg, 0.55), width=2)
+    d.text((x + pad_x, y + (h - font.size) / 2 - 4), text, font=font, fill=fg)
+    return x + tw + pad_x * 2, h
+
+
+def _tag_row(d, cx_center, y, max_w, tags, font, fg, bg) -> float:
+    """관련 태그를 가운데 정렬 알약으로. 다음 줄까지 자동 배치. 마지막 y 반환."""
+    if not tags:
+        return y
+    pad_x, gap, h = 20, 14, 50
+    rows: list[list[tuple[str, float]]] = []
+    cur, cur_w = [], 0.0
+    for t in tags:
+        w = d.textlength(t, font=font) + pad_x * 2
+        add = w if not cur else gap + w
+        if cur and cur_w + add > max_w:
+            rows.append(cur)
+            cur, cur_w = [], 0.0
+            add = w
+        cur.append((t, w))
+        cur_w += add
+    if cur:
+        rows.append(cur)
+    for row in rows:
+        row_w = sum(w for _, w in row) + gap * (len(row) - 1)
+        cx = cx_center - row_w / 2
+        for t, w in row:
+            d.rounded_rectangle([cx, y, cx + w, y + h], radius=h // 2,
+                                 outline=_blend(fg, bg, 0.4), width=2)
+            d.text((cx + pad_x, y + (h - font.size) / 2 - 4), t, font=font, fill=_blend(fg, bg, 0.85))
+            cx += w + gap
+        y += h + 16
+    return y
+
+
 def _bg(cfg, theme):
     W, H = cfg["size"]
     img = Image.new("RGB", (W, H), theme["bg"])
@@ -143,8 +183,8 @@ def _cover(item: dict, cfg: dict) -> Image.Image:
     img, d = _bg(cfg, th)
     x, max_w = m, W - 2 * m
 
-    d.text((m, m), item.get("kicker") or th.get("name", ""),
-           font=_font(cfg["fonts"]["bold"], 30), fill=sub)
+    _kicker_badge(d, m, m - 6, item.get("kicker") or th.get("name", ""),
+                  _font(cfg["fonts"]["bold"], 30), sub, bg)
     ind = "1 / 2"
     inf = _font(cfg["fonts"]["regular"], 26)
     d.text((W - m - d.textlength(ind, font=inf), m + 2), ind, font=inf, fill=sub)
@@ -160,6 +200,10 @@ def _cover(item: dict, cfg: dict) -> Image.Image:
         img.paste(mk, (int(x - 12), int(y + asc * 0.24)), mk)
         d.text((x, y), ln, font=tf, fill=fg)
         y += tlh
+
+    # 제목 아래 빈 공간을 관련 태그로 채움(예비 유입 키워드 미리 보여주기)
+    tags = [t.lstrip("#") for t in item.get("extra_hashtags", [])[:3]]
+    _tag_row(d, W / 2, y + 64, max_w, tags, _font(cfg["fonts"]["regular"], 30), fg, bg)
 
     hint = "→  넘겨서 보기"
     hf = _font(cfg["fonts"]["bold"], 32)
@@ -235,6 +279,12 @@ def _content(item: dict, cfg: dict, units: list[str], part: int, parts: int) -> 
             uy = y + oasc + odesc * 0.55 + 8   # 글자 아래로 충분히 내림
             _wavy(d, x, x + ow, uy, accent, amp=2.6, width=7, period=26)
             y += olh
+
+    # 본문 폰트가 크게 잡혀 아래쪽에 여유가 남으면 관련 태그로 채움
+    leftover = bottom - y
+    if leftover > 90:
+        tags = [t.lstrip("#") for t in item.get("extra_hashtags", [])[:3]]
+        _tag_row(d, W / 2, y + min(leftover - 66, 40), max_w, tags, _font(Fr, 28), fg, bg)
 
     _footer(d, cfg, th, item, part, parts)
     return img
