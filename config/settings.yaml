@@ -39,8 +39,14 @@ graph_api_version: v21.0
 
 # 캐러셀과 함께 같은 내용을 릴스(세로 영상)로도 발행.
 also_post_reel: true
-# 릴스 배경음악 mp3 경로(저장소 기준). 비우면 무음 → 인스타 앱에서 오디오 추가 권장.
-reel_audio: ""
+# 릴스 배경음악 mp3 경로(저장소 기준). 여러 개 두면 발행할 때마다 순서대로 하나씩
+# 돌려가며 씀(같은 곡 연달아 안 나오게). 리스트를 비우면 무음.
+reel_audio:
+  - "assets/audio/elms_sunny_desk.mp3"
+  - "assets/audio/gentle_focus_lofi.mp3"
+  - "assets/audio/lofi_gentle_tides.mp3"
+  - "assets/audio/midnight_solitude.mp3"
+  - "assets/audio/soft_lofi_lullaby.mp3"
 
 # 발행 시각(참고용, KST). 실제 트리거는 워크플로 cron 에서 UTC 로 설정.
 publish_hour_kst: 8

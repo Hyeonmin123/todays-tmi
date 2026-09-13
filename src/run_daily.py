@@ -240,7 +240,8 @@ def main() -> int:
         try:
             from .reel_search import render_reel
             from .publish import publish_reel
-            mp4 = render_reel(item, out_dir, cfg)
+            track_index = len(state["published"]) - 1  # 발행 순서대로 브금 순환
+            mp4 = render_reel(item, out_dir, cfg, track_index=track_index)
             rel_mp4 = mp4.relative_to(ROOT).as_posix()
             print("릴스 렌더 완료:", rel_mp4)
             if not args.no_git:

@@ -19,8 +19,8 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter
 
-from .common import load_settings
-from .render import _blend, _dot_grid, _fit, _font, _marker, _rgb, _wavy, _wrap
+from .common import ROOT, load_settings
+from .render import _blend, _dot_grid, _fit, _font, _marker, _rgb, _split_highlight, _wrap
 
 W, H = 1080, 1920
 FPS = 30
@@ -33,8 +33,6 @@ PAUSE_SEC = 0.18
 TAP_SEC = 0.22
 LOAD_SEC = 0.5
 CARD_IN_SEC = 0.32
-HINT_DELAY_SEC = 0.55
-HINT_FADE_SEC = 0.32
 CHIPS_DELAY_SEC = 0.22
 CHIP_STAGGER_SEC = 0.07
 CHIP_FADE_SEC = 0.22
@@ -43,7 +41,9 @@ FOLLOW_FADE_SEC = 0.28
 PAA_DELAY_SEC = 0.30
 PAA_STAGGER_SEC = 0.14
 PAA_FADE_SEC = 0.24
-TAIL_HOLD_SEC = 0.9
+FINAL_CTA_DELAY_SEC = 0.28   # 가장 중요한 "본문에 있어요" 안내 - 맨 마지막, 가장 크게
+FINAL_CTA_FADE_SEC = 0.30
+TAIL_HOLD_SEC = 1.4          # 그 상태로 화면 끝까지 유지
 SUGG_APPEAR_AT = 0.4     # 검색어의 이 비율만큼 타이핑되면 자동완성 목록 등장
 SUGG_FADE_IN = 8         # 프레임
 SUGG_FADE_OUT = 6
@@ -141,7 +141,8 @@ def _derive_query(item: dict) -> str:
     return line1
 
 
-def render_reel(item: dict, out_dir: Path, cfg: dict | None = None, query: str | None = None) -> Path:
+def render_reel(item: dict, out_dir: Path, cfg: dict | None = None, query: str | None = None,
+                 track_index: int | None = None) -> Path:
     cfg = cfg or load_settings()
     query = query or item.get("search_query") or _derive_query(item)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -190,7 +191,7 @@ def render_reel(item: dict, out_dir: Path, cfg: dict | None = None, query: str |
 
     detail_font = _font(PT_REG, 36)
     body_items = (item.get("body") or {}).get("items") or []
-    detail_raw = body_items[0] if body_items else ""
+    detail_raw, _ = _split_highlight(body_items[0]) if body_items else ("", None)
     detail_wrapped = _wrap(probe, detail_raw, detail_font, card_w - 2 * pad) if detail_raw else []
     detail_lines = detail_wrapped[:2]
     if len(detail_wrapped) > 2:
@@ -210,17 +211,9 @@ def render_reel(item: dict, out_dir: Path, cfg: dict | None = None, query: str |
     card_x = m
     card_y_final = pill_y + pill_h + 46
 
-    hint = "자세한 이야기는 본문(캡션)에 정리했어요"
-    arrow = "본문 펼쳐서 전체 내용 보기 ↓"
-    hf = _font(Fb, 32)
-    af = _font(Fb, 26)
-    hw = probe.textlength(hint, font=hf)
-    hx = (W - hw) / 2
-    hy = card_y_final + card_h + 60
-
     # ---- 관련 검색 칩 (해시태그 재활용) ----
     chip_labels = [h.lstrip("#") for h in item.get("extra_hashtags", [])[:5]]
-    chips_label_y = hy + 116
+    chips_label_y = card_y_final + card_h + 54
     chip_font = _font(PT_REG, 30)
     chip_h = 62
     chip_rows_raw = _chip_rows(probe, chip_labels, chip_font, card_w) if chip_labels else []
@@ -244,26 +237,40 @@ def render_reel(item: dict, out_dir: Path, cfg: dict | None = None, query: str |
     follow_h = 84
     follow_w = fw + 72
     follow_x = (W - follow_w) / 2
-    follow_y = chips_bottom + 72
+    follow_y = chips_bottom + 50
 
     # ---- "사람들이 함께 찾아봤어요" 아코디언 2줄 (화면 하단까지 채움) ----
     paa_label = "사람들이 함께 찾아봤어요"
-    paa_qs = ["이거 말고 또 신기한 사실 있어?", "다른 TMI 이야기도 보고 싶은데"]
+    paa_qs = ["다른 TMI 이야기도 보고 싶은데"]
     paa_font = _font(PT_REG, 30)
     paa_row_h = 92
     paa_gap = 20
-    paa_label_y = follow_y + follow_h + 64
+    paa_label_y = follow_y + follow_h + 46
     paa_row_y0 = paa_label_y + 44
+    paa_bottom = paa_row_y0 + len(paa_qs) * (paa_row_h + paa_gap) - paa_gap
+
+    # ---- 가장 중요한 안내: 맨 마지막에, 가장 크게, 박스로 강조 ----
+    cta_hint = "자세한 이야기는 본문(캡션)에 정리했어요"
+    cta_arrow = "본문 펼쳐서 전체 내용 보기 ↓"
+    cta_hf = _font(Fb, 42)
+    cta_af = _font(Fb, 30)
+    cta_pad_x, cta_pad_y = 36, 26
+    cta_lines = _wrap(probe, cta_hint, cta_hf, card_w - 2 * cta_pad_x)
+    cta_lh = int(cta_hf.size * 1.28)
+    cta_w = card_w
+    cta_h = (cta_pad_y * 2 + cta_lh * len(cta_lines) + 16
+             + cta_af.getmetrics()[0] + cta_af.getmetrics()[1])
+    cta_x = m
+    cta_y = paa_bottom + 40
 
     shadow_im, shadow_pad = _shadow(card_w, card_h, 28)
+    cta_shadow_im, cta_shadow_pad = _shadow(cta_w, cta_h, 26, blur=14, alpha=50)
 
     n_type = round(TYPE_SEC * FPS)
     n_pause = round(PAUSE_SEC * FPS)
     n_tap = round(TAP_SEC * FPS)
     n_load = round(LOAD_SEC * FPS)
     n_cardin = round(CARD_IN_SEC * FPS)
-    n_hintdelay = round(HINT_DELAY_SEC * FPS)
-    n_hintfade = round(HINT_FADE_SEC * FPS)
     n_chipsdelay = round(CHIPS_DELAY_SEC * FPS)
     n_chipstagger = round(CHIP_STAGGER_SEC * FPS)
     n_chipfade = round(CHIP_FADE_SEC * FPS)
@@ -272,15 +279,17 @@ def render_reel(item: dict, out_dir: Path, cfg: dict | None = None, query: str |
     n_paadelay = round(PAA_DELAY_SEC * FPS)
     n_paastagger = round(PAA_STAGGER_SEC * FPS)
     n_paafade = round(PAA_FADE_SEC * FPS)
+    n_ctadelay = round(FINAL_CTA_DELAY_SEC * FPS)
+    n_ctafade = round(FINAL_CTA_FADE_SEC * FPS)
     n_tailhold = round(TAIL_HOLD_SEC * FPS)
 
     n_chips_total = sum(len(r) for r in chip_rows)
     chips_span = (n_chips_total - 1) * n_chipstagger + n_chipfade if n_chips_total else 0
     paa_span = (len(paa_qs) - 1) * n_paastagger + n_paafade
 
-    total = (n_type + n_pause + n_tap + n_load + n_cardin + n_hintdelay + n_hintfade
+    total = (n_type + n_pause + n_tap + n_load + n_cardin
              + n_chipsdelay + chips_span + n_followdelay + n_followfade
-             + n_paadelay + paa_span + n_tailhold)
+             + n_paadelay + paa_span + n_ctadelay + n_ctafade + n_tailhold)
     sugg_start = round(SUGG_APPEAR_AT * n_type)
 
     icon_cx, icon_cy = m + 46, pill_y + pill_h // 2
@@ -395,18 +404,7 @@ def render_reel(item: dict, out_dir: Path, cfg: dict | None = None, query: str |
 
         if t >= n_cardin:
             lt = t - n_cardin
-            if lt >= n_hintdelay:
-                hp = min(1.0, (lt - n_hintdelay) / max(1, n_hintfade))
-                hp = hp * hp * (3 - 2 * hp)
-                if hp > 0:
-                    col = tuple(int(c) for c in _blend(fg, bg_hex, 0.9)) + (int(255 * hp),)
-                    d.text((hx, hy), hint, font=hf, fill=col)
-                    _wavy(d, hx, hx + hw, hy + hf.getmetrics()[0] + 6,
-                          (*_rgb(accent), int(255 * hp)), amp=3.0, width=7, period=26)
-                    d.text(((W - d.textlength(arrow, font=af)) / 2, hy + 50), arrow,
-                           font=af, fill=(*_rgb(sub), int(255 * hp)))
-
-            chips_t = lt - (n_hintdelay + n_hintfade) - n_chipsdelay
+            chips_t = lt - n_chipsdelay
             if chips_t >= 0 and chip_rows:
                 d.text((m, chips_label_y - 34), "관련 검색", font=_font(PT_SEMI, 26), fill=sub)
                 gi = 0
@@ -457,18 +455,55 @@ def render_reel(item: dict, out_dir: Path, cfg: dict | None = None, query: str |
                         _paa_row(d, m, ry0, card_w, paa_row_h, q_text, paa_font,
                                  fg, sub, sub, white, rp)
 
+            cta_t = paa_t - paa_span - n_ctadelay
+            if cta_t >= 0:
+                cp2 = min(1.0, cta_t / max(1, n_ctafade))
+                cp2 = cp2 * cp2 * (3 - 2 * cp2)
+                if cp2 > 0:
+                    off2 = int(18 * (1 - cp2))
+                    a2 = int(255 * cp2)
+                    cy2 = cta_y + off2
+                    csh = cta_shadow_im.copy()
+                    csh.putalpha(csh.split()[3].point(lambda a, al=cp2: int(a * al)))
+                    frame.paste(csh, (cta_x - cta_shadow_pad, int(cy2 - cta_shadow_pad) + 6), csh)
+                    d.rounded_rectangle([cta_x, cy2, cta_x + cta_w, cy2 + cta_h], radius=30,
+                                         fill=(*_rgb(accent), a2))
+                    ty2 = cy2 + cta_pad_y
+                    for ln in cta_lines:
+                        lw2 = d.textlength(ln, font=cta_hf)
+                        d.text((cta_x + (cta_w - lw2) / 2, ty2), ln, font=cta_hf, fill=(*_rgb(fg), a2))
+                        ty2 += cta_lh
+                    aw2 = d.textlength(cta_arrow, font=cta_af)
+                    d.text((cta_x + (cta_w - aw2) / 2, ty2 + 14), cta_arrow, font=cta_af,
+                           fill=(*_blend(fg, accent, 0.65), a2))
+
         frame.save(frm / f"f_{f:04d}.png")
 
     mp4 = out_dir / "reel_search.mp4"
     ff = _ffmpeg()
     dur = total / FPS
-    cmd = [ff, "-y", "-framerate", str(FPS), "-i", str(frm / "f_%04d.png"),
-           "-f", "lavfi", "-t", str(dur + 1), "-i", "anullsrc=r=44100:cl=stereo",
-           "-t", f"{dur:.2f}", "-r", str(FPS),
-           "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
-           "-pix_fmt", "yuv420p", "-profile:v", "high", "-level", "4.0",
-           "-c:a", "aac", "-b:a", "128k", "-ar", "44100",
-           "-movflags", "+faststart", "-shortest", str(mp4)]
+    cmd = [ff, "-y", "-framerate", str(FPS), "-i", str(frm / "f_%04d.png")]
+
+    audio_cfg = cfg.get("reel_audio", "")
+    tracks = audio_cfg if isinstance(audio_cfg, list) else ([audio_cfg] if audio_cfg else [])
+    tracks = [t for t in tracks if t]
+    audio = tracks[track_index % len(tracks)] if tracks and track_index is not None else (
+        tracks[0] if tracks else "")
+    apath = (ROOT / audio) if audio else None
+    if apath and apath.exists():
+        cmd += ["-stream_loop", "-1", "-i", str(apath)]
+        fade_out_at = max(0.0, dur - 0.8)
+        amap = ["-map", "1:a", "-af",
+                f"afade=t=in:d=0.4,afade=t=out:st={fade_out_at:.2f}:d=0.8,volume=0.5"]
+    else:
+        cmd += ["-f", "lavfi", "-t", str(dur + 1), "-i", "anullsrc=r=44100:cl=stereo"]
+        amap = ["-map", "1:a"]
+
+    cmd += ["-map", "0:v", "-t", f"{dur:.2f}", "-r", str(FPS),
+            "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+            "-pix_fmt", "yuv420p", "-profile:v", "high", "-level", "4.0",
+            *amap, "-c:a", "aac", "-b:a", "128k", "-ar", "44100",
+            "-movflags", "+faststart", "-shortest", str(mp4)]
     r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
     if r.returncode != 0 or not mp4.exists():
         raise RuntimeError("ffmpeg 실패:\n" + (r.stderr or "")[-2500:])
@@ -484,6 +519,7 @@ if __name__ == "__main__":
     from .common import OUTPUT_DIR, load_all_items
     slug = sys.argv[1] if len(sys.argv) > 1 else load_all_items()[0]["slug"]
     override = sys.argv[2] if len(sys.argv) > 2 else None
+    idx = int(sys.argv[3]) if len(sys.argv) > 3 else None
     it = next(x for x in load_all_items() if x["slug"] == slug)
-    p = render_reel(it, OUTPUT_DIR / "preview" / ("_search_" + slug), query=override)
+    p = render_reel(it, OUTPUT_DIR / "preview" / ("_search_" + slug), query=override, track_index=idx)
     print("ok ->", p, p.stat().st_size, "bytes")
