@@ -11,9 +11,11 @@ interval_days: 1
 # 발행 시각(KST). 부스트 기간엔 boost_slots_kst, 그 외엔 slots_kst 를 쓴다.
 # 슬롯 시각 s 이후 slot_tolerance_hours 안에 실행되면 그 슬롯 발행분으로 인정.
 # 그 시간을 넘겨 실행되면(스케줄러 지연 등) 그 슬롯은 건너뜀 → 발행 시각이 크게 안 튄다.
+# GitHub Actions 예약 실행이 보통 ~2시간 늦게 도는 걸 감안해 원하는 체감 시각
+# (아침 8시/점심 11시/저녁 8시)보다 슬롯 자체를 2시간씩 당겨 잡아둠.
 boost_until: "2026-09-30"
-boost_slots_kst: [8, 11, 20]
-slots_kst: [8]
+boost_slots_kst: [6, 9, 18]
+slots_kst: [6]
 slot_tolerance_hours: 4.5
 
 # 직전 발행에서 이 시간(h)이 안 지났으면 스킵 (몰아 올리기 방지).
