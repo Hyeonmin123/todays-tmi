@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-09-12",
+  "last_published_at": "2026-09-13",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -219,6 +219,13 @@
       "permalink": "https://www.instagram.com/p/DdMJySFINrE/",
       "reel_media_id": "17916617535245846",
       "reel_permalink": "https://www.instagram.com/reel/DdMJ5qJgFre/"
+    },
+    {
+      "slug": "hollywood-sign-realty-ad",
+      "track": "A",
+      "published_at": "2026-09-13T09:55:19+09:00",
+      "media_id": "18111326444123562",
+      "permalink": "https://www.instagram.com/p/DdNUl0TD7Fk/"
     }
   ]
 }
