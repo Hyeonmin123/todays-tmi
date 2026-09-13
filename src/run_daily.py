@@ -238,7 +238,7 @@ def main() -> int:
     # 6-b. 릴스도 발행 (설정 시)
     if cfg.get("also_post_reel"):
         try:
-            from .reel import render_reel
+            from .reel_search import render_reel
             from .publish import publish_reel
             mp4 = render_reel(item, out_dir, cfg)
             rel_mp4 = mp4.relative_to(ROOT).as_posix()

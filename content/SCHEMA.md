@@ -24,8 +24,11 @@
     ]
     // type이 "text"면 items 대신:  "text": "문단 내용..."
   },
-  "outro": "주 1회 해두면 냄새도 안 남는다",   // (선택) 하단 저장유도 박스. 없으면 박스 생략.
-  "source": "출처: 정부24",            // (선택) 좌하단 작은 출처
+  "outro": "주 1회 해두면 냄새도 안 남는다",   // (선택) 하단 저장유도 박스 + 릴스 검색결과 카드의 정답.
+  "search_query": "전자레인지 기름때",  // (선택) 릴스 '검색창 UI'에서 타이핑되는 검색어.
+  //  ↑ 2~4단어, 실제 검색창에 칠 법한 키워드 스타일("~는 원래", "~한 이유" 등).
+  //    없으면 제목 첫 줄에서 자동으로 뽑아 쓴다(src/reel_search._derive_query) — 급할 때 생략 가능.
+  "source": "출처: 정부24",            // (선택) 좌하단 작은 출처. 릴스 결과 카드에도 그대로 표시됨.
   "caption": "첫 문장에 '누구의 어떤 상황' 키워드.\n방법 요약.\n\n저장 필수 · 필요한 친구 태그",
   "hashtags": ["#TMI", "#오늘의TMI", "#잡학", "#신기한사실", "#주제"],  // 항상 붙는 5개
   "extra_hashtags": ["#세계사", "#고대이집트", "#역사스타그램", "#피라미드", "#역사이야기"],
@@ -47,6 +50,7 @@
 python -m src.render --preview "content/bank_A.json#0"    # 0번째 항목
 python -m src.render --preview "content/bank_A.json#-1"    # 마지막 항목
 python -m src.render --preview-all                         # 전체 -> output/preview/
+python -m src.reel_search <slug> ["검색어 오버라이드"]      # 릴스(검색창 UI) 미리보기
 ```
 
 > `content/bank_B.parked.json` 은 예전에 보류한 '문해력' 트랙(옛 스키마). 지금은 안 쓴다.
