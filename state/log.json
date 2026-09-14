@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-09-13",
+  "last_published_at": "2026-09-14",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -246,6 +246,13 @@
       "permalink": "https://www.instagram.com/p/DdOkcp0k02Z/",
       "reel_media_id": "18011142068962441",
       "reel_permalink": "https://www.instagram.com/reel/DdQZIp_mwez/"
+    },
+    {
+      "slug": "mona-lisa-theft-fame",
+      "track": "A",
+      "published_at": "2026-09-14T17:19:29+09:00",
+      "media_id": "18108281318585129",
+      "permalink": "https://www.instagram.com/p/DdQsN8BFksh/"
     }
   ]
 }
