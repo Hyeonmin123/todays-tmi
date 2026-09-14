@@ -170,8 +170,13 @@ def publish_carousel(image_urls: list[str], caption: str,
 
 
 def publish_reel(video_url: str, caption: str, cfg: dict | None = None, *,
-                 dry_run: bool = False) -> dict:
-    """세로 영상을 릴스로 발행. 피드 중복을 막으려고 share_to_feed=false."""
+                 dry_run: bool = False, thumb_offset_ms: int | None = None) -> dict:
+    """세로 영상을 릴스로 발행. 피드 중복을 막으려고 share_to_feed=false.
+
+    thumb_offset_ms: 프로필 그리드 썸네일로 쓸 프레임 시점(ms). 지정 안 하면
+    인스타가 기본적으로 첫 프레임을 쓰는데, 우리 릴스는 첫 프레임이 빈 검색창이라
+    허전해 보임 -> reel_search.render_reel 이 답변 카드가 다 뜨는 시점을 계산해서 넘겨줌.
+    """
     cfg = cfg or load_settings()
     uid, token = _token()
     version = cfg.get("graph_api_version", "v21.0")
@@ -179,13 +184,16 @@ def publish_reel(video_url: str, caption: str, cfg: dict | None = None, *,
     root = f"{api_base}/{version}"
     base = f"{root}/{uid}"
 
-    cont = _post(f"{base}/media", {
+    payload = {
         "media_type": "REELS",
         "video_url": video_url,
         "caption": caption,
         "share_to_feed": "false",
         "access_token": token,
-    })
+    }
+    if thumb_offset_ms is not None:
+        payload["thumb_offset"] = str(int(thumb_offset_ms))
+    cont = _post(f"{base}/media", payload)
     container_id = cont["id"]
     result = {"type": "REELS", "container": container_id}
     if dry_run:

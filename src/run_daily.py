@@ -243,14 +243,14 @@ def main() -> int:
             from .reel_search import render_reel
             from .publish import publish_reel
             track_index = len(state["published"]) - 1  # 발행 순서대로 브금 순환
-            mp4 = render_reel(item, out_dir, cfg, track_index=track_index)
+            mp4, thumb_ms = render_reel(item, out_dir, cfg, track_index=track_index)
             rel_mp4 = mp4.relative_to(ROOT).as_posix()
-            print("릴스 렌더 완료:", rel_mp4)
+            print("릴스 렌더 완료:", rel_mp4, f"(thumb_offset={thumb_ms}ms)")
             if not args.no_git:
                 git_commit_push([rel_mp4], f"post: reel {item['slug']} ({date_str})")
                 time.sleep(12)
             reel_url = f"{raw_base()}/{rel_mp4}"
-            rres = publish_reel(reel_url, caption, cfg)
+            rres = publish_reel(reel_url, caption, cfg, thumb_offset_ms=thumb_ms)
             if rres.get("recovered"):
                 print("⚠ 릴스 media_publish 오류였지만 실제로는 발행됨 확인 -> 안전장치로 복구")
             print("릴스 발행 결과:", rres)

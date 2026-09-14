@@ -142,7 +142,10 @@ def _derive_query(item: dict) -> str:
 
 
 def render_reel(item: dict, out_dir: Path, cfg: dict | None = None, query: str | None = None,
-                 track_index: int | None = None) -> Path:
+                 track_index: int | None = None) -> tuple[Path, int]:
+    """반환: (mp4 경로, 프로필 그리드 썸네일로 쓸 프레임 시점 ms).
+    썸네일 시점은 검색 결과 카드가 다 등장한 직후로 잡는다(첫 프레임은 빈 검색창이라
+    썸네일로 쓰면 허전해 보임)."""
     cfg = cfg or load_settings()
     query = query or item.get("search_query") or _derive_query(item)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -282,6 +285,9 @@ def render_reel(item: dict, out_dir: Path, cfg: dict | None = None, query: str |
     n_ctadelay = round(FINAL_CTA_DELAY_SEC * FPS)
     n_ctafade = round(FINAL_CTA_FADE_SEC * FPS)
     n_tailhold = round(TAIL_HOLD_SEC * FPS)
+
+    thumb_frame = n_type + n_pause + n_tap + n_load + n_cardin
+    thumb_offset_ms = round((thumb_frame / FPS) * 1000)
 
     n_chips_total = sum(len(r) for r in chip_rows)
     chips_span = (n_chips_total - 1) * n_chipstagger + n_chipfade if n_chips_total else 0
@@ -511,7 +517,7 @@ def render_reel(item: dict, out_dir: Path, cfg: dict | None = None, query: str |
     for p in frm.glob("*"):
         p.unlink()
     frm.rmdir()
-    return mp4
+    return mp4, thumb_offset_ms
 
 
 if __name__ == "__main__":
@@ -521,5 +527,5 @@ if __name__ == "__main__":
     override = sys.argv[2] if len(sys.argv) > 2 else None
     idx = int(sys.argv[3]) if len(sys.argv) > 3 else None
     it = next(x for x in load_all_items() if x["slug"] == slug)
-    p = render_reel(it, OUTPUT_DIR / "preview" / ("_search_" + slug), query=override, track_index=idx)
-    print("ok ->", p, p.stat().st_size, "bytes")
+    p, thumb_ms = render_reel(it, OUTPUT_DIR / "preview" / ("_search_" + slug), query=override, track_index=idx)
+    print("ok ->", p, p.stat().st_size, "bytes", f"(thumb_offset={thumb_ms}ms)")
