@@ -61,6 +61,41 @@ def _get(url: str, params: dict) -> dict:
     return r.json()
 
 
+def _parse_ts(ts: str) -> float:
+    import datetime as _dt
+    return _dt.datetime.strptime(ts, "%Y-%m-%dT%H:%M:%S%z").timestamp()
+
+
+def find_recent_media(caption: str, media_product_type: str,
+                      cfg: dict | None = None, within_minutes: int = 20) -> dict | None:
+    """media_publish 가 오류를 반환했지만 실제로는 성공했을 수 있는 경우
+    (레이트리밋 응답 글리치 등)를 잡아내는 안전장치. 최근 게시물 중 같은
+    캡션 앞부분 + 같은 타입(FEED/REELS)을 찾으면 그걸로 간주한다."""
+    cfg = cfg or load_settings()
+    try:
+        uid, token = _token()
+        api_base = cfg.get("api_base", DEFAULT_BASE).rstrip("/")
+        version = cfg.get("graph_api_version", "v21.0")
+        data = _get(f"{api_base}/{version}/{uid}/media",
+                   {"fields": "id,caption,timestamp,permalink,media_product_type",
+                    "limit": 5, "access_token": token})
+    except PublishError:
+        return None
+    needle = caption.strip()[:60]
+    now = time.time()
+    for it in data.get("data", []):
+        try:
+            age_min = (now - _parse_ts(it.get("timestamp", ""))) / 60
+        except Exception:
+            continue
+        if age_min > within_minutes:
+            break  # 최신순 정렬이라 이후로는 더 오래된 것만 나옴
+        if (it.get("media_product_type") == media_product_type
+                and (it.get("caption") or "").strip().startswith(needle)):
+            return {"media_id": it["id"], "permalink": it.get("permalink")}
+    return None
+
+
 def _wait_ready(base: str, container_id: str, token: str, timeout: int = 120) -> None:
     """컨테이너가 FINISHED 될 때까지 대기(캐러셀 publish 전 권장)."""
     deadline = time.time() + timeout
@@ -111,9 +146,19 @@ def publish_carousel(image_urls: list[str], caption: str,
         return result
 
     _wait_ready(root, container_id, token)
-    pub = _post(f"{base}/media_publish",
-                {"creation_id": container_id, "access_token": token})
-    media_id = pub["id"]
+    try:
+        pub = _post(f"{base}/media_publish",
+                    {"creation_id": container_id, "access_token": token})
+        media_id = pub["id"]
+    except PublishError:
+        # media_publish 가 오류를 반환했지만 실제로는 발행됐을 수 있음(레이트리밋
+        # 응답 글리치 등) -> 최근 게시물에서 확인 후, 있으면 성공으로 간주.
+        found = find_recent_media(caption, "FEED", cfg)
+        if not found:
+            raise
+        result.update({"media_id": found["media_id"], "permalink": found["permalink"],
+                       "recovered": True})
+        return result
     permalink = None
     try:
         permalink = _get(f"{root}/{media_id}",
@@ -149,9 +194,17 @@ def publish_reel(video_url: str, caption: str, cfg: dict | None = None, *,
 
     # 영상 처리는 오래 걸릴 수 있음
     _wait_ready(root, container_id, token, timeout=420)
-    pub = _post(f"{base}/media_publish",
-                {"creation_id": container_id, "access_token": token})
-    media_id = pub["id"]
+    try:
+        pub = _post(f"{base}/media_publish",
+                    {"creation_id": container_id, "access_token": token})
+        media_id = pub["id"]
+    except PublishError:
+        found = find_recent_media(caption, "REELS", cfg)
+        if not found:
+            raise
+        result.update({"media_id": found["media_id"], "permalink": found["permalink"],
+                       "recovered": True})
+        return result
     permalink = None
     try:
         permalink = _get(f"{root}/{media_id}",

@@ -1,22 +1,20 @@
 name: 자동 발행
 
 on:
-  # 2026-09-14: 중복 발행 사고로 스케줄 임시 정지. 원인 파악 전까지
-  # schedule/repository_dispatch 자동 트리거 비활성화 — workflow_dispatch(수동)만 허용.
-  # 원인 확인되면 schedule 블록 복원.
-  #
-  # schedule:
-  #   - cron: "7 21 * * *"    # 06:07 KST
-  #   - cron: "37 21 * * *"   # 06:37
-  #   - cron: "22 22 * * *"   # 07:22
-  #   - cron: "7 0 * * *"     # 09:07 KST
-  #   - cron: "37 0 * * *"    # 09:37
-  #   - cron: "22 1 * * *"    # 10:22
-  #   - cron: "7 9 * * *"     # 18:07 KST
-  #   - cron: "37 9 * * *"    # 18:37
-  #   - cron: "22 10 * * *"   # 19:22
-  # repository_dispatch:
-  #   types: [publish]
+  # 2026-09-14: media_publish 가 오류를 반환했는데 실제로는 발행된 사고 발생.
+  # src/publish.py 에 안전장치(find_recent_media) 추가 후 스케줄 재개.
+  schedule:
+    - cron: "7 21 * * *"    # 06:07 KST
+    - cron: "37 21 * * *"   # 06:37
+    - cron: "22 22 * * *"   # 07:22
+    - cron: "7 0 * * *"     # 09:07 KST
+    - cron: "37 0 * * *"    # 09:37
+    - cron: "22 1 * * *"    # 10:22
+    - cron: "7 9 * * *"     # 18:07 KST
+    - cron: "37 9 * * *"    # 18:37
+    - cron: "22 10 * * *"   # 19:22
+  repository_dispatch:
+    types: [publish]
   workflow_dispatch:
     inputs:
       force:

@@ -220,6 +220,8 @@ def main() -> int:
 
     # 5. 발행
     res = publish_carousel(urls, caption, cfg)
+    if res.get("recovered"):
+        print("⚠ media_publish 가 오류를 반환했지만 실제로는 발행됨 확인 -> 안전장치로 복구")
     print("발행 결과:", res)
 
     # 6. 상태 갱신
@@ -249,6 +251,8 @@ def main() -> int:
                 time.sleep(12)
             reel_url = f"{raw_base()}/{rel_mp4}"
             rres = publish_reel(reel_url, caption, cfg)
+            if rres.get("recovered"):
+                print("⚠ 릴스 media_publish 오류였지만 실제로는 발행됨 확인 -> 안전장치로 복구")
             print("릴스 발행 결과:", rres)
             state["published"][-1]["reel_media_id"] = rres.get("media_id")
             state["published"][-1]["reel_permalink"] = rres.get("permalink")
