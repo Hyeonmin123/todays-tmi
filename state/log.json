@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-09-14",
+  "last_published_at": "2026-09-15",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -255,6 +255,13 @@
       "permalink": "https://www.instagram.com/p/DdQsN8BFksh/",
       "reel_media_id": "18124581788485754",
       "reel_permalink": "https://www.instagram.com/reel/DdQsS4blCE4/"
+    },
+    {
+      "slug": "hedy-lamarr-wifi",
+      "track": "A",
+      "published_at": "2026-09-15T08:50:07+09:00",
+      "media_id": "18114800551813520",
+      "permalink": "https://www.instagram.com/p/DdSWtv0m6EH/"
     }
   ]
 }
