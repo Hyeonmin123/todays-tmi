@@ -1,23 +1,22 @@
 name: 자동 발행
 
 on:
-  schedule:
-    # KST 06 / 09 / 18 시(= 체감 08/11/20시에서 2시간 당김, settings.yaml 참고)
-    # + 재시도. GitHub 는 정각·30분처럼 딱 떨어지는 시각에 예약 작업이 몰려
-    # 더 늦게 처리된다고 공식적으로 밝힘 -> 분을 어긋나게 잡음.
-    - cron: "7 21 * * *"    # 06:07 KST
-    - cron: "37 21 * * *"   # 06:37
-    - cron: "22 22 * * *"   # 07:22
-    - cron: "7 0 * * *"     # 09:07 KST
-    - cron: "37 0 * * *"    # 09:37
-    - cron: "22 1 * * *"    # 10:22
-    - cron: "7 9 * * *"     # 18:07 KST
-    - cron: "37 9 * * *"    # 18:37
-    - cron: "22 10 * * *"   # 19:22
-  # 외부 스케줄러(cron-job.org)가 정시에 이 이벤트를 쏜다. GitHub cron 지연 회피용.
-  # 위 schedule 은 외부 트리거가 죽었을 때의 백업.
-  repository_dispatch:
-    types: [publish]
+  # 2026-09-14: 중복 발행 사고로 스케줄 임시 정지. 원인 파악 전까지
+  # schedule/repository_dispatch 자동 트리거 비활성화 — workflow_dispatch(수동)만 허용.
+  # 원인 확인되면 schedule 블록 복원.
+  #
+  # schedule:
+  #   - cron: "7 21 * * *"    # 06:07 KST
+  #   - cron: "37 21 * * *"   # 06:37
+  #   - cron: "22 22 * * *"   # 07:22
+  #   - cron: "7 0 * * *"     # 09:07 KST
+  #   - cron: "37 0 * * *"    # 09:37
+  #   - cron: "22 1 * * *"    # 10:22
+  #   - cron: "7 9 * * *"     # 18:07 KST
+  #   - cron: "37 9 * * *"    # 18:37
+  #   - cron: "22 10 * * *"   # 19:22
+  # repository_dispatch:
+  #   types: [publish]
   workflow_dispatch:
     inputs:
       force:
