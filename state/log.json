@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-09-17",
+  "last_published_at": "2026-09-18",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -309,6 +309,13 @@
       "permalink": "https://www.instagram.com/p/DdYegJFlka_/",
       "reel_media_id": "18145073698564187",
       "reel_permalink": "https://www.instagram.com/reel/DdYelMoDf2y/"
+    },
+    {
+      "slug": "mount-rushmore-unfinished",
+      "track": "A",
+      "published_at": "2026-09-18T08:38:58+09:00",
+      "media_id": "18122319532920785",
+      "permalink": "https://www.instagram.com/p/DdaD1AhlY4D/"
     }
   ]
 }
