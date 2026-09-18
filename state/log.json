@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-09-18",
+  "last_published_at": "2026-09-19",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -327,6 +327,13 @@
       "permalink": "https://www.instagram.com/p/DdbEVYDm4ZY/",
       "reel_media_id": "18114822970801521",
       "reel_permalink": "https://www.instagram.com/reel/DdbEZ5SkuD5/"
+    },
+    {
+      "slug": "stallone-sold-dog",
+      "track": "A",
+      "published_at": "2026-09-19T08:12:38+09:00",
+      "media_id": "18394475719201611",
+      "permalink": "https://www.instagram.com/p/Ddclm1ooLTQ/"
     }
   ]
 }
