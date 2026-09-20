@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-09-20",
+  "last_published_at": "2026-09-21",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -363,6 +363,13 @@
       "permalink": "https://www.instagram.com/p/DdgP2qklbHW/",
       "reel_media_id": "18116526881049215",
       "reel_permalink": "https://www.instagram.com/reel/DdgP7k_jLp7/"
+    },
+    {
+      "slug": "statue-of-liberty-color",
+      "track": "A",
+      "published_at": "2026-09-21T08:09:51+09:00",
+      "media_id": "17898262329387226",
+      "permalink": "https://www.instagram.com/p/Ddhu4ffETJL/"
     }
   ]
 }
