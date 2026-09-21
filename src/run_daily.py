@@ -149,41 +149,73 @@ def raw_base() -> str:
 
 
 def _main_reel_stock(args, cfg: dict, state: dict) -> int:
-    """릴스 전용 모드: 미리 렌더·검수해서 커밋해 둔 output/reels/<slug>/reel_stock.mp4 를
-    뱅크 순서대로 하나씩 릴스로만 발행한다(게시물 없음)."""
+    """릴스+게시물 모드: 미리 렌더·검수해 커밋해 둔 output/reels/<slug>/reel_stock.mp4 (릴스)와
+    output/posts/<slug>/N.jpg (사진 게시물)를 뱅크 순서대로 같은 캡션으로 발행한다.
+    한쪽만 나간 소재(예: 릴스만 나감)는 다음 실행에서 빠진 쪽만 발행한다."""
+    from .publish import publish_carousel, publish_reel
     bank = json.loads((ROOT / "content" / "bank_people.json").read_text(encoding="utf-8"))
-    done = {p.get("slug") for p in state.get("published", [])}
-    ready = [i for i in bank if i["slug"] not in done
-             and (ROOT / "output" / "reels" / i["slug"] / "reel_stock.mp4").exists()]
+    entries = {p.get("slug"): p for p in state.get("published", [])}
+
+    def parts(i):
+        slug = i["slug"]
+        e = entries.get(slug) or {}
+        reel = ROOT / "output" / "reels" / slug / "reel_stock.mp4"
+        pdir = ROOT / "output" / "posts" / slug
+        post = sorted(pdir.glob("*.jpg"), key=lambda x: int(x.stem)) if pdir.exists() else []
+        return {"reel": reel if reel.exists() and not e.get("reel_media_id") else None,
+                "post": post if post and not e.get("media_id") else None}
+
+    ready = [i for i in bank if any(parts(i).values())]
     if not ready:
-        print("발행할 릴스가 없음. 소재를 추가하세요.")
+        print("발행할 소재가 없음. 소재를 추가하세요.")
         notify.notify_low_queue({"A": 0, "B": 0, "total": 0})
         return 0
     item = ready[0]
-    rel = f"output/reels/{item['slug']}/reel_stock.mp4"
+    todo = parts(item)
+    slug = item["slug"]
     caption = "\n\n".join([item["caption"].rstrip(), item.get("source", ""), item["hashtags"]]).strip()
-    print(f"발행 대상(릴스 전용): {item['slug']}  (대기 {len(ready)}개)")
+    print(f"발행 대상: {slug}  (게시물 {'O' if todo['post'] else '-'} / 릴스 {'O' if todo['reel'] else '-'}, 대기 소재 {len(ready)}개)")
     if args.dry_run:
-        print("[DRY-RUN]", rel, "\n" + caption)
+        print("[DRY-RUN]", {k: (len(v) if isinstance(v, list) else str(v)) for k, v in todo.items() if v}, "\n" + caption)
         return 0
-    from .publish import publish_reel
-    rres = publish_reel(f"{raw_base()}/{rel}", caption, cfg,
-                        thumb_offset_ms=int(cfg.get("reel_thumb_ms", 800)))
-    if rres.get("recovered"):
-        print("⚠ 릴스 media_publish 오류였지만 실제로는 발행됨 확인 -> 안전장치로 복구")
-    print("릴스 발행 결과:", rres)
+
     date_str = today_kst().isoformat()
-    state.setdefault("published", []).append({
-        "slug": item["slug"], "track": "P",
-        "published_at": dt.datetime.now(KST).isoformat(timespec="seconds"),
-        "reel_media_id": rres.get("media_id"), "reel_permalink": rres.get("permalink"),
-    })
-    state["last_published_at"] = date_str
-    save_state(state)
-    if not args.no_git:
-        git_commit_push(["state/log.json"], f"post: reel {item['slug']} ({date_str})")
+    now = lambda: dt.datetime.now(KST).isoformat(timespec="seconds")
+    rel = lambda path: path.relative_to(ROOT).as_posix()
+
+    def entry():
+        if slug not in entries:
+            e = {"slug": slug, "track": "P", "published_at": now()}
+            state.setdefault("published", []).append(e)
+            entries[slug] = e
+        return entries[slug]
+
+    def commit(msg):
+        state["last_published_at"] = date_str
+        save_state(state)
+        if not args.no_git:
+            git_commit_push(["state/log.json"], f"{msg} {slug} ({date_str})")
+
+    if todo["post"]:
+        res = publish_carousel([f"{raw_base()}/{rel(f)}" for f in todo["post"]], caption, cfg)
+        if res.get("recovered"):
+            print("⚠ 게시물 media_publish 오류였지만 실제로는 발행됨 확인 -> 안전장치로 복구")
+        print("게시물 발행 결과:", res)
+        e = entry()
+        e["media_id"], e["permalink"] = res.get("media_id"), res.get("permalink")
+        commit("post: carousel")
+    if todo["reel"]:
+        rres = publish_reel(f"{raw_base()}/{rel(todo['reel'])}", caption, cfg,
+                            thumb_offset_ms=int(cfg.get("reel_thumb_ms", 800)))
+        if rres.get("recovered"):
+            print("⚠ 릴스 media_publish 오류였지만 실제로는 발행됨 확인 -> 안전장치로 복구")
+        print("릴스 발행 결과:", rres)
+        e = entry()
+        e["reel_media_id"], e["reel_permalink"] = rres.get("media_id"), rres.get("permalink")
+        commit("post: reel")
+
     left = len(ready) - 1
-    print(f"남은 릴스: {left}개")
+    print(f"남은 소재: {left}개")
     if left < int(cfg.get("low_queue_threshold", 5)):
         notify.notify_low_queue({"A": left, "B": 0, "total": left})
     print("완료.")
