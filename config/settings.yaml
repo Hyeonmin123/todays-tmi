@@ -17,7 +17,7 @@ interval_days: 1
 # (이전엔 [6,9,18]이라 6시-9시 창이 겹쳐서 아침 발행이 9시 슬롯으로 잘못 잡히고
 #  점심 슬롯이 통째로 소진되는 버그가 있었음.)
 boost_until: "2026-09-30"
-boost_slots_kst: [6, 12, 19]
+boost_slots_kst: [6, 12, 17]   # 목표 8시/14시/19시 - 각각 2시간 전부터 시도
 slots_kst: [6]
 slot_tolerance_hours: 4.5
 
