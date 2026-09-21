@@ -17,7 +17,7 @@ interval_days: 1
 # (이전엔 [6,9,18]이라 6시-9시 창이 겹쳐서 아침 발행이 9시 슬롯으로 잘못 잡히고
 #  점심 슬롯이 통째로 소진되는 버그가 있었음.)
 boost_until: "2026-09-30"
-boost_slots_kst: [6, 12, 18]
+boost_slots_kst: [6, 12, 19]
 slots_kst: [6]
 slot_tolerance_hours: 4.5
 
@@ -82,3 +82,12 @@ fonts:
   title: "DoHyeon-Regular.ttf"
   bold: "Gaegu-Bold.ttf"
   regular: "Gaegu-Regular.ttf"
+
+# 릴스 나레이션(ElevenLabs). 키는 ELEVENLABS_API_KEY (secrets.env / GitHub Secrets).
+tts:
+  voice_id: "PDoCXqBQFGsvfO0hNkEs"   # KKC HQ (ko)
+  model: "eleven_multilingual_v2"
+
+# 콘텐츠 모드: reel_stock = content/bank_people.json 의 검수 끝난 릴스(output/reels)만 발행(게시물 없음)
+content_mode: "reel_stock"
+reel_thumb_ms: 800   # 릴스 커버로 쓸 프레임 시점(ms) - 훅 자막이 보이는 첫 컷

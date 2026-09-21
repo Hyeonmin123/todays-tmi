@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import json
 import os
 import subprocess
 import sys
@@ -147,6 +148,48 @@ def raw_base() -> str:
     return f"https://raw.githubusercontent.com/{repo}/{branch}"
 
 
+def _main_reel_stock(args, cfg: dict, state: dict) -> int:
+    """릴스 전용 모드: 미리 렌더·검수해서 커밋해 둔 output/reels/<slug>/reel_stock.mp4 를
+    뱅크 순서대로 하나씩 릴스로만 발행한다(게시물 없음)."""
+    bank = json.loads((ROOT / "content" / "bank_people.json").read_text(encoding="utf-8"))
+    done = {p.get("slug") for p in state.get("published", [])}
+    ready = [i for i in bank if i["slug"] not in done
+             and (ROOT / "output" / "reels" / i["slug"] / "reel_stock.mp4").exists()]
+    if not ready:
+        print("발행할 릴스가 없음. 소재를 추가하세요.")
+        notify.notify_low_queue({"A": 0, "B": 0, "total": 0})
+        return 0
+    item = ready[0]
+    rel = f"output/reels/{item['slug']}/reel_stock.mp4"
+    caption = "\n\n".join([item["caption"].rstrip(), item.get("source", ""), item["hashtags"]]).strip()
+    print(f"발행 대상(릴스 전용): {item['slug']}  (대기 {len(ready)}개)")
+    if args.dry_run:
+        print("[DRY-RUN]", rel, "\n" + caption)
+        return 0
+    from .publish import publish_reel
+    rres = publish_reel(f"{raw_base()}/{rel}", caption, cfg,
+                        thumb_offset_ms=int(cfg.get("reel_thumb_ms", 800)))
+    if rres.get("recovered"):
+        print("⚠ 릴스 media_publish 오류였지만 실제로는 발행됨 확인 -> 안전장치로 복구")
+    print("릴스 발행 결과:", rres)
+    date_str = today_kst().isoformat()
+    state.setdefault("published", []).append({
+        "slug": item["slug"], "track": "P",
+        "published_at": dt.datetime.now(KST).isoformat(timespec="seconds"),
+        "reel_media_id": rres.get("media_id"), "reel_permalink": rres.get("permalink"),
+    })
+    state["last_published_at"] = date_str
+    save_state(state)
+    if not args.no_git:
+        git_commit_push(["state/log.json"], f"post: reel {item['slug']} ({date_str})")
+    left = len(ready) - 1
+    print(f"남은 릴스: {left}개")
+    if left < int(cfg.get("low_queue_threshold", 5)):
+        notify.notify_low_queue({"A": left, "B": 0, "total": left})
+    print("완료.")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
@@ -169,6 +212,9 @@ def main() -> int:
             print(f"직전 발행에서 {since:.1f}시간 (최소 {min_gap}h) → 스킵.")
             return 0
         print(f"발행 진행 → {reason} (현재 {today_kst()})")
+
+    if cfg.get("content_mode") == "reel_stock":
+        return _main_reel_stock(args, cfg, state)
 
     item = pick_next(state, cfg)
     if not item:

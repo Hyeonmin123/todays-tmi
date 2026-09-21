@@ -1,0 +1,351 @@
+[
+  {
+    "slug": "einstein-israel-president",
+    "who": "아인슈타인",
+    "hook": "아인슈타인이 대통령 제안을\n**거절**했다?",
+    "hook_say": "아인슈타인이 한 나라의 대통령 자리를 거절한 거 알고 계셨나요?",
+    "hook_query": "albert einstein portrait",
+    "beats": [
+      {
+        "text": "1952년 이스라엘\n**대통령** 제안",
+        "say": "천구백오십이 년, 이스라엘 초대 대통령이 세상을 떠나자, 정부가 아인슈타인에게 대통령을 맡아 달라고 제안했어요.",
+        "query": "israel flag jerusalem",
+        "img": 98134
+      },
+      {
+        "text": "이유는 **경험 부족**",
+        "say": "하지만 아인슈타인은, 자신은 사람을 다루는 경험이 부족하다며 정중히 거절했어요.",
+        "query": "old letter handwriting vintage",
+        "img": 1277562
+      }
+    ],
+    "reveal": "끝까지\n**과학자**로 남았어요",
+    "reveal_say": "결국 그 자리는 다른 사람이 맡았고, 아인슈타인은 끝까지 과학자로 남았어요.",
+    "reveal_query": "physics chalkboard equations",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.britannica.com/story/the-time-albert-einstein-was-asked-to-be-president-of-israel",
+      "https://www.snopes.com/articles/465466/einstein-israeli-presidency/"
+    ],
+    "verify_note": "확인됨(1952.11 제안, 거절)",
+    "hook_img": 1165151,
+    "reveal_img": 1144965,
+    "caption": "아인슈타인이 한 나라의 대통령 제안을 거절했다는 사실, 알고 계셨나요?\n\n1952년 이스라엘 초대 대통령이 세상을 떠나자 정부는 아인슈타인에게 대통령직을 제안했어요. 하지만 아인슈타인은 사람을 다루는 경험이 부족하다며 정중히 거절했고, 끝까지 과학자로 남았어요.",
+    "source": "출처: Britannica, Snopes",
+    "hashtags": "#아인슈타인 #위인 #역사 #의외의사실 #오늘의TMI"
+  },
+  {
+    "slug": "yi-sun-sin-exam-fall",
+    "who": "이순신",
+    "hook": "이순신도\n**시험에 떨어졌다?**",
+    "hook_say": "이순신 장군도 시험에 떨어진 적이 있다는 거 알고 계셨나요?",
+    "hook_query": "admiral yi sun-sin statue",
+    "beats": [
+      {
+        "text": "28세 첫 **무과 시험**",
+        "say": "스물여덟 살에 처음 치른 무과 시험에서, 말을 타고 달리다 말에서 떨어져 탈락했어요.",
+        "query": "korean traditional archery horse",
+        "img": 10079930
+      },
+      {
+        "text": "4년 뒤 **32세**에 급제",
+        "say": "하지만 포기하지 않고 사 년 뒤, 서른두 살에 무과에 급제했어요.",
+        "query": "korean palace gyeongbokgung",
+        "img": 7095475
+      }
+    ],
+    "reveal": "**실패**가 끝이 아니었어요",
+    "reveal_say": "그 뒤 이순신은 임진왜란에서 나라를 지킨 명장이 됐어요.",
+    "reveal_query": "korea seoul statue sunset",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://encykorea.aks.ac.kr/",
+      "https://www.gyeongnam.go.kr/index.gyeong?menuCd=DOM_000009304001004004"
+    ],
+    "verify_note": "확인됨(1572 낙방, 4년 뒤 급제). 다리 부상 세부는 전승이라 대사에서 뺌",
+    "hook_img": 96648,
+    "reveal_img": 4679950,
+    "caption": "이순신 장군도 시험에 떨어진 적이 있어요.\n\n스물여덟 살에 처음 치른 무과 시험에서 말에서 떨어져 탈락했지만, 포기하지 않고 4년 뒤 서른두 살에 급제했어요. 실패가 끝이 아니라는 걸 보여주는 이야기예요.",
+    "source": "출처: 한국민족문화대백과사전",
+    "hashtags": "#이순신 #위인 #역사 #의외의사실 #오늘의TMI"
+  },
+  {
+    "slug": "sejong-meat-diabetes",
+    "who": "세종대왕",
+    "hook": "세종대왕은 **고기 덕후**였다?",
+    "hook_say": "세종대왕이 고기를 무척 좋아했다는 거 알고 계셨나요?",
+    "hook_query": "king sejong statue",
+    "beats": [
+      {
+        "text": "고기 없인 **식사 못 함**",
+        "say": "기록에 따르면 세종은 고기가 없으면 식사를 잘 못 할 정도로 고기를 좋아했어요.",
+        "query": "grilled meat barbecue",
+        "img": 7423228
+      },
+      {
+        "text": "**당뇨**와 눈병에 시달림",
+        "say": "그래서인지 세종은 갈증이 심한 소갈증, 지금의 당뇨와 눈병에 시달렸다고 전해져요.",
+        "query": "eye glasses vintage",
+        "img": 5486962
+      }
+    ],
+    "reveal": "그럼에도\n**한글**을 만들었어요",
+    "reveal_say": "그런 몸으로도 세종은 훈민정음, 한글을 만들어 냈어요.",
+    "reveal_query": "hangul korean alphabet",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://readnutrient.kr/entry/%EC%84%B8%EC%A2%85%EB%8C%80%EC%99%95-%EB%8B%B9%EB%87%A8-%ED%88%AC%EB%B3%91%EA%B8%B0-%EC%9C%A1%EC%8B%9D-%EC%86%8C%EA%B0%88-%EC%8B%9D%EC%8A%B5%EA%B4%80"
+    ],
+    "verify_note": "부분 확인(2차 자료). 대사는 '기록에 따르면/전해져요'로 단정 회피",
+    "hook_img": 744995,
+    "reveal_img": 96647,
+    "caption": "세종대왕이 고기를 무척 좋아했다는 기록, 알고 계셨나요?\n\n기록에 따르면 세종은 고기가 없으면 식사를 잘 못 할 정도였고, 소갈증(당뇨)과 눈병에 시달렸다고 전해져요. 그런 몸으로도 훈민정음을 만들어 냈어요.",
+    "source": "출처: 조선왕조실록 관련 기록",
+    "hashtags": "#세종대왕 #한글 #역사 #의외의사실 #오늘의TMI"
+  },
+  {
+    "slug": "lincoln-only-patent",
+    "who": "링컨",
+    "hook": "링컨은 **특허**가 있다?",
+    "hook_say": "미국 대통령 중에 특허를 가진 사람이 있다는 거 알고 계셨나요?",
+    "hook_query": "abraham lincoln statue",
+    "beats": [
+      {
+        "text": "1849년 **특허 6469호**",
+        "say": "링컨은 천팔백사십구 년에 특허를 받았고, 특허 번호는 육천사백육십구 번이에요.",
+        "query": "patent document vintage",
+        "img": 1917110
+      },
+      {
+        "text": "배를 **띄우는 장치**",
+        "say": "강의 얕은 곳에 배가 걸리지 않도록, 배 옆에 공기주머니를 달아 띄우는 장치였어요.",
+        "query": "steamboat river",
+        "img": 3254340
+      }
+    ],
+    "reveal": "지금까지 **유일한** 대통령",
+    "reveal_say": "미국 대통령 중 특허를 가진 사람은 지금까지 링컨이 유일해요.",
+    "reveal_query": "lincoln memorial washington",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Abraham_Lincoln's_patent",
+      "https://www.smithsonianmag.com/history/abraham-lincoln-only-president-have-patent-131184751/",
+      "https://patents.google.com/patent/US6469A/en"
+    ],
+    "verify_note": "확인됨(US 6,469, 1849.5.22)",
+    "hook_img": 943223,
+    "reveal_img": 1846272,
+    "caption": "미국 대통령 중 특허를 가진 사람이 있다는 거 알고 계셨나요?\n\n링컨은 1849년 강의 얕은 곳에서 배를 띄우는 장치로 특허 6469호를 받았어요. 지금까지 특허를 가진 미국 대통령은 링컨이 유일해요.",
+    "source": "출처: Smithsonian, Library of Congress",
+    "hashtags": "#링컨 #위인 #역사 #의외의사실 #오늘의TMI"
+  },
+  {
+    "slug": "napoleon-not-short",
+    "who": "나폴레옹",
+    "hook": "나폴레옹은\n**키가 작지 않았다?**",
+    "hook_say": "나폴레옹이 키가 작았다는 이야기, 사실이 아니라는 거 알고 계셨나요?",
+    "hook_query": "napoleon bonaparte statue",
+    "beats": [
+      {
+        "text": "실제 키는 약 **169cm**",
+        "say": "나폴레옹의 실제 키는 약 백육십구 센티미터로, 당시 프랑스 남성 평균 정도였어요.",
+        "query": "tape measure ruler",
+        "img": 2923809
+      },
+      {
+        "text": "**프랑스 인치**의 착각",
+        "say": "프랑스 단위로 오 피트 이 인치라고 기록된 게, 영국 단위로 읽히면서 작은 키로 오해받았어요.",
+        "query": "old map france vintage",
+        "img": 4426219
+      }
+    ],
+    "reveal": "키 큰 **근위병** 때문에\n더 작아 보였어요",
+    "reveal_say": "게다가 나폴레옹은 키가 큰 근위병들에게 둘러싸여 있어서, 더 작아 보였어요.",
+    "reveal_query": "napoleon painting",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.britannica.com/story/was-napoleon-short",
+      "https://www.napoleon.org/en/history-of-the-two-empires/articles/was-napoleon-small/",
+      "https://www.scienceabc.com/eyeopeners/was-napoleon-really-short"
+    ],
+    "verify_note": "확인됨",
+    "hook_img": 6798754,
+    "reveal_img": 67784,
+    "caption": "나폴레옹이 키가 작았다는 이야기는 사실이 아니에요.\n\n실제 키는 약 169cm로 당시 프랑스 남성 평균 정도였고, 프랑스 인치와 영국 인치의 차이, 그리고 키 큰 근위병들 때문에 작게 오해받았어요.",
+    "source": "출처: Britannica, napoleon.org",
+    "hashtags": "#나폴레옹 #위인 #역사 #의외의사실 #오늘의TMI"
+  },
+  {
+    "slug": "beethoven-deaf-ninth",
+    "who": "베토벤",
+    "hook": "베토벤은\n**못 듣고** 지휘했다?",
+    "hook_say": "귀가 들리지 않는 베토벤이 교향곡을 지휘했다는 거 알고 계셨나요?",
+    "hook_query": "beethoven bust",
+    "beats": [
+      {
+        "text": "1824년 **9번 교향곡** 초연",
+        "say": "천팔백이십사 년, 거의 귀가 먹은 베토벤의 교향곡 구 번이 처음 무대에 올랐어요.",
+        "query": "orchestra concert hall vintage",
+        "img": 1168357
+      },
+      {
+        "text": "박수 소리도 **못 들었다**",
+        "say": "연주가 끝난 줄도 모르고 베토벤이 계속 지휘하자, 옆의 가수가 조심스럽게 관객 쪽으로 돌려세웠어요.",
+        "query": "conductor baton hands",
+        "img": 287324
+      }
+    ],
+    "reveal": "**기립박수**가 쏟아졌어요",
+    "reveal_say": "그러자 베토벤은 관객들의 뜨거운 기립박수를 볼 수 있었어요.",
+    "reveal_query": "audience applause standing ovation",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Symphony_No._9_(Beethoven)",
+      "https://www.history.com/this-day-in-history/may-7/beethoven-ninth-symphony-debuts-vienna"
+    ],
+    "verify_note": "확인됨(공식 지휘자는 따로 있었고 베토벤은 템포를 지시)",
+    "hook_img": 62844,
+    "reveal_img": 6133151,
+    "caption": "귀가 들리지 않는 베토벤이 교향곡 9번 초연 무대에 섰어요.\n\n1824년 연주가 끝난 줄도 모르고 지휘를 이어가자 옆의 가수가 관객 쪽으로 돌려세웠고, 그제야 뜨거운 기립박수를 볼 수 있었어요.",
+    "source": "출처: History.com, Wikipedia",
+    "hashtags": "#베토벤 #클래식 #역사 #의외의사실 #오늘의TMI"
+  },
+  {
+    "slug": "churchill-nobel-literature",
+    "who": "처칠",
+    "hook": "처칠은 **노벨상**을 받았다?",
+    "hook_say": "처칠이 노벨상을 받았다는 거 알고 계셨나요? 그런데 평화상이 아니에요.",
+    "hook_query": "winston churchill statue",
+    "beats": [
+      {
+        "text": "받은 건 **문학상**",
+        "say": "처칠이 받은 건 평화상이 아니라 노벨 문학상이었어요.",
+        "query": "nobel prize medal",
+        "img": 2754166
+      },
+      {
+        "text": "1953년 **역사 서술과 연설**",
+        "say": "천구백오십삼 년, 역사와 전기를 훌륭하게 서술하고 뛰어난 연설로 인간의 가치를 옹호했다는 이유였어요.",
+        "query": "old books library",
+        "img": 1867381
+      }
+    ],
+    "reveal": "정치가이자 **작가**",
+    "reveal_say": "처칠은 총리이면서 많은 책을 쓴 작가이기도 했어요.",
+    "reveal_query": "typewriter writing desk",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.nobelprize.org/prizes/literature/1953/churchill/facts/"
+    ],
+    "verify_note": "확인됨(수상 사유 노벨위원회 공식)",
+    "hook_img": 6982065,
+    "reveal_img": 7542629,
+    "caption": "처칠이 노벨상을 받았다는 거 알고 계셨나요? 평화상이 아니라 문학상이에요.\n\n1953년 역사와 전기를 훌륭하게 서술하고 뛰어난 연설로 인간의 가치를 옹호했다는 이유로 노벨 문학상을 받았어요.",
+    "source": "출처: NobelPrize.org",
+    "hashtags": "#처칠 #노벨상 #역사 #의외의사실 #오늘의TMI"
+  },
+  {
+    "slug": "gandhi-nobel-missing",
+    "who": "간디",
+    "hook": "간디는 **노벨평화상**을\n못 받았다?",
+    "hook_say": "간디가 노벨 평화상을 받지 못했다는 거 알고 계셨나요?",
+    "hook_query": "mahatma gandhi statue",
+    "beats": [
+      {
+        "text": "후보에만 **5번**",
+        "say": "간디는 노벨 평화상 후보에 다섯 번이나 올랐어요.",
+        "query": "india flag",
+        "img": 7382913
+      },
+      {
+        "text": "1948년, **암살** 때문에",
+        "say": "마지막 해인 천구백사십팔 년에는 수상 결정 직전에 암살당했고, 위원회는 적합한 생존 후보가 없다고 밝혔어요.",
+        "query": "spinning wheel charkha",
+        "img": 3078792
+      }
+    ],
+    "reveal": "**가장 큰 누락**이라 인정",
+    "reveal_say": "노벨위원회는 훗날 간디에게 상을 주지 못한 것을 가장 큰 누락이라고 인정했어요.",
+    "reveal_query": "nobel prize medal",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.nobelprize.org/prizes/themes/mahatma-gandhi-the-missing-laureate/"
+    ],
+    "verify_note": "확인됨(노벨위원회 공식 페이지)",
+    "hook_img": 71445,
+    "reveal_img": 6982115,
+    "caption": "간디는 노벨 평화상을 받지 못했어요.\n\n후보에만 다섯 번 올랐고, 1948년에는 수상 결정 직전에 암살당했어요. 노벨위원회는 훗날 이를 가장 큰 누락이라고 인정했어요.",
+    "source": "출처: NobelPrize.org",
+    "hashtags": "#간디 #노벨평화상 #역사 #의외의사실 #오늘의TMI"
+  },
+  {
+    "slug": "marie-curie-two-nobels",
+    "who": "마리 퀴리",
+    "hook": "노벨상을 **두 분야**에서\n받은 유일한 사람?",
+    "hook_say": "노벨 과학상을 서로 다른 두 분야에서 받은 사람이 딱 한 명뿐이라는 거 알고 계셨나요?",
+    "hook_query": "marie curie",
+    "beats": [
+      {
+        "text": "1903년 **물리학상**",
+        "say": "마리 퀴리는 천구백삼 년에 방사능 연구로 노벨 물리학상을 받았고,",
+        "query": "physics laboratory vintage",
+        "img": 4915431
+      },
+      {
+        "text": "1911년 **화학상**",
+        "say": "천구백십일 년에는 폴로늄과 라듐을 분리한 공으로 노벨 화학상까지 받았어요.",
+        "query": "chemistry laboratory glassware",
+        "img": 674467
+      }
+    ],
+    "reveal": "지금까지 **유일한** 기록",
+    "reveal_say": "서로 다른 두 과학 분야에서 노벨상을 받은 사람은 지금도 마리 퀴리가 유일해요.",
+    "reveal_query": "nobel prize medal",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.nobelprize.org/stories/women-who-changed-science/marie-curie/",
+      "https://www.britannica.com/biography/Marie-Curie"
+    ],
+    "verify_note": "확인됨. 스톡 인물 사진 부실 -> 실험실 이미지 대체",
+    "hook_img": 2182647,
+    "reveal_img": 2754166,
+    "caption": "서로 다른 두 과학 분야에서 노벨상을 받은 사람은 단 한 명뿐이에요.\n\n마리 퀴리는 1903년 물리학상, 1911년 화학상을 받았고 지금도 유일한 기록이에요.",
+    "source": "출처: NobelPrize.org, Britannica",
+    "hashtags": "#마리퀴리 #노벨상 #과학 #의외의사실 #오늘의TMI"
+  },
+  {
+    "slug": "davinci-mirror-writing",
+    "who": "다빈치",
+    "hook": "다빈치는 노트를\n**거울글씨**로 썼다?",
+    "hook_say": "다빈치가 노트를 거꾸로 썼다는 거 알고 계셨나요?",
+    "hook_query": "leonardo da vinci",
+    "beats": [
+      {
+        "text": "**거울**에 비춰야 읽힘",
+        "say": "다빈치의 노트는 글자가 좌우로 뒤집혀 있어서, 거울에 비춰야 제대로 읽혀요.",
+        "query": "mirror reflection vintage",
+        "img": 4509194
+      },
+      {
+        "text": "유력한 이유는 **왼손잡이**",
+        "say": "가장 유력한 설명은, 왼손잡이였던 다빈치가 잉크가 번지지 않게 하려고 그렇게 썼다는 거예요.",
+        "query": "fountain pen ink writing",
+        "img": 3237969
+      }
+    ],
+    "reveal": "남이 볼 글은\n**정상**으로 썼어요",
+    "reveal_say": "다만 다른 사람이 읽을 글은 평범하게 왼쪽에서 오른쪽으로 썼다고 해요.",
+    "reveal_query": "ancient manuscript notebook",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://news.artnet.com/art-world/art-bites-leonardo-mirror-writing-2473530",
+      "https://www.vam.ac.uk/articles/leonardo-da-vincis-notebooks"
+    ],
+    "verify_note": "확인됨(가장 유력한 '설'로 표현)",
+    "hook_img": 62966,
+    "reveal_img": 165410,
+    "caption": "다빈치는 노트를 거울글씨로 썼어요.\n\n글자가 좌우로 뒤집혀 있어 거울에 비춰야 읽히는데, 가장 유력한 설명은 왼손잡이라 잉크가 번지지 않게 하려던 거예요. 남이 읽을 글은 평범하게 썼다고 해요.",
+    "source": "출처: V&A Museum, Artnet",
+    "hashtags": "#다빈치 #레오나르도다빈치 #역사 #의외의사실 #오늘의TMI"
+  }
+]

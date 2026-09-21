@@ -13,9 +13,9 @@ on:
     - cron: "7 3 * * *"     # 12:07 KST (목표 14:00)
     - cron: "37 3 * * *"    # 12:37
     - cron: "22 4 * * *"    # 13:22
-    - cron: "7 9 * * *"     # 18:07 KST (목표 20:00)
-    - cron: "37 9 * * *"    # 18:37
-    - cron: "22 10 * * *"   # 19:22
+    - cron: "7 10 * * *"    # 19:07 KST (릴스 전용, 저녁 슬롯 19시)
+    - cron: "37 10 * * *"   # 19:37
+    - cron: "22 11 * * *"   # 20:22
   repository_dispatch:
     types: [publish]
   workflow_dispatch:
