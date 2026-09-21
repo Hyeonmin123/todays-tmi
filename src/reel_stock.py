@@ -34,6 +34,7 @@ API = "https://pixabay.com/api/"
 TTS_CACHE = OUTPUT_DIR / "_tts_cache"
 PAD_SEC = 0.35
 SHORT_CHARS = 12   # 공백 뺀 글자 수가 이 이하면 자막 1줄 고정, 초과면 2줄 허용
+MIN_MATCH = 0.97   # 음성인식 일치도 기준. 낮으면 발음이 뭉개진 것이므로 시드를 바꿔 다시 뽑는다
 MAX_SEC = 30.0   # 릴스 길이 상한. 핵심만 담아 이 안에 끝내야 한다
 
 
@@ -54,7 +55,22 @@ def _sino(n: int) -> str:
     return out
 
 
+_TENS = ["", "열", "스물", "서른", "마흔", "쉰", "예순", "일흔", "여든", "아흔"]
+_ONES = ["", "한", "두", "세", "네", "다섯", "여섯", "일곱", "여덟", "아홉"]
+_NATIVE_UNITS = "살|번|명|개|마리|시간|분야"
+
+
+def _native(n: int) -> str:
+    """고유어 수(한, 두, 스물, 여든두 …). 살·번·명 같은 단위 앞에서 쓴다."""
+    if n == 20:
+        return "스무"
+    return _TENS[n // 10] + _ONES[n % 10]
+
+
 def _norm(t: str) -> str:
+    # 음성인식이 '여든두 살'을 '82살'로 적는 경우 등: 고유어 단위 앞 숫자는 고유어 수로, 나머지는 한자어 수로.
+    t = re.sub(rf"(\d+)\s*(?={_NATIVE_UNITS})",
+               lambda m: _native(int(m[1])) if int(m[1]) < 100 else m[0], t)
     t = re.sub(r"\d+", lambda m: _sino(int(m[0])), t)
     return re.sub(r"[^가-힣]", "", t)
 
@@ -71,7 +87,7 @@ def _stt(path: Path) -> str:
     return r.json().get("text", "")
 
 
-def _tts(text: str, cfg: dict, tries: int = 5) -> Path:
+def _tts(text: str, cfg: dict, tries: int = 8) -> Path:
     """ElevenLabs TTS. 생성한 음성을 음성인식으로 다시 들어보고, 대본과 다르게 읽히면
     (숫자 발음 뭉개짐 등) 시드를 바꿔 다시 뽑는다. 검증 통과한 것만 캐시한다."""
     load_dotenv()
@@ -102,7 +118,7 @@ def _tts(text: str, cfg: dict, tries: int = 5) -> Path:
         ratio = difflib.SequenceMatcher(None, want, _norm(heard)).ratio()
         best = max(best, ratio)
         print(f"  [음성검수 {n + 1}/{tries}] 일치도 {ratio:.2f} | {heard}")
-        if ratio >= 0.93:
+        if ratio >= MIN_MATCH:
             tmp.replace(path)
             return path
     tmp.unlink(missing_ok=True)

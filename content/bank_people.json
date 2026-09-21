@@ -449,5 +449,462 @@
         "body": "왼손잡이라 잉크가 번지지 않게 쓰려던 것으로 알려져요. 남이 읽을 글은 평범하게 썼어요."
       }
     ]
+  },
+  {
+    "slug": "washington-one-tooth",
+    "who": "조지 워싱턴",
+    "hook": "워싱턴은 취임식 때\n**이가 하나**뿐이었다?",
+    "hook_say": "미국 초대 대통령 워싱턴이 취임할 때 이가 하나밖에 없었다는 거 알고 계셨나요?",
+    "hook_query": "george washington statue",
+    "beats": [
+      {
+        "text": "취임 당시 **이 1개**",
+        "say": "천칠백팔십구 년 취임식 날, 워싱턴에게 남은 자기 이는 딱 하나뿐이었어요.",
+        "query": "dentist vintage teeth",
+        "img": 887338
+      },
+      {
+        "text": "나무 틀니는 **오해**",
+        "say": "그의 틀니는 나무가 아니라, 하마 상아와 사람 이빨 등으로 만들어졌어요.",
+        "query": "ivory tusk",
+        "img": 2112416
+      }
+    ],
+    "reveal": "**상아**가 얼룩져\n나무처럼 보였어요",
+    "reveal_say": "상아가 금방 얼룩져서 나무처럼 보였던 것이, 오해의 시작으로 추정돼요.",
+    "reveal_query": "mount vernon virginia",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.mountvernon.org/george-washington/health/washingtons-teeth",
+      "https://www.livescience.com/61919-george-washington-teeth-not-wood.html",
+      "https://www.smithsonianmag.com/smart-news/george-washington-didnt-have-wooden-teeth-they-were-ivory-180953273/"
+    ],
+    "verify_note": "확인됨",
+    "caption": "미국 초대 대통령 워싱턴이 취임식 날 자기 이가 하나뿐이었다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1789년 4월 30일 첫 대통령 취임식 날, 워싱턴에게 남은 자기 이는 작은어금니 하나뿐이었어요. 나머지는 전부 틀니였죠.\n\n흔히 \"워싱턴은 나무 틀니를 썼다\"고 알려져 있지만 사실이 아니에요. 그의 틀니는 하마 상아에 금 스프링과 놋쇠 나사를 달고, 사람 이빨을 끼운 형태였어요. 치과의사는 남은 자기 이를 뽑지 않으려고 틀니에 구멍을 내 그 이가 들어가게 했다고 해요.\n\n평생 그는 사람·소·당나귀·말의 이빨, 하마와 바다코끼리의 상아, 납·금·은 합금 등 다양한 재료의 틀니를 썼어요. 나무로 오해받은 건 상아가 금세 얼룩져 나무처럼 보였기 때문으로 추정돼요.",
+    "source": "출처: Mount Vernon, Smithsonian, Live Science",
+    "hashtags": "#조지워싱턴 #위인 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "취임식 날, 이는 하나뿐",
+        "body": "1789년 4월 30일 첫 취임식 날, 워싱턴에게 남은 자기 이는 하나뿐이었고 나머지는 틀니였어요."
+      },
+      {
+        "title": "나무가 아니라 상아",
+        "body": "틀니는 하마 상아에 금 스프링, 사람 이빨 등으로 만들어졌어요. 상아가 얼룩지면서 나무로 오해받았다고 추정돼요."
+      }
+    ],
+    "hook_img": 6952099,
+    "reveal_img": 55476
+  },
+  {
+    "slug": "roosevelt-bullet-speech",
+    "who": "시어도어 루스벨트",
+    "hook": "루스벨트는 **총에 맞고도**\n연설했다?",
+    "hook_say": "시어도어 루스벨트가 총에 맞고도 연설을 계속했다는 거 알고 계셨나요?",
+    "hook_query": "mount rushmore",
+    "beats": [
+      {
+        "text": "1912년 **선거 유세** 중 피격",
+        "say": "천구백십이 년 선거 유세를 앞두고 밀워키에서, 그는 가슴에 총을 맞았어요.",
+        "query": "vintage political rally crowd",
+        "img": 3420639
+      },
+      {
+        "text": "**연설문**이 총알을 막았다",
+        "say": "주머니 속 접힌 연설문과 안경집이 총알을 늦춰 줬어요.",
+        "query": "folded paper manuscript old",
+        "img": 3145649
+      }
+    ],
+    "reveal": "그대로 **90분**\n연설했어요",
+    "reveal_say": "그는 치료보다 연설을 먼저 택했고, 거의 구십 분 동안 말을 이어 갔어요.",
+    "reveal_query": "moose wildlife",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.history.com/this-day-in-history/october-14/theodore-roosevelt-shot-in-milwaukee",
+      "https://www.trlibrary.com/bullet-speech",
+      "https://wisconsinlife.org/story/shot-in-the-chest-theodore-roosevelt-kept-talking-in-milwaukee/"
+    ],
+    "verify_note": "확인됨(불무스 발언은 '전해져요')",
+    "caption": "총에 맞고도 연설을 끝까지 마친 전직 대통령이 있다는 거 알고 계셨나요? 시어도어 루스벨트예요.\n\n📌 영상에 다 담지 못한 이야기\n\n1912년 10월 14일, 3선에 도전하던 루스벨트가 밀워키에서 유세 연설을 하러 차에 오르던 중, 36세의 존 슈랭크가 쏜 .38구경 권총 총알이 가슴에 맞았어요.\n\n총알은 주머니 속에 접어 둔 50쪽짜리 연설문과 금속 안경집을 지나며 속도가 줄었고, 갈비뼈에 박힌 채 멈췄어요. 루스벨트는 병원에 가기를 거부하고 연단에 올라 거의 90분 동안 연설했어요. 피 묻은 셔츠와 총알 구멍이 난 연설문을 보여 주며 \"불무스(그의 정당의 상징)는 총알 하나로는 쓰러지지 않는다\"고 말했다고 전해져요.\n\n의사들은 총알을 빼지 않기로 했고, 그 총알은 1919년 1월 그가 세상을 떠날 때까지 몸속에 있었어요.",
+    "source": "출처: History.com, Theodore Roosevelt Presidential Library, Wisconsin Life",
+    "hashtags": "#루스벨트 #위인 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "가슴에 총알",
+        "body": "1912년 10월 14일 밀워키, 3선에 도전하던 루스벨트가 유세 직전 가슴에 총을 맞았어요. 연설문과 안경집이 총알을 늦춰 줬어요."
+      },
+      {
+        "title": "그래도 연설",
+        "body": "그는 병원 대신 연단에 올라 거의 90분간 연설했어요. 총알은 1919년 세상을 떠날 때까지 몸속에 있었어요."
+      }
+    ],
+    "hook_img": 301164,
+    "reveal_img": 386742
+  },
+  {
+    "slug": "chaplin-oscar-ovation",
+    "who": "찰리 채플린",
+    "hook": "채플린은 오스카에서\n**12분** 박수를 받았다?",
+    "hook_say": "채플린이 오스카에서 십이 분 동안 박수를 받았다는 거 알고 계셨나요?",
+    "hook_query": "charlie chaplin",
+    "beats": [
+      {
+        "text": "**20년** 만의 미국 복귀",
+        "say": "채플린은 매카시즘 여파로 미국을 떠나 이십 년 가까이 스위스에서 지냈어요.",
+        "query": "switzerland lake mountains",
+        "img": 4686879
+      },
+      {
+        "text": "1972년 **명예상**",
+        "say": "천구백칠십이 년, 여든두 살의 그는 아카데미 명예상을 받으러 무대에 올랐어요.",
+        "query": "golden trophy statuette",
+        "img": 649825
+      }
+    ],
+    "reveal": "역대 최장 **기립박수**",
+    "reveal_say": "그가 무대에 서자 기립박수가 오래 이어졌고, 오스카 역사상 가장 긴 박수로 알려져 있어요.",
+    "reveal_query": "audience applause standing ovation",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://aaspeechesdb.oscars.org/link/044-23/",
+      "https://collider.com/oscars-longest-standing-ovation-1972-charlie-chaplin/",
+      "https://www.imdb.com/news/ni64088594/"
+    ],
+    "verify_note": "확인됨(12분은 '알려져 있어요')",
+    "caption": "채플린이 오스카에서 12분 동안 기립박수를 받았다는 이야기, 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1972년 4월 10일, 로스앤젤레스 도로시 챈들러 파빌리온에서 열린 제44회 아카데미 시상식에 82세의 채플린이 나타났어요. 매카시즘 여파로 미국을 떠나 스위스에서 지낸 지 20년 가까이 만이었어요.\n\n그는 \"이번 세기 영화를 예술로 만드는 데 끼친 헤아릴 수 없는 영향\"을 기리는 명예상을 받았고, 무대에 오르자 기립박수가 12분간 이어졌다고 알려져 있어요. 이는 오스카 역사상 가장 긴 기립박수로 꼽혀요.\n\n※ 12분이라는 수치는 널리 알려진 이야기이고, 이를 뒷받침하는 공식 영상 기록이 없다는 지적도 있어요.",
+    "source": "출처: Oscars Speech Database, Collider, IMDb",
+    "hashtags": "#찰리채플린 #영화 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "20년 만의 귀환",
+        "body": "매카시즘 여파로 미국을 떠나 스위스에서 지내던 채플린이, 1972년 4월 10일 아카데미 시상식에 82세로 돌아왔어요."
+      },
+      {
+        "title": "역대 최장 박수",
+        "body": "\"영화를 이 세기의 예술로 만드는 데 끼친 헤아릴 수 없는 영향\"으로 명예상을 받았고, 기립박수는 12분간 이어졌다고 알려져 있어요."
+      }
+    ],
+    "hook_img": 2507799,
+    "reveal_img": 6133151
+  },
+  {
+    "slug": "michelangelo-sculptor",
+    "who": "미켈란젤로",
+    "hook": "미켈란젤로는 스스로\n**화가가 아니라** 생각했다?",
+    "hook_say": "미켈란젤로가 스스로를 화가가 아니라 조각가라고 여겼다는 거 알고 계셨나요?",
+    "hook_query": "michelangelo david statue",
+    "beats": [
+      {
+        "text": "1508년 **천장화** 의뢰",
+        "say": "천오백팔 년, 교황 율리우스 이 세가 그에게 시스티나 성당 천장화를 맡겼어요.",
+        "query": "sistine chapel ceiling",
+        "img": 2519988
+      },
+      {
+        "text": "본업은 **조각**이었어요",
+        "say": "하지만 그는 자신을 무엇보다 조각가로 여겨서, 그림 작업을 내켜 하지 않았어요.",
+        "query": "marble sculpture chisel",
+        "img": 1684647
+      }
+    ],
+    "reveal": "그래도 **4년** 만에 완성",
+    "reveal_say": "그럼에도 사 년 동안 매달려, 서양 미술 최고의 걸작 중 하나를 완성했어요.",
+    "reveal_query": "sistine chapel fresco",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.ebsco.com/research-starters/history/michelangelo-paints-sistine-chapel",
+      "https://artsandculture.google.com/story/the-unlikely-figure-we-have-to-thank-for-the-renaissance%E2%80%99s-greatest-masterpieces/GwXRBZb7R5YTKA?hl=en"
+    ],
+    "verify_note": "확인됨(의심했다는 부분은 '전해져요')",
+    "caption": "미켈란젤로가 스스로를 화가보다 조각가라고 여겼다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1508년 교황 율리우스 2세는 미켈란젤로에게 시스티나 성당 천장화를 맡겼어요. 하지만 미켈란젤로는 자신을 무엇보다 조각가로 여겼고, 그때 한창 작업 중이던 교황의 묘 조각에 시간을 쏟고 싶어 했어요.\n\n그는 경쟁자들이 자신을 곤란하게 만들려고, 그림이 전문이 아닌 자신을 추천한 거라고 의심했다고 전해져요. 그래도 그는 이후 4년 동안 이 일에 매달려 서양 미술의 위대한 걸작 중 하나를 완성했어요.",
+    "source": "출처: EBSCO Research Starters, Google Arts & Culture",
+    "hashtags": "#미켈란젤로 #르네상스 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "조각가의 자부심",
+        "body": "미켈란젤로는 스스로를 화가보다 조각가로 여겼어요. 1508년 교황 율리우스 2세가 시스티나 성당 천장화를 맡기자 내키지 않아 했다고 전해져요."
+      },
+      {
+        "title": "그래도 걸작으로",
+        "body": "그는 경쟁자들의 계략일지 모른다고 의심했지만, 4년 동안 작업해 결국 천장화를 완성했어요."
+      }
+    ],
+    "hook_img": 1284596,
+    "reveal_img": 263573
+  },
+  {
+    "slug": "columbus-thought-asia",
+    "who": "크리스토퍼 콜럼버스",
+    "hook": "콜럼버스는 끝까지\n**아시아**라고 믿었다?",
+    "hook_say": "콜럼버스가 죽을 때까지 자신이 아시아에 갔다고 믿었다는 거 알고 계셨나요?",
+    "hook_query": "christopher columbus statue",
+    "beats": [
+      {
+        "text": "목표는 **아시아** 항로",
+        "say": "그의 목표는 대서양을 건너 아시아로 가는 더 빠른 항로를 찾는 것이었어요.",
+        "query": "old sailing ship sea",
+        "img": 4509960
+      },
+      {
+        "text": "카리브해를 **동인도**로 착각",
+        "say": "카리브해에 도착한 그는 그곳을 동인도라고 여기고 돌아갔어요.",
+        "query": "caribbean beach palm trees",
+        "img": 5288904
+      }
+    ],
+    "reveal": "죽을 때까지\n**착각**이었어요",
+    "reveal_say": "다른 탐험가들이 새 대륙임을 알아 갔지만, 콜럼버스는 천오백육 년 세상을 떠날 때까지 생각을 바꾸지 않았다고 전해져요.",
+    "reveal_query": "antique world map globe",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://exploration.marinersmuseum.org/subject/christopher-columbus/",
+      "https://kids.britannica.com/students/article/Christopher-Columbus/273745"
+    ],
+    "verify_note": "부분 확인(학자별 해석 차이 명시)",
+    "caption": "콜럼버스가 죽을 때까지 자신이 아시아에 갔다고 믿었다는 이야기, 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n콜럼버스의 원래 목표는 대서양을 건너 아시아로 가는 더 짧은 항로를 찾는 것이었어요. 카리브해에 도착한 그는 그곳을 동인도라고 믿은 채 스페인으로 돌아갔어요.\n\n이후 아메리고 베스푸치 같은 탐험가들은 그곳이 아시아가 아닌 새로운 땅이라는 걸 알아 가기 시작했어요. 하지만 콜럼버스는 1506년 세상을 떠날 때까지 자신의 항해가 아시아에 닿은 것이라는 믿음을 버리지 않았다고 전해져요.\n\n※ 그가 정말 끝까지 그렇게 믿었는지에 대해서는 학자마다 해석이 조금 달라요.",
+    "source": "출처: Mariners' Museum, Britannica Kids",
+    "hashtags": "#콜럼버스 #대항해시대 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "동인도라고 믿었어요",
+        "body": "콜럼버스는 카리브해에 도착한 뒤 그곳이 아시아의 동인도라고 믿고 스페인으로 돌아갔어요."
+      },
+      {
+        "title": "끝까지 바뀌지 않은 생각",
+        "body": "아메리고 베스푸치 같은 탐험가들은 새 땅임을 알아 갔지만, 콜럼버스는 1506년 세상을 떠날 때까지 생각을 바꾸지 않았다고 전해져요."
+      }
+    ],
+    "hook_img": 2422371,
+    "reveal_img": 680230
+  },
+  {
+    "slug": "wright-12-seconds",
+    "who": "라이트 형제",
+    "hook": "인류 첫 비행은 **12초**였다?",
+    "hook_say": "인류 최초의 동력 비행이 십이 초였다는 거 알고 계셨나요?",
+    "hook_query": "wright brothers",
+    "beats": [
+      {
+        "text": "1903년 **키티호크**",
+        "say": "천구백삼 년 십이 월 십칠 일, 미국 노스캐롤라이나 키티호크에서 라이트 형제가 비행에 성공했어요.",
+        "query": "kitty hawk monument",
+        "img": 2723415
+      },
+      {
+        "text": "비행 거리 약 **37m**",
+        "say": "첫 비행은 십이 초 동안 백이십 피트, 약 삼십칠 미터를 날았어요.",
+        "query": "vintage biplane airplane",
+        "img": 3657350
+      }
+    ],
+    "reveal": "그날 **네 번** 날았어요",
+    "reveal_say": "그날 네 번 비행했고, 가장 긴 마지막 비행은 오십구 초 동안 약 이백육십 미터를 날았어요.",
+    "reveal_query": "airplane flying blue sky",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.nasa.gov/image-article/wright-brothers-first-flight/",
+      "https://airandspace.si.edu/stories/editorial/wright-brothers-made-history-kitty-hawk",
+      "https://www.history.com/this-day-in-history/december-17/first-airplane-flies"
+    ],
+    "verify_note": "확인됨",
+    "caption": "인류 최초의 동력 비행이 12초였다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1903년 12월 17일 오전 10시 35분, 다섯 명의 목격자가 지켜보는 가운데 오빌 라이트가 조종한 비행기가 레일을 달려 하늘로 떠올랐어요. 비행은 12초 동안 120피트(약 37m)였어요.\n\n형제는 그날 모두 네 번 비행했어요. 마지막 비행은 윌버가 조종해 59초 동안 852피트(약 260m)를 날았어요. 노스캐롤라이나 키티호크에서 인류의 항공 시대가 열린 순간이었죠.",
+    "source": "출처: NASA, Smithsonian National Air and Space Museum, History.com",
+    "hashtags": "#라이트형제 #비행기 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "첫 비행은 12초",
+        "body": "1903년 12월 17일 오전 10시 35분, 오빌 라이트가 조종한 비행기가 12초 동안 약 37m를 날았어요."
+      },
+      {
+        "title": "그날 네 번의 비행",
+        "body": "형제는 그날 네 번 비행했고, 윌버가 조종한 마지막 비행은 59초 동안 약 260m를 날았어요."
+      }
+    ],
+    "hook_img": 794534,
+    "reveal_img": 2617651
+  },
+  {
+    "slug": "caesar-pirates-ransom",
+    "who": "율리우스 카이사르",
+    "hook": "카이사르는 납치범에게\n**몸값을 올리라** 했다?",
+    "hook_say": "카이사르가 납치범에게 몸값을 더 높이라고 했다는 거 알고 계셨나요?",
+    "hook_query": "julius caesar statue",
+    "beats": [
+      {
+        "text": "해적이 부른 **20탈란트**",
+        "say": "기원전 칠십오 년, 스물다섯 살의 카이사르는 해적에게 붙잡혀 이십 탈란트를 요구받았어요.",
+        "query": "pirate ship",
+        "img": 4748373
+      },
+      {
+        "text": "**50탈란트**로 올려라",
+        "say": "그러자 카이사르는 자신을 그렇게 싸게 보느냐며 오십 탈란트로 올리라고 했어요.",
+        "query": "gold coins treasure",
+        "img": 2053585
+      }
+    ],
+    "reveal": "풀려난 뒤 **해적 소탕**",
+    "reveal_say": "삼십팔 일 뒤 풀려난 그는 함대를 모아 해적들을 붙잡아, 약속대로 처형했어요.",
+    "reveal_query": "roman ruins forum",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.britannica.com/story/the-time-julius-caesar-was-captured-by-pirates",
+      "https://www.history.com/articles/julius-caesar-pirate-kidnap-legend",
+      "https://www.livius.org/sources/content/plutarch/plutarchs-caesar/caesar-and-the-pirates/"
+    ],
+    "verify_note": "확인됨(고대 기록, 사실성 논쟁 명시)",
+    "caption": "카이사르가 납치범에게 몸값을 더 올리라고 했다는 이야기, 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n플루타르코스의 『영웅전』에 따르면, 기원전 75년 웅변을 공부하러 로도스로 가던 스물다섯 살의 카이사르가 킬리키아 해적에게 붙잡혔어요. 해적이 몸값으로 20탈란트를 부르자 카이사르는 자신을 너무 싸게 본다며 50탈란트로 올리라고 했어요.\n\n그는 붙잡혀 있는 동안 해적들에게 풀려나면 모두 십자가형에 처하겠다고 말했지만, 해적들은 농담으로 여겼다고 해요. 38일 만에 몸값이 전달돼 풀려난 그는 밀레토스에서 함대를 꾸려 해적들을 붙잡았고, 약속대로 처형했다고 전해져요.\n\n※ 이 이야기는 고대 기록에 바탕한 것이라, 세부 내용의 사실성에는 학자들 사이에 논쟁이 있어요.",
+    "source": "출처: Britannica, History.com, Livius(플루타르코스)",
+    "hashtags": "#카이사르 #로마 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "20탈란트를 50탈란트로",
+        "body": "기원전 75년 해적에게 붙잡힌 스물다섯의 카이사르는 몸값 20탈란트가 너무 적다며 50탈란트로 올리게 했어요."
+      },
+      {
+        "title": "약속을 지키다",
+        "body": "38일 뒤 풀려난 그는 함대를 꾸려 해적을 붙잡아 처형했어요. 플루타르코스의 기록에 전해지는 이야기예요."
+      }
+    ],
+    "hook_img": 2789915,
+    "reveal_img": 944823
+  },
+  {
+    "slug": "mozart-unknown-grave",
+    "who": "모차르트",
+    "hook": "모차르트의 무덤은\n**어딘지 모른다?**",
+    "hook_say": "모차르트의 정확한 무덤 위치를 아무도 모른다는 거 알고 계셨나요?",
+    "hook_query": "mozart statue salzburg",
+    "beats": [
+      {
+        "text": "빈의 **성 마르크스** 묘지",
+        "say": "천칠백구십일 년 세상을 떠난 모차르트는 빈의 성 마르크스 묘지에 묻혔어요.",
+        "query": "vienna cemetery",
+        "img": 6775053
+      },
+      {
+        "text": "당시 규정대로 **간소한 장례**",
+        "say": "당시 규정에 따라 간소하게 치러져서, 시간이 지나자 정확한 위치를 알기 어려워졌어요.",
+        "query": "old cemetery graves",
+        "img": 2409337
+      }
+    ],
+    "reveal": "지금 기념비는 **추정 위치**",
+    "reveal_say": "천팔백오십구 년에 세운 기념비는 무덤이 있었으리라 추정되는 자리에 서 있어요.",
+    "reveal_query": "angel statue cemetery monument",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.wien.info/en/see-do/sights-from-a-to-z/cemetery-st-marx-342450",
+      "https://en.wikipedia.org/wiki/St._Marx_Cemetery",
+      "https://www.mozartproject.org/mozarts-final-resting-place-the-st-marx-cemetery-in-vienna-austria/"
+    ],
+    "verify_note": "확인됨",
+    "caption": "모차르트의 정확한 무덤 위치를 아무도 모른다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n모차르트는 1791년 12월 6일 빈의 성 마르크스 묘지에 묻혔어요. 그런데 정확히 어느 자리인지는 지금도 알려져 있지 않아요.\n\n흔히 \"가난해서 무덤에 표식조차 없었다\"고 알려져 있지만 오해예요. 당시 규정에 따른 간소한 매장이었고, 성 슈테판 대성당에서 장례 미사도 치러졌어요. 당시 묘지는 대부분 단순한 봉분에 나무 십자가가 드문드문 있는 정도여서, 얼마 지나지 않아 정확한 자리를 가리기 어려워졌어요.\n\n1855년경 무덤이 있었으리라 믿어지는 자리가 확인됐고, 1859년 그곳에 기념비가 세워졌어요.",
+    "source": "출처: 빈 관광청(wien.info), Wikipedia(St. Marx Cemetery), Mozart Project",
+    "hashtags": "#모차르트 #클래식 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "성 마르크스 묘지",
+        "body": "1791년 12월 6일 모차르트는 빈의 성 마르크스 묘지에 묻혔지만, 정확한 무덤 위치는 지금도 알려져 있지 않아요."
+      },
+      {
+        "title": "가난해서가 아니에요",
+        "body": "표식이 없던 건 가난 때문이 아니라 당시 규정에 따른 간소한 매장이었기 때문이에요. 지금 기념비는 추정 위치에 서 있어요."
+      }
+    ],
+    "hook_img": 83803,
+    "reveal_img": 3408101
+  },
+  {
+    "slug": "galileo-1992-error",
+    "who": "갈릴레오",
+    "hook": "갈릴레오 재판의 **오류**는\n359년 뒤에 인정됐다?",
+    "hook_say": "갈릴레오 재판의 오류가 삼백오십구 년 뒤에야 공식 인정됐다는 거 알고 계셨나요?",
+    "hook_query": "galileo statue florence",
+    "beats": [
+      {
+        "text": "1633년 **종교재판**",
+        "say": "천육백삼십삼 년, 갈릴레오는 지동설 때문에 종교재판을 받았어요.",
+        "query": "vintage telescope",
+        "img": 11624
+      },
+      {
+        "text": "1992년 **오류 인정**",
+        "say": "천구백구십이 년, 교황 요한 바오로 이 세가 당시 재판에 오류가 있었다고 인정했어요.",
+        "query": "st peters basilica vatican",
+        "img": 601810
+      }
+    ],
+    "reveal": "**'비극적 오해'**라고 표현",
+    "reveal_say": "교황은 이를 서로에 대한 비극적인 몰이해 때문이라고 표현했어요.",
+    "reveal_query": "starry night sky",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.astronomy.com/today-in-the-history-of-astronomy/oct-31-1992-the-pope-addresses-the-galileo-affair/",
+      "https://www.washingtonpost.com/archive/politics/1992/11/01/vatican-finds-galileo-not-guilty/1092b119-440e-4fb6-b990-cc7f8a662f0d/",
+      "https://historyforatheists.com/2025/03/galileo-pope-apologise/"
+    ],
+    "verify_note": "확인됨(사과/사면 아님 명시)",
+    "caption": "갈릴레오 재판의 오류가 359년 뒤에야 공식적으로 인정됐다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1633년 갈릴레오는 지동설을 지지했다는 이유로 종교재판을 받았어요. 그로부터 359년 뒤인 1992년 10월 31일, 교황 요한 바오로 2세는 당시 교회 재판부가 오류를 범했다고 공식 인정했어요. 그는 이를 \"비극적인 상호 몰이해\"의 결과라고 표현했어요.\n\n1979년 교황이 이 문제를 조사하도록 위원회를 만든 지 13년 만의 발표였어요.\n\n※ 언론은 흔히 이를 \"사과\"나 \"사면\"으로 보도했지만, 재심이나 사면이 있었던 건 아니에요.",
+    "source": "출처: Astronomy.com, The Washington Post(1992), History for Atheists",
+    "hashtags": "#갈릴레오 #과학 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "1633년의 재판",
+        "body": "갈릴레오는 1633년 지동설을 지지했다는 이유로 종교재판을 받았어요."
+      },
+      {
+        "title": "1992년의 인정",
+        "body": "1992년 10월 31일 교황 요한 바오로 2세는 당시 재판에 오류가 있었다고 인정했어요. 다만 재심이나 사면이 있었던 건 아니에요."
+      }
+    ],
+    "hook_img": 165413,
+    "reveal_img": 9768540
+  },
+  {
+    "slug": "elizabeth-mechanic",
+    "who": "엘리자베스 2세",
+    "hook": "엘리자베스 2세는\n**자동차 정비병**이었다?",
+    "hook_say": "엘리자베스 이 세 여왕이 젊은 시절 자동차 정비병이었다는 거 알고 계셨나요?",
+    "hook_query": "queen elizabeth ii",
+    "beats": [
+      {
+        "text": "1945년 **군에 입대**",
+        "say": "천구백사십오 년, 열아홉 살의 공주 엘리자베스는 스스로 전쟁에 기여하겠다며 여군 보조부대에 들어갔어요.",
+        "query": "military uniform vintage",
+        "img": 6034928
+      },
+      {
+        "text": "트럭 **운전과 정비**",
+        "say": "군용 트럭을 운전하고 엔진을 고치는 훈련을 받아 운전 시험도 통과했어요.",
+        "query": "engine mechanic wrench",
+        "img": 63201
+      }
+    ],
+    "reveal": "별명은\n**자동차 정비 공주**",
+    "reveal_say": "당시 신문은 그녀를 자동차 정비 공주라고 불렀어요.",
+    "reveal_query": "vintage army truck",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.nationalww2museum.org/war/articles/queen-elizabeth-ii-during-world-war-ii",
+      "https://www.warhistoryonline.com/war-articles/queen-elizabeth-ii-auto-mechanic.html"
+    ],
+    "verify_note": "확인됨",
+    "caption": "엘리자베스 2세 여왕이 젊은 시절 군용 트럭 정비병이었다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1945년 열아홉 살의 엘리자베스 공주는 스스로 전쟁에 힘을 보태겠다며 여군 보조부대(ATS)에 명예 소위로 입대했어요. 아버지인 왕의 뜻에 따라 특별 대우는 받지 않았어요.\n\n그녀는 3월부터 훈련을 시작해 군용 트럭 운전과 엔진 정비를 배우고, 올더숏에서 운전·차량 정비 과정을 마쳐 4월 14일 자격을 얻었어요. 지도 읽는 법도 익히고 군 운전 시험도 통과했죠. 당시 신문들은 그녀를 \"자동차 정비 공주(Princess Auto Mechanic)\"라고 불렀고, AP통신은 왕실 여성 가운데 여군에서 정식으로 복무한 첫 사례라고 전했어요.",
+    "source": "출처: The National WWII Museum, War History Online",
+    "hashtags": "#엘리자베스2세 #영국 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "공주, 여군이 되다",
+        "body": "1945년 열아홉 살의 엘리자베스 공주는 여군 보조부대(ATS)에 명예 소위로 입대했어요."
+      },
+      {
+        "title": "정비병 훈련",
+        "body": "올더숏에서 운전과 차량 정비 과정을 마쳤고, 당시 신문은 그녀를 \"자동차 정비 공주\"라고 불렀어요."
+      }
+    ],
+    "hook_img": 63006,
+    "reveal_img": 4579558
   }
 ]

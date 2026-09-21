@@ -76,10 +76,10 @@ def _card(item: dict, c: dict, page: int, total: int, used: set, last: bool) -> 
     tf, bf = _font(TITLE_FONT, 68), _font(BODY_FONT, 45)
     lines = _wrap(d, c["body"], bf, W - 2 * mx - 2 * pad)
     lh = int(45 * 1.55)
-    extra = []
-    if last:
-        extra = [item.get("source", ""), "저장해 두고 친구에게 공유하기"]
-    ph = pad * 2 + 68 + 34 + lh * len(lines) + (44 + 40 * len(extra) if extra else 0)
+    sf, cf = _font(BODY_FONT, 30), _font(TITLE_FONT, 44)
+    src_lines = _wrap(d, item.get("source", ""), sf, W - 2 * mx - 2 * pad) if last else []
+    slh = 40
+    ph = pad * 2 + 68 + 34 + lh * len(lines) + ((30 + slh * len(src_lines) + 14 + 56) if last else 0)
     y0 = (H - ph) // 2
     d.rounded_rectangle([mx, y0, W - mx, y0 + ph], radius=36, fill=(0, 0, 0, 150))
     d.rounded_rectangle([mx + pad, y0 + pad + 74, mx + pad + 96, y0 + pad + 80], radius=3, fill=(*_rgb(HL), 255))
@@ -88,11 +88,12 @@ def _card(item: dict, c: dict, page: int, total: int, used: set, last: bool) -> 
     for ln in lines:
         d.text((mx + pad, y), ln, font=bf, fill=(255, 255, 255, 255))
         y += lh
-    if extra:
+    if last:
         y += 30
-        sf, cf = _font(BODY_FONT, 32), _font(TITLE_FONT, 44)
-        d.text((mx + pad, y), extra[0], font=sf, fill=(255, 255, 255, 170))
-        d.text((mx + pad, y + 46), extra[1], font=cf, fill=(*_rgb(HL), 255))
+        for ln in src_lines:
+            d.text((mx + pad, y), ln, font=sf, fill=(255, 255, 255, 170))
+            y += slh
+        d.text((mx + pad, y + 14), "저장해 두고 친구에게 공유하기", font=cf, fill=(*_rgb(HL), 255))
     im.alpha_composite(layer)
     _chrome(im, page, total)
     return im
