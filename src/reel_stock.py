@@ -57,7 +57,7 @@ def _sino(n: int) -> str:
 
 _TENS = ["", "열", "스물", "서른", "마흔", "쉰", "예순", "일흔", "여든", "아흔"]
 _ONES = ["", "한", "두", "세", "네", "다섯", "여섯", "일곱", "여덟", "아홉"]
-_NATIVE_UNITS = "살|번|명|개|마리|시간|분야"
+_NATIVE_UNITS = "살|번|명|마리|시간|분야"
 
 
 def _native(n: int) -> str:
@@ -68,6 +68,7 @@ def _native(n: int) -> str:
 
 
 def _norm(t: str) -> str:
+    t = re.sub(r"(?<=\d),(?=\d)", "", t)   # 1,093 -> 1093
     # 음성인식이 '여든두 살'을 '82살'로 적는 경우 등: 고유어 단위 앞 숫자는 고유어 수로, 나머지는 한자어 수로.
     t = re.sub(rf"(\d+)\s*(?={_NATIVE_UNITS})",
                lambda m: _native(int(m[1])) if int(m[1]) < 100 else m[0], t)

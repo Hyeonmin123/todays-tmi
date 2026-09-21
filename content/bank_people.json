@@ -906,5 +906,919 @@
     ],
     "hook_img": 63006,
     "reveal_img": 4579558
+  },
+  {
+    "slug": "jang-yeong-sil",
+    "who": "장영실",
+    "hook": "관노 출신이 **종3품**까지 올랐다?",
+    "hook_say": "관노 출신 장영실이 종삼품 벼슬까지 올랐다는 거 알고 계셨나요?",
+    "hook_query": "gyeongbokgung palace korea",
+    "beats": [
+      {
+        "text": "동래현 **관노** 출신",
+        "say": "장영실은 동래현의 관노였지만, 뛰어난 재주로 천인 신분에서 벗어났어요.",
+        "query": "hanok traditional korean village",
+        "img": 4617978
+      },
+      {
+        "text": "**종3품**까지 승진",
+        "say": "그리고 종삼품이라는 높은 벼슬까지 올랐어요.",
+        "query": "korean palace gate",
+        "img": 3909995
+      }
+    ],
+    "reveal": "가마 사건으로 **파직**",
+    "reveal_say": "하지만 천사백사십이 년 임금의 가마가 부러진 사건으로 곤장 팔십 대를 맞고 파직됐어요.",
+    "reveal_query": "korean palace sunset",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_n310300&code=kc_age_30",
+      "https://www.polinews.co.kr/news/articleView.html?idxno=475915"
+    ],
+    "verify_note": "확인됨",
+    "caption": "관노 출신 장영실이 종3품 벼슬까지 올랐다는 사실, 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n장영실은 동래현의 관노였지만 뛰어난 재능으로 천인 신분에서 벗어났고, 종3품의 직위에까지 올랐어요.\n\n그런데 1442년 3월, 그가 감독해 만든 임금의 가마(안여)가 부러지는 사고가 일어났어요. 의금부는 견고하게 만들지 않은 책임을 물어 곤장 100대를 청했고, 세종은 그동안의 공로를 고려해 2등을 감형해 곤장 80대에 파직하도록 했어요.\n\n그 뒤 장영실은 역사 기록에서 자취를 감췄고, 이후의 행적은 알려져 있지 않아요.",
+    "source": "출처: 우리역사넷(국사편찬위원회), 폴리뉴스",
+    "hashtags": "#장영실 #세종대왕 #조선시대 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "관노에서 종3품으로",
+        "body": "동래현의 관노였던 장영실은 재능 하나로 천인 신분에서 벗어나 종3품까지 올랐어요."
+      },
+      {
+        "title": "가마 사건과 파직",
+        "body": "1442년 그가 감독한 임금의 가마가 부러져 곤장 80대를 맞고 파직됐고, 이후 기록에서 사라졌어요."
+      }
+    ],
+    "hook_img": 6257203,
+    "reveal_img": 7490481
+  },
+  {
+    "slug": "jeong-yak-yong",
+    "who": "정약용",
+    "hook": "정약용은 유배 중에\n**500권**을 썼다?",
+    "hook_say": "정약용이 유배 생활 중에 오백 권이 넘는 책을 썼다는 거 알고 계셨나요?",
+    "hook_query": "hanok garden korea",
+    "beats": [
+      {
+        "text": "**18년** 유배 생활",
+        "say": "정조가 세상을 떠난 뒤 모함을 받아, 정약용은 십팔 년 동안 유배 생활을 했어요.",
+        "query": "old korean countryside village",
+        "img": 10356809
+      },
+      {
+        "text": "강진 **다산초당**",
+        "say": "전남 강진의 다산초당에서 십 년 넘게 머물며 저술에 몰두했어요.",
+        "query": "thatched roof cottage korea",
+        "img": 5975830
+      }
+    ],
+    "reveal": "**목민심서** 등\n500여 권",
+    "reveal_say": "그 결과 목민심서를 비롯해 오백여 권의 책을 남겼어요.",
+    "reveal_query": "old books traditional korean",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "http://www.heritage.go.kr/heri/cul/culSelectDetail.do?ccbaCpno=1333601070000",
+      "http://www.atlasnews.co.kr/news/articleView.html?idxno=9452"
+    ],
+    "verify_note": "확인됨",
+    "caption": "정약용이 유배 생활 동안 500여 권의 책을 남겼다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n정조가 세상을 떠난 뒤 신하들의 모함으로 투옥되고 유배된 정약용은 18년 동안 유배 생활을 했어요. 그중 전남 강진의 다산초당에서 10년 넘게 머물며 가장 찬란한 결실을 맺었어요.\n\n그는 이곳에서 『목민심서』, 『경세유표』, 『흠흠신서』를 비롯해 500여 권에 달하는 저서를 남겼고, 제자 18명도 길러냈어요. 그의 연구를 총정리한 『여유당전서』에는 철학, 법제, 의술, 천문, 측량, 건축까지 폭넓은 학문이 담겨 있어요.",
+    "source": "출처: 국가유산청(사적 강진 정약용 유적)",
+    "hashtags": "#정약용 #다산 #조선시대 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "18년의 유배",
+        "body": "정조가 세상을 떠난 뒤 모함을 받은 정약용은 18년 동안 유배 생활을 했어요. 강진 다산초당에서만 10년 넘게 머물렀어요."
+      },
+      {
+        "title": "500여 권의 저술",
+        "body": "『목민심서』, 『경세유표』, 『흠흠신서』를 비롯해 500여 권의 책을 남기고 제자 18명을 길러냈어요."
+      }
+    ],
+    "hook_img": 7093068,
+    "reveal_img": 5045049
+  },
+  {
+    "slug": "ahn-jung-geun",
+    "who": "안중근",
+    "hook": "안중근과 11명은\n**손가락을 잘랐다?**",
+    "hook_say": "안중근과 동지 열한 명이 손가락을 잘라 독립을 맹세했다는 거 알고 계셨나요?",
+    "hook_query": "korean flag taegeukgi",
+    "beats": [
+      {
+        "text": "1909년 **단지동맹**",
+        "say": "천구백구 년 이월, 러시아 연해주에서 열두 명이 모여 단지동맹을 맺었어요.",
+        "query": "birch forest russia",
+        "img": 4598017
+      },
+      {
+        "text": "왼손 **넷째 손가락**",
+        "say": "그들은 저마다 왼손 넷째 손가락을 끊어 태극기에 대한독립이라고 피로 썼어요.",
+        "query": "korean flag waving",
+        "img": 4428969
+      }
+    ],
+    "reveal": "3년 안에 **처단** 맹세",
+    "reveal_say": "그리고 삼 년 안에 이토 히로부미를 처단하겠다고 맹세했어요.",
+    "reveal_query": "memorial monument korea",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://kookbang.dema.mil.kr/newsWeb/20230126/1/ATCE_CTGR_0020010008/view.do",
+      "https://www.cha.go.kr/cop/bbs/selectBoardArticle.do?nttId=73422&bbsId=BBSMSTR_1008&pageUnit=10&searchtitle=title&mn=NS_01_09_01"
+    ],
+    "verify_note": "확인됨",
+    "caption": "안중근과 동지 11명이 손가락을 잘라 독립을 맹세했다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1909년 2월 7일, 안중근을 비롯한 12명이 러시아 연해주의 자작나무 숲에서 왼손 넷째 손가락을 잘라, 태극기 앞면에 혈서로 '대한독립'이라고 썼어요. 이것이 단지동맹이에요.\n\n그들은 3년 안에 이토 히로부미와 이완용을 처단하겠다고 맹세했고, 이루지 못하면 스스로 목숨을 끊어 책임지겠다고 다짐했어요.\n\n안중근은 그해 10월 26일 하얼빈에서 이토 히로부미를 저격했어요.",
+    "source": "출처: 국방일보, 국가유산청",
+    "hashtags": "#안중근 #독립운동 #대한민국 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "연해주의 맹세",
+        "body": "1909년 2월 7일 안중근 등 12명이 왼손 넷째 손가락을 잘라 태극기에 \"대한독립\"이라고 혈서를 썼어요."
+      },
+      {
+        "title": "3년 안의 목표",
+        "body": "그들은 3년 안에 이토 히로부미와 이완용을 처단하겠다고 맹세했고, 안중근은 그해 10월 26일 하얼빈에서 이토를 저격했어요."
+      }
+    ],
+    "hook_img": 5801956,
+    "reveal_img": 2829526
+  },
+  {
+    "slug": "kim-jeong-ho",
+    "who": "김정호",
+    "hook": "김정호가 **옥사**했다는 건\n근거가 없다?",
+    "hook_say": "대동여지도를 만든 김정호가 감옥에서 죽었다는 이야기, 근거가 없다는 거 알고 계셨나요?",
+    "hook_query": "antique old map",
+    "beats": [
+      {
+        "text": "옥사설은 **1939년**에 등장",
+        "say": "김정호가 옥에서 죽었다는 이야기는 천구백삼십구 년 일제가 발행한 조선어독본에서 처음 나왔어요.",
+        "query": "vintage textbook old",
+        "img": 889139
+      },
+      {
+        "text": "기록에는 **흔적 없음**",
+        "say": "고종실록 같은 기록을 살펴봤지만 그런 흔적은 전혀 찾을 수 없었어요.",
+        "query": "old korean documents",
+        "img": 1639226
+      }
+    ],
+    "reveal": "**목판**은 지금도 남아 있어요",
+    "reveal_say": "게다가 대동여지도 목판이 지금도 남아 있어서, 불태워졌다는 이야기도 근거가 없어요.",
+    "reveal_query": "wood block print carving",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://encykorea.aks.ac.kr/Article/E0010423",
+      "https://encykorea.aks.ac.kr/Article/E0014266"
+    ],
+    "verify_note": "확인됨",
+    "caption": "대동여지도를 만든 김정호가 감옥에서 죽었다는 이야기, 근거가 없다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1861년 김정호는 앞서 만든 <청구도>와 <동여도>를 보완해 <대동여지도>를 목판본으로 편찬했어요. 22첩의 절첩분첩식 전국 지도첩이에요.\n\n김정호가 옥에서 죽었다는 '옥사설'이 공식적으로 처음 등장한 건 1939년 일제가 발행한 <조선어독본>이에요. 연구자가 『고종실록』, 『승정원일기』, 『추안급국안』 등을 검토했지만 그런 흔적은 찾을 수 없었다고 해요.\n\n흥선대원군이 지도의 목판을 불태웠다는 이야기도 근거가 없어요. 판목이 숭실대학교 박물관에 1매, 국립중앙박물관에 11매 남아 있거든요. 또 김정호가 백두산을 7번 올랐다는 이야기를 믿는 연구자도 거의 없어요.",
+    "source": "출처: 한국민족문화대백과사전",
+    "hashtags": "#김정호 #대동여지도 #조선시대 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "옥사설의 출처",
+        "body": "김정호가 옥에서 죽었다는 이야기는 1939년 일제가 발행한 <조선어독본>에서 처음 나왔고, 실록 등에서는 그 흔적을 찾을 수 없어요."
+      },
+      {
+        "title": "목판은 남아 있어요",
+        "body": "대동여지도 목판은 숭실대 박물관에 1매, 국립중앙박물관에 11매 남아 있어서 불태워졌다는 이야기도 근거가 없어요."
+      }
+    ],
+    "hook_img": 2168170,
+    "reveal_img": 2909613
+  },
+  {
+    "slug": "stephen-hawking",
+    "who": "스티븐 호킹",
+    "hook": "호킹은 **시한부 2년**이었다?",
+    "hook_say": "스티븐 호킹이 스물한 살에 시한부 이 년을 선고받았다는 거 알고 계셨나요?",
+    "hook_query": "stephen hawking",
+    "beats": [
+      {
+        "text": "21세에 **루게릭병** 진단",
+        "say": "천구백육십삼 년, 스물한 살의 호킹은 루게릭병 진단을 받았어요.",
+        "query": "hospital medical",
+        "img": 1704855
+      },
+      {
+        "text": "의사가 말한 **2년**",
+        "say": "의사들은 그에게 남은 시간이 이 년쯤이라고 했어요.",
+        "query": "hourglass sand time",
+        "img": 1489042
+      }
+    ],
+    "reveal": "그 뒤 **55년**을 더 살았어요",
+    "reveal_say": "하지만 호킹은 그 뒤로도 오십오 년을 더 살았고, 이천십팔 년 일흔여섯 살에 세상을 떠났어요.",
+    "reveal_query": "universe galaxy stars",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.hcplive.com/view/stephen-hawking-dead",
+      "https://www.scientificamerican.com/article/stephen-hawking-als/",
+      "https://time.com/5199001/stephen-hawking-als/"
+    ],
+    "verify_note": "확인됨(진단 시기·수명은 복수 출처 일치)",
+    "caption": "스티븐 호킹이 21살에 시한부 2년을 선고받았다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n호킹은 1963년 21세에 루게릭병(ALS) 진단을 받았고, 처음에는 2년 정도밖에 살지 못할 것이라는 말을 들었어요. 하지만 그는 그로부터 55년을 더 살았고, 2018년 3월 14일 76세로 세상을 떠났어요.\n\n일반적으로 루게릭병 환자의 기대 수명은 약 3년이고, 진단 후 10년 넘게 사는 사람은 약 10%, 20년 이상 사는 사람은 그 절반 정도에 불과해요. 50년 넘게 병과 함께한 호킹은 매우 드문 사례로 꼽혀요.",
+    "source": "출처: HCPLive, Scientific American, TIME",
+    "hashtags": "#스티븐호킹 #과학 #물리학 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "21세의 진단",
+        "body": "호킹은 1963년 21세에 루게릭병 진단을 받았고, 의사들은 2년쯤 살 것이라고 했어요."
+      },
+      {
+        "title": "그 뒤 55년",
+        "body": "그는 55년을 더 살아 2018년 3월 14일 76세로 세상을 떠났어요. 진단 후 20년 넘게 사는 환자는 아주 드물어요."
+      }
+    ],
+    "hook_img": 5480855,
+    "reveal_img": 9768540
+  },
+  {
+    "slug": "nightingale-statistician",
+    "who": "나이팅게일",
+    "hook": "나이팅게일은 **통계학자**였다?",
+    "hook_say": "나이팅게일이 통계학자이기도 했다는 거 알고 계셨나요?",
+    "hook_query": "florence italy statue",
+    "beats": [
+      {
+        "text": "크림 전쟁 **사망 원인** 분석",
+        "say": "크림 전쟁 때 그녀는 영국 군대의 사망 원인 자료를 모아 분석했어요.",
+        "query": "old hospital ward vintage",
+        "img": 378903
+      },
+      {
+        "text": "**장미 그래프**로 시각화",
+        "say": "그리고 그 결과를 장미 모양의 그래프로 그려 사람들을 설득했어요.",
+        "query": "rose flower petals",
+        "img": 419079
+      }
+    ],
+    "reveal": "1858년 **첫 여성 회원**",
+    "reveal_say": "천팔백오십팔 년에는 통계학회의 첫 여성 회원으로 뽑혔어요.",
+    "reveal_query": "graph chart data",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.sciencemuseum.org.uk/objects-and-stories/florence-nightingale-pioneer-statistician",
+      "https://exhibits.lib.lehigh.edu/exhibits/show/data_visualization/science/nightingale"
+    ],
+    "verify_note": "확인됨",
+    "caption": "나이팅게일이 간호사이자 통계학자였다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n크림 전쟁(1853~1856) 동안 나이팅게일은 영국 군대의 사망률 자료를 방대하게 모았고, 그 결과를 '극좌표 도표(장미 도표)'라는 그래프로 시각화했어요. 흥미로운 그래프로 실태를 보여 주고, 사람들이 운영 방식을 바꾸도록 설득하려 했어요.\n\n1858년에는 통계학회의 첫 여성 회원으로 선출됐고, 미국통계학회의 명예회원이 되기도 했어요. 그녀의 방법은 지금도 보건 분야와 인구조사에서 널리 쓰이고 있어요.",
+    "source": "출처: Science Museum, Lehigh University",
+    "hashtags": "#나이팅게일 #통계 #간호 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "크림 전쟁의 자료",
+        "body": "나이팅게일은 크림 전쟁 동안 영국 군대의 사망 원인 자료를 모아, 장미 모양의 그래프로 시각화했어요."
+      },
+      {
+        "title": "첫 여성 회원",
+        "body": "1858년 통계학회의 첫 여성 회원으로 뽑혔고, 그녀의 방법은 지금도 보건 분야에서 쓰여요."
+      }
+    ],
+    "hook_img": 7131604,
+    "reveal_img": 921034
+  },
+  {
+    "slug": "darwin-beagle",
+    "who": "찰스 다윈",
+    "hook": "다윈은 **의학을 그만두고**\n배에 올랐다?",
+    "hook_say": "찰스 다윈이 의학 공부를 그만두고 배에 올랐다는 거 알고 계셨나요?",
+    "hook_query": "charles darwin",
+    "beats": [
+      {
+        "text": "수술을 **못 견뎌** 의대 떠남",
+        "say": "다윈은 에든버러 의대에서 수술을 견디기 힘들어해 결국 의학을 그만뒀어요.",
+        "query": "old medical school vintage",
+        "img": 5058673
+      },
+      {
+        "text": "22세, **비글호** 출항",
+        "say": "이후 천팔백삼십일 년, 스물두 살의 다윈은 비글호를 타고 영국을 떠났어요.",
+        "query": "old sailing ship sea",
+        "img": 487503
+      }
+    ],
+    "reveal": "5년 항해가 **진화론**의 토대",
+    "reveal_say": "오 년에 걸친 이 항해에서 만난 동식물이 훗날 진화론의 토대가 됐어요.",
+    "reveal_query": "galapagos tortoise island",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.britannica.com/biography/Charles-Darwin/The-Beagle-voyage",
+      "https://www.nationalgeographic.com/history/history-magazine/article/darwin-voyage-beagle-first-only-trip-around-world-scientific-revolution",
+      "https://www.darwinproject.ac.uk/commentary/voyage-hms-beagle"
+    ],
+    "verify_note": "확인됨",
+    "caption": "다윈이 의학 공부를 그만두고 비글호에 올랐다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n다윈은 의사인 아버지의 뜻에 따라 1825년 에든버러 의대에 들어갔지만, 수술을 견디기 힘들어해 1827년 케임브리지 대학 크라이스트 칼리지로 옮겼어요. 그곳에서 신학 학위를 받았어요.\n\n1831년 12월 27일, 스물두 살의 다윈은 영국 플리머스를 떠나 HMS 비글호에 올랐어요. 아버지는 처음에 이 항해가 현명한 진로 선택이 아니라며 반대했다고 해요. 1831년부터 1836년까지 이어진 5년의 항해에서 만난 동식물이 훗날 진화론의 토대가 됐어요.",
+    "source": "출처: Britannica, National Geographic, Darwin Correspondence Project",
+    "hashtags": "#찰스다윈 #진화론 #과학 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "의학을 그만두다",
+        "body": "다윈은 1825년 에든버러 의대에 들어갔지만 수술을 견디기 힘들어해 1827년 케임브리지로 옮겼어요."
+      },
+      {
+        "title": "22세의 항해",
+        "body": "1831년 12월 27일 스물두 살의 다윈은 비글호에 올랐고, 5년의 항해가 훗날 진화론의 토대가 됐어요."
+      }
+    ],
+    "hook_img": 62911,
+    "reveal_img": 6666086
+  },
+  {
+    "slug": "pasteur-first-vaccine",
+    "who": "루이 파스퇴르",
+    "hook": "첫 광견병 백신 환자는\n**9살 소년**이었다?",
+    "hook_say": "세계 최초로 광견병 백신을 맞은 사람이 아홉 살 소년이었다는 거 알고 계셨나요?",
+    "hook_query": "microscope laboratory vintage",
+    "beats": [
+      {
+        "text": "개에게 **14번** 물린 소년",
+        "say": "천팔백팔십오 년 알자스의 소년 조제프 마이스터는 미친개에게 열네 번 물렸어요.",
+        "query": "dog vintage",
+        "img": 1840071
+      },
+      {
+        "text": "**13번**의 주사",
+        "say": "파스퇴르는 점점 강해지는 백신을 열세 번에 걸쳐 놓았어요.",
+        "query": "syringe vaccine",
+        "img": 6164129
+      }
+    ],
+    "reveal": "소년은 **살아남았어요**",
+    "reveal_say": "소년은 광견병에 걸리지 않았고, 새로운 백신의 시대가 열렸어요.",
+    "reveal_query": "child boy vintage portrait",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.pasteur.fr/en/research-journal/news/history-first-rabies-vaccination-1885",
+      "https://www.pnas.org/doi/10.1073/pnas.1414226111",
+      "https://www.ebsco.com/research-starters/history/first-use-pasteurs-antirabies-vaccine"
+    ],
+    "verify_note": "확인됨",
+    "caption": "세계 최초로 광견병 백신을 맞은 사람이 9살 소년이었다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1885년 7월, 알자스에 살던 9살 소년 조제프 마이스터가 미친개에게 14번 물렸어요. 의사 그랑셰의 설득으로 루이 파스퇴르는 이 아이에게 아직 시험 중이던 백신을 써 보기로 했어요.\n\n1885년 7월 6일 첫 접종이 이뤄졌고, 광견병에 걸린 토끼의 척수에서 얻은 약화된 바이러스로 만든 백신을 점점 강한 농도로 13번 주사했어요. 소년은 광견병에 걸리지 않았고, 8월 25일 알자스의 집으로 돌아갔어요.\n\n이 성공을 바탕으로 백신은 1886년 3월 프랑스 과학아카데미에 발표됐고, 1888년 파스퇴르 연구소가 세워졌어요.",
+    "source": "출처: 파스퇴르 연구소, PNAS, EBSCO Research Starters",
+    "hashtags": "#파스퇴르 #백신 #과학 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "개에게 14번 물린 소년",
+        "body": "1885년 7월 알자스의 9살 소년 조제프 마이스터는 미친개에게 14번 물렸고, 파스퇴르가 백신을 써 보기로 했어요."
+      },
+      {
+        "title": "13번의 주사",
+        "body": "점점 강해지는 백신을 13번 주사했고, 소년은 광견병에 걸리지 않았어요. 새로운 백신의 시대가 열렸어요."
+      }
+    ],
+    "hook_img": 2182647,
+    "reveal_img": 2737064
+  },
+  {
+    "slug": "mendel-pea-plants",
+    "who": "멘델",
+    "hook": "멘델은 죽은 뒤에 **유명해졌다?**",
+    "hook_say": "유전학의 아버지 멘델이 세상을 떠난 뒤에야 유명해졌다는 거 알고 계셨나요?",
+    "hook_query": "pea plants garden",
+    "beats": [
+      {
+        "text": "수도사가 키운 **완두콩**",
+        "say": "멘델은 수도원에서 완두콩을 이만 그루 넘게 키우며 유전의 법칙을 연구했어요.",
+        "query": "monastery garden",
+        "img": 2311526
+      },
+      {
+        "text": "1866년 **논문**은 외면",
+        "say": "천팔백육십육 년에 그 결과를 발표했지만, 당시에는 거의 주목받지 못했어요.",
+        "query": "old scientific paper manuscript",
+        "img": 6477385
+      }
+    ],
+    "reveal": "**1900년**에 재발견",
+    "reveal_say": "멘델이 떠난 지 십육 년 뒤인 천구백 년에야, 그의 연구가 다시 발견됐어요.",
+    "reveal_query": "dna helix science",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.newworldencyclopedia.org/entry/Gregor_Mendel",
+      "https://www.nationalgeographic.com/science/article/gregor-mendel-genetics",
+      "https://www.biography.com/scientists/gregor-mendel"
+    ],
+    "verify_note": "확인됨",
+    "caption": "멘델이 세상을 떠난 뒤에야 유명해졌다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n오스트리아의 수도사 그레고어 멘델은 수도원 담장 안에서 2만 그루가 넘는 완두콩을 기르고 관찰하며 유전의 법칙을 알아냈어요. 그 결과는 1866년에 발표됐지만 당시에는 거의 알려지지 않았어요.\n\n멘델은 1884년 1월 6일 브르노에서 만성 신장염으로 세상을 떠났어요. 그리고 1900년, 후고 더프리스, 카를 코렌스, 에리히 체르마크 세 학자가 각자 비슷한 실험을 하다가 멘델의 논문을 발견하면서, 그의 연구는 비로소 인정받기 시작했어요.",
+    "source": "출처: New World Encyclopedia, National Geographic, Biography.com",
+    "hashtags": "#멘델 #유전학 #과학 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "수도사의 완두콩",
+        "body": "멘델은 수도원에서 완두콩 2만 그루 넘게 키우며 유전의 법칙을 알아냈고, 1866년 결과를 발표했지만 주목받지 못했어요."
+      },
+      {
+        "title": "죽은 뒤의 재발견",
+        "body": "멘델은 1884년 세상을 떠났고, 1900년 세 명의 학자가 그의 연구를 다시 찾아내며 인정받기 시작했어요."
+      }
+    ],
+    "hook_img": 382297,
+    "reveal_img": 6527967
+  },
+  {
+    "slug": "edison-1093-patents",
+    "who": "토머스 에디슨",
+    "hook": "에디슨의 특허는\n**1,093개**였다?",
+    "hook_say": "에디슨이 미국에서만 천구십삼 개의 특허를 냈다는 거 알고 계셨나요?",
+    "hook_query": "thomas edison",
+    "beats": [
+      {
+        "text": "21세에 낸 **첫 특허**",
+        "say": "스물한 살이던 천팔백육십팔 년에 첫 특허를 출원했어요.",
+        "query": "vintage light bulb",
+        "img": 4535320
+      },
+      {
+        "text": "미국 특허 **1,093개**",
+        "say": "평생 미국에서 받은 특허가 천구십삼 개로, 이 기록은 팔십이 년 동안 깨지지 않았어요.",
+        "query": "patent document vintage",
+        "img": 1917110
+      }
+    ],
+    "reveal": "해외까지 합치면 **2,332개**",
+    "reveal_say": "해외 특허 천이백삼십구 개를 더하면 모두 이천삼백삼십이 개예요.",
+    "reveal_query": "old inventor workshop laboratory",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://edison.rutgers.edu/research/edison-s-patents",
+      "https://www.britannica.com/biography/Thomas-Edison",
+      "https://en.wikipedia.org/wiki/List_of_Edison_patents"
+    ],
+    "verify_note": "확인됨",
+    "caption": "에디슨이 미국에서만 1,093개의 특허를 냈다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n에디슨은 1868년 10월 13일, 21세의 나이에 첫 특허를 출원했어요. 이후 그는 평생 미국에서 1,093개의 특허를 받았고, 이 기록은 82년 동안 깨지지 않았어요.\n\n해외에서 받은 1,239개를 더하면 전 세계 특허는 모두 2,332개예요. 그의 특허는 전신, 주식 시세 표시기, 축전지, 축음기, 영화, 백열전구 개량 등 전기·통신·음향·영상·광업 등 여러 분야에 걸쳐 있어요.",
+    "source": "출처: Rutgers Edison Papers, Britannica, Wikipedia(List of Edison patents)",
+    "hashtags": "#에디슨 #발명 #특허 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "21세의 첫 특허",
+        "body": "에디슨은 1868년 10월 13일 스물한 살에 첫 특허를 출원했어요."
+      },
+      {
+        "title": "특허 1,093개",
+        "body": "평생 미국에서 받은 특허는 1,093개로, 이 기록은 82년간 깨지지 않았어요. 해외 특허 1,239개를 더하면 모두 2,332개예요."
+      }
+    ],
+    "hook_img": 67763,
+    "reveal_img": 7788653
+  },
+  {
+    "slug": "franklin-no-patents",
+    "who": "벤저민 프랭클린",
+    "hook": "프랭클린은 발명품에\n**특허를 안 냈다?**",
+    "hook_say": "벤저민 프랭클린이 자신의 발명품에 특허를 내지 않았다는 거 알고 계셨나요?",
+    "hook_query": "benjamin franklin",
+    "beats": [
+      {
+        "text": "**이중초점** 안경도 발명",
+        "say": "그는 렌즈를 반씩 잘라 붙여서 이중초점 안경을 만들었어요.",
+        "query": "eyeglasses vintage",
+        "img": 1283235
+      },
+      {
+        "text": "**피뢰침**도 그의 작품",
+        "say": "번개를 피하는 피뢰침도 그가 고안한 것으로 알려져 있어요.",
+        "query": "lightning storm",
+        "img": 4702140
+      }
+    ],
+    "reveal": "모두와 **나누려고**",
+    "reveal_say": "하지만 그는 발명을 모두와 나누려고, 어떤 것에도 특허를 내지 않았어요.",
+    "reveal_query": "open hands sharing",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.loc.gov/exhibits/franklin/franklin-scientist.html",
+      "https://fi.edu/en/science-and-education/benjamin-franklin/inventions",
+      "https://www.history.com/this-day-in-history/may-23/benjamin-franklin-invents-bifocal-glasses"
+    ],
+    "verify_note": "확인됨",
+    "caption": "벤저민 프랭클린이 자신의 발명품에 특허를 내지 않았다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n프랭클린은 안경 가게 주인에게 먼 곳을 보는 렌즈와 가까운 곳을 보는 렌즈를 반씩 잘라 위아래로 붙이게 했고, 이를 '이중 안경(double spectacles)', 오늘날의 이중초점 안경이라 불렀어요. 1785년 5월 23일 그는 이 안경의 설계를 알렸어요.\n\n1752년에는 연에 열쇠를 달아 번개가 전기라는 것을 보여 준 유명한 실험을 했고, 피뢰침의 발명자로도 알려져 있어요.\n\n그러나 프랭클린은 자신의 발명에 한 번도 특허를 내지 않았어요. 발명을 이익보다 사회와 나누는 데 쓰고 싶어 했기 때문이에요.",
+    "source": "출처: Library of Congress, Franklin Institute, HISTORY",
+    "hashtags": "#벤저민프랭클린 #발명 #미국 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "이중초점 안경",
+        "body": "프랭클린은 먼 곳용과 가까운 곳용 렌즈를 반씩 잘라 붙인 이중초점 안경을 고안했어요."
+      },
+      {
+        "title": "특허는 없어요",
+        "body": "그는 이중초점 안경과 피뢰침 등 어떤 발명에도 특허를 내지 않고, 발명을 모두와 나누려 했어요."
+      }
+    ],
+    "hook_img": 95790,
+    "reveal_img": 7489574
+  },
+  {
+    "slug": "kennedy-pulitzer",
+    "who": "존 F. 케네디",
+    "hook": "케네디는 **퓰리처상**을 받았다?",
+    "hook_say": "케네디 대통령이 퓰리처상을 받았다는 거 알고 계셨나요?",
+    "hook_query": "john f kennedy",
+    "beats": [
+      {
+        "text": "책 '**용기 있는 사람들**'",
+        "say": "그는 소신을 지킨 미국 상원의원 여덟 명의 이야기를 책으로 썼어요.",
+        "query": "capitol building washington",
+        "img": 2212102
+      },
+      {
+        "text": "수술 뒤 **회복 중** 집필",
+        "say": "이 책은 수술에서 회복하던 시기에 구상을 넓혀 완성한 것이에요.",
+        "query": "old typewriter writing",
+        "img": 210640
+      }
+    ],
+    "reveal": "1957년 **전기 부문 수상**",
+    "reveal_say": "이 책으로 천구백오십칠 년 퓰리처상 전기 부문을 받았어요.",
+    "reveal_query": "books library shelf",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.pulitzer.org/winners/john-f-kennedy",
+      "https://www.jfklibrary.org/events-and-awards/profile-in-courage-award/about-the-book",
+      "https://www.ebsco.com/research-starters/history/profiles-courage"
+    ],
+    "verify_note": "확인됨",
+    "caption": "케네디 대통령이 퓰리처상을 받았다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n케네디는 1956년 1월 『용기 있는 사람들(Profiles in Courage)』을 출간했어요. 책은 인기 없는 입장을 지켜 자신의 경력을 위험에 빠뜨린 미국 상원의원 여덟 명의 이야기를 다뤄요. 로버트 태프트, 존 퀸시 애덤스, 토머스 하트 벤턴, 대니얼 웹스터, 샘 휴스턴, 조지 노리스, 에드먼드 로스, 루셔스 라마가 등장해요.\n\n케네디는 수술 후 회복하던 중 원래 잡지 기사로 쓰려던 구상을 책으로 넓혔어요. 이 책은 1957년 5월 6일 퓰리처상 전기 부문을 받았고, 그를 진지한 정치인으로 각인시키며 1958년 재선과 1960년 대선에도 도움이 됐어요.",
+    "source": "출처: JFK Library, The Pulitzer Prizes, EBSCO Research Starters",
+    "hashtags": "#케네디 #미국 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "'용기 있는 사람들'",
+        "body": "케네디는 소신을 지킨 미국 상원의원 여덟 명의 이야기를 책으로 썼어요. 수술 뒤 회복하던 시기에 구상을 넓힌 책이에요."
+      },
+      {
+        "title": "퓰리처상 수상",
+        "body": "이 책으로 1957년 5월 6일 퓰리처상 전기 부문을 받았고, 그는 진지한 정치인으로 각인됐어요."
+      }
+    ],
+    "hook_img": 63160,
+    "reveal_img": 1867381
+  },
+  {
+    "slug": "mlk-improvised-dream",
+    "who": "마틴 루터 킹",
+    "hook": "'I have a dream'은\n**즉흥**이었다?",
+    "hook_say": "마틴 루터 킹의 그 유명한 꿈 연설이 즉흥이었다는 거 알고 계셨나요?",
+    "hook_query": "martin luther king memorial",
+    "beats": [
+      {
+        "text": "1963년 **워싱턴 행진**",
+        "say": "천구백육십삼 년 팔 월 이십팔 일, 킹은 워싱턴 행진에서 연설을 했어요.",
+        "query": "lincoln memorial washington",
+        "img": 1791337
+      },
+      {
+        "text": "**원고에 없던** 부분",
+        "say": "그런데 꿈이라는 유명한 구절은 준비한 원고에 없던 내용이었어요.",
+        "query": "paper manuscript speech",
+        "img": 893537
+      }
+    ],
+    "reveal": "가수의 **한마디**가 계기",
+    "reveal_say": "가수 마할리아 잭슨이 꿈을 이야기하라고 외치자, 킹은 즉흥으로 연설을 이어 갔어요.",
+    "reveal_query": "microphone stage speech",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.history.com/this-day-in-history/august-28/mahalia-jackson-the-queen-of-gospel-puts-her-stamp-on-the-march-on-washington",
+      "https://en.wikipedia.org/wiki/I_Have_a_Dream"
+    ],
+    "verify_note": "확인됨",
+    "caption": "\"I have a dream\"이 즉흥이었다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1963년 8월 28일 워싱턴 행진에서 킹이 연설하던 중, 뒤에 앉아 있던 가스펠 가수 마할리아 잭슨이 \"꿈에 대해 이야기해요, 마틴!\"이라고 외쳤어요.\n\n'I have a dream'이라는 유명한 후렴은 킹이 준비한 원고에는 없던 부분이었어요. 그는 원고를 내려놓고, 이전 설교에서 써 본 적이 있는 구절을 바탕으로 즉흥적으로 연설을 이어 갔어요. 이 부분 덕분에 평범할 수도 있었던 연설이 역사상 가장 유명한 연설 중 하나가 됐어요.",
+    "source": "출처: HISTORY, Wikipedia(I Have a Dream)",
+    "hashtags": "#마틴루터킹 #연설 #미국 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "원고에 없던 꿈",
+        "body": "1963년 8월 28일 워싱턴 행진 연설에서 \"I have a dream\" 후렴은 준비한 원고에 없던 부분이었어요."
+      },
+      {
+        "title": "가수의 한마디",
+        "body": "가수 마할리아 잭슨이 \"꿈에 대해 이야기해요, 마틴!\"이라고 외치자, 킹은 원고를 내려놓고 즉흥으로 이어 갔어요."
+      }
+    ],
+    "hook_img": 623955,
+    "reveal_img": 7974197
+  },
+  {
+    "slug": "mandela-466-64",
+    "who": "넬슨 만델라",
+    "hook": "만델라는 **27년**을\n감옥에서 보냈다?",
+    "hook_say": "만델라가 이십칠 년 넘게 감옥에 있었다는 거 알고 계셨나요?",
+    "hook_query": "nelson mandela statue",
+    "beats": [
+      {
+        "text": "**1964년** 로벤섬 수감",
+        "say": "천구백육십사 년, 만델라는 남아공 로벤섬 감옥에 수감됐어요.",
+        "query": "robben island cape town",
+        "img": 7087126
+      },
+      {
+        "text": "그해 **466번째** 수감자",
+        "say": "그는 그해 사백육십육 번째로 들어온 수감자여서, 번호에 그 숫자가 들어갔어요.",
+        "query": "prison cell bars",
+        "img": 598851
+      }
+    ],
+    "reveal": "번호는 **상징**이 됐어요",
+    "reveal_say": "그 번호는 훗날 그를 상징하는 이름이 됐어요.",
+    "reveal_query": "south africa flag",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://en.wikipedia.org/wiki/46664",
+      "https://www.nelsonmandela.org/trials-and-prison-chronology",
+      "https://www.aljazeera.com/news/2013/12/6/how-mandela-prison-number-became-a-brand"
+    ],
+    "verify_note": "확인됨",
+    "caption": "만델라가 27년 넘게 감옥에 있었다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n만델라는 27년이 넘는 세월을 감옥에서 보냈어요. 1964년부터 1982년까지는 케이프타운 앞바다의 로벤섬 교도소에 수감됐어요.\n\n그는 1964년에 466번째로 들어온 수감자여서 수감번호가 '466/64'였어요. 이 번호는 1982년 폴스무어 교도소로 옮겨지며 '220/82'로 바뀔 때까지 쓰였어요. 훗날 이 번호는 브랜드처럼 그의 이름과 함께 기억되게 됐어요.",
+    "source": "출처: Nelson Mandela Foundation, Britannica, Al Jazeera",
+    "hashtags": "#만델라 #남아공 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "로벤섬의 수감자",
+        "body": "만델라는 27년이 넘게 감옥에 있었고, 1964년부터 1982년까지는 로벤섬 교도소에 수감됐어요."
+      },
+      {
+        "title": "수감번호 466/64",
+        "body": "1964년 466번째로 들어온 수감자여서 번호가 466/64였고, 이 번호는 훗날 그의 상징이 됐어요."
+      }
+    ],
+    "hook_img": 997558,
+    "reveal_img": 2470354
+  },
+  {
+    "slug": "helen-keller-radcliffe",
+    "who": "헬렌 켈러",
+    "hook": "헬렌 켈러는 **대학을 우등**으로\n졸업했다?",
+    "hook_say": "헬렌 켈러가 대학을 우등으로 졸업했다는 거 알고 계셨나요?",
+    "hook_query": "braille book hands",
+    "beats": [
+      {
+        "text": "생후 **19개월**에 시청각 상실",
+        "say": "그녀는 생후 십구 개월에 병을 앓아 보지도 듣지도 못하게 됐어요.",
+        "query": "child hands touching",
+        "img": 9950817
+      },
+      {
+        "text": "**설리번**이 손에 강의를",
+        "say": "대학에서는 스승 앤 설리번이 강의 내용을 그녀의 손바닥에 글자로 전했어요.",
+        "query": "university library old",
+        "img": 3528885
+      }
+    ],
+    "reveal": "1904년 **우등 졸업**",
+    "reveal_say": "천구백사 년, 그녀는 시청각 중복장애인으로는 처음으로 학사 학위를 받았어요.",
+    "reveal_query": "graduation cap diploma",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.history.com/this-day-in-history/june-28/helen-keller-graduates-radcliffe-first-deafblind-college-grad",
+      "https://afb.org/about-afb/history/online-museums/helen-keller-museum/education",
+      "https://www.perkins.org/helen-keller-faq/"
+    ],
+    "verify_note": "확인됨",
+    "caption": "헬렌 켈러가 대학을 우등으로 졸업했다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n헬렌 켈러는 생후 19개월에 앓은 병으로 시력과 청력을 모두 잃었어요. 1898년 케임브리지 여학교에서 대학 입학을 준비했고, 1900년 가을 래드클리프 대학에 입학했어요.\n\n대학에서는 스승 앤 설리번이 강의 내용을 헬렌의 손바닥에 글자로 옮겨 전했어요. 그리고 1904년, 헬렌은 우등(cum laude)으로 문학사 학위를 받아, 시각·청각 중복장애인 가운데 최초로 학사 학위를 받은 사람이 됐어요.",
+    "source": "출처: HISTORY, American Foundation for the Blind, Perkins School for the Blind",
+    "hashtags": "#헬렌켈러 #교육 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "손바닥으로 듣는 강의",
+        "body": "생후 19개월에 시청각을 잃은 헬렌은 1900년 래드클리프 대학에 입학했고, 앤 설리번이 강의를 손바닥에 전했어요."
+      },
+      {
+        "title": "1904년의 졸업",
+        "body": "1904년 헬렌은 우등으로 학사 학위를 받아, 시각·청각 중복장애인 최초의 학사가 됐어요."
+      }
+    ],
+    "hook_img": 3964050,
+    "reveal_img": 6553467
+  },
+  {
+    "slug": "vangogh-letters",
+    "who": "빈센트 반 고흐",
+    "hook": "반 고흐가 쓴 편지는\n**800통이 넘는다?**",
+    "hook_say": "반 고흐가 쓴 편지가 팔백 통이 넘는다는 거 알고 계셨나요?",
+    "hook_query": "van gogh statue bust",
+    "beats": [
+      {
+        "text": "동생 **테오**에게 650통",
+        "say": "그중 육백오십 통 넘게는 사랑하는 동생에게 보냈어요.",
+        "query": "old letters envelope vintage",
+        "img": 1390586
+      },
+      {
+        "text": "전해지는 편지 **903통**",
+        "say": "지금까지 전해지는 편지는 구백삼 통이고, 그가 쓴 것이 팔백이십 통이에요.",
+        "query": "antique manuscript ink",
+        "img": 2311526
+      }
+    ],
+    "reveal": "편지로 **삶**을 읽어요",
+    "reveal_say": "이 편지들 덕분에 그의 생각과 삶을 지금도 읽을 수 있어요.",
+    "reveal_query": "sunflowers field painting",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.vangoghmuseum.nl/en/art-and-stories/stories/all-stories/van-goghs-letters",
+      "https://en.wikipedia.org/wiki/The_Letters_of_Vincent_van_Gogh",
+      "https://vangoghletters.org/"
+    ],
+    "verify_note": "확인됨",
+    "caption": "반 고흐가 쓴 편지가 800통이 넘는다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n『반 고흐의 편지』에는 지금까지 전해지는 편지 903통이 실려 있어요. 이 중 820통은 빈센트가 쓴 것이고, 83통은 그가 받은 편지예요. 빈센트가 쓴 편지 가운데 650통 넘는 편지는 동생 테오에게 보낸 것이에요.\n\n빈센트는 편지를 꼼꼼히 보관하지 않아서 많은 편지를 버리거나 태웠다고 해요. 그래서 지금 남아 있는 편지는 그가 쓴 것의 일부일 뿐이지만, 그의 생각과 삶을 지금도 읽을 수 있는 중요한 기록이에요.",
+    "source": "출처: Van Gogh Museum, vangoghletters.org, Wikipedia",
+    "hashtags": "#반고흐 #미술 #예술 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "동생에게 보낸 650통",
+        "body": "지금 전해지는 편지는 903통이고, 그중 820통이 빈센트가 쓴 것이에요. 650통 넘게 동생 테오에게 보냈어요."
+      },
+      {
+        "title": "남은 것은 일부",
+        "body": "빈센트는 많은 편지를 버리거나 태웠지만, 남은 편지로 그의 생각과 삶을 지금도 읽을 수 있어요."
+      }
+    ],
+    "hook_img": 5472640,
+    "reveal_img": 8111329
+  },
+  {
+    "slug": "marie-antoinette-cake",
+    "who": "마리 앙투아네트",
+    "hook": "'케이크를 먹으라'는 말은\n**앙투아네트가 안 했다?**",
+    "hook_say": "빵이 없으면 케이크를 먹으라는 말을 앙투아네트가 하지 않았다는 거 알고 계셨나요?",
+    "hook_query": "versailles palace paris",
+    "beats": [
+      {
+        "text": "**1760년대** 루소의 글에 등장",
+        "say": "이 말은 천칠백육십 년대에 루소가 쓴 고백록에 이미 나와요.",
+        "query": "old french book manuscript",
+        "img": 10102767
+      },
+      {
+        "text": "그때 앙투아네트는 **9살**",
+        "say": "그때 앙투아네트는 아홉 살이었고, 프랑스에 오지도 않은 때였어요.",
+        "query": "vienna austria castle",
+        "img": 740920
+      }
+    ],
+    "reveal": "죽은 뒤에야 **그녀의 말**로",
+    "reveal_say": "이 말은 그녀가 세상을 떠나고 수십 년이 지나서야 그녀의 말로 알려졌어요.",
+    "reveal_query": "cake pastry french",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.britannica.com/story/did-marie-antoinette-really-say-let-them-eat-cake",
+      "https://www.history.com/articles/did-marie-antoinette-really-say-let-them-eat-cake",
+      "https://en.wikipedia.org/wiki/Let_them_eat_cake"
+    ],
+    "verify_note": "확인됨",
+    "caption": "마리 앙투아네트가 \"빵이 없으면 케이크를 먹으라\"고 하지 않았다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n이 말이 처음 등장한 건 장 자크 루소의 『고백록』이에요. 루소가 1760년대에 쓰기 시작한 이 책에서, 이름을 밝히지 않은 '위대한 공주'가 농민들에게 빵이 없다는 말을 듣고 브리오슈를 먹으면 되지 않느냐고 말했다고 해요.\n\n당시 마리 앙투아네트는 아홉 살로 오스트리아에 살고 있었고, 프랑스에 오지도 않은 때였어요. 게다가 『고백록』은 루소가 세상을 떠난 뒤인 1782년에 출간됐어요. 이 말이 앙투아네트의 말로 알려진 것은 그녀가 세상을 떠나고 수십 년이 지난 뒤예요.\n\n실제 왕족이 이 말을 했다는 증거는 거의 없어요.",
+    "source": "출처: Britannica, HISTORY, Wikipedia(Let them eat cake)",
+    "hashtags": "#마리앙투아네트 #프랑스 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "루소의 글에 먼저",
+        "body": "이 말은 루소가 1760년대에 쓰기 시작한 『고백록』에 이미 등장하고, 이름은 밝히지 않은 '위대한 공주'의 말이었어요."
+      },
+      {
+        "title": "그녀의 말이 된 이유",
+        "body": "그때 앙투아네트는 아홉 살이었고, 이 말이 그녀의 말로 알려진 건 세상을 떠나고 수십 년 뒤였어요."
+      }
+    ],
+    "hook_img": 4838031,
+    "reveal_img": 5900100
+  },
+  {
+    "slug": "socrates-no-writings",
+    "who": "소크라테스",
+    "hook": "소크라테스는 **글을 한 줄도**\n남기지 않았다?",
+    "hook_say": "소크라테스가 직접 쓴 글이 하나도 없다는 거 알고 계셨나요?",
+    "hook_query": "ancient greece athens acropolis",
+    "beats": [
+      {
+        "text": "우리가 아는 건 **제자의 기록**",
+        "say": "그의 모습은 제자 플라톤과 크세노폰의 글을 통해 전해져요.",
+        "query": "ancient greek ruins columns",
+        "img": 5977410
+      },
+      {
+        "text": "희극에도 **등장**",
+        "say": "아리스토파네스의 희극 구름에도 소크라테스가 등장해요.",
+        "query": "ancient theater greece",
+        "img": 4759420
+      }
+    ],
+    "reveal": "기원전 **399년** 독배",
+    "reveal_say": "그는 기원전 삼백구십구 년 재판에서 사형을 선고받아 독배를 마셨어요.",
+    "reveal_query": "greek statue philosopher",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.britannica.com/biography/Socrates",
+      "https://www.ancientworldmagazine.com/articles/trial-socrates/",
+      "https://www.history.com/articles/socrates-trial-death-hemlock"
+    ],
+    "verify_note": "확인됨(사진은 상징 이미지로 대체 필요)",
+    "caption": "소크라테스가 직접 쓴 글이 하나도 없다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n소크라테스는 스스로는 아무것도 쓰지 않았어요. 그의 삶과 생각은 제자 플라톤과 크세노폰의 대화편, 그리고 아리스토파네스의 희극 등 소수의 기록을 통해 전해져요. 기원전 423년 희극 『구름』에도 그가 등장해요.\n\n기원전 399년, 소크라테스는 도시가 인정하는 신들을 인정하지 않고 젊은이들을 타락시켰다는 두 가지 죄목으로 재판을 받고 독배를 마시는 사형을 선고받았어요. 이 재판의 모습은 플라톤의 『소크라테스의 변명』과 크세노폰의 『변명』, 『회상록』에 남아 있어요.",
+    "source": "출처: Britannica, Ancient World Magazine, HISTORY",
+    "hashtags": "#소크라테스 #철학 #그리스 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "글을 남기지 않은 철학자",
+        "body": "소크라테스는 직접 쓴 글이 없고, 그의 모습은 제자 플라톤과 크세노폰의 기록, 아리스토파네스의 희극 등으로 전해져요."
+      },
+      {
+        "title": "기원전 399년의 재판",
+        "body": "그는 신들을 인정하지 않고 젊은이들을 타락시켰다는 죄목으로 재판을 받아 독배를 마시는 사형을 선고받았어요."
+      }
+    ],
+    "hook_img": 5977418,
+    "reveal_img": 6784489
+  },
+  {
+    "slug": "joan-of-arc-1456",
+    "who": "잔 다르크",
+    "hook": "잔 다르크의 재판은\n25년 뒤 **무효**가 됐다?",
+    "hook_say": "잔 다르크의 재판이 이십오 년 뒤에 무효가 됐다는 거 알고 계셨나요?",
+    "hook_query": "joan of arc statue",
+    "beats": [
+      {
+        "text": "1431년, 열아홉에 **화형**",
+        "say": "천사백삼십일 년 오 월, 열아홉 살의 잔 다르크는 이단이라는 죄로 화형을 당했어요.",
+        "query": "medieval cathedral france",
+        "img": 1021517
+      },
+      {
+        "text": "1456년 **재심**",
+        "say": "천사백오십육 년 재심 법정은 재판이 속임수와 절차상 오류로 얼룩졌다며 판결을 뒤집었어요.",
+        "query": "old court hall gothic",
+        "img": 6508068
+      }
+    ],
+    "reveal": "1920년 **성인**으로",
+    "reveal_say": "그리고 천구백이십 년, 교황 베네딕토 십오 세가 그녀를 성인으로 선포했어요.",
+    "reveal_query": "stained glass cathedral",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.history.com/this-day-in-history/may-30/joan-of-arc-martyred",
+      "https://en.wikipedia.org/wiki/Canonization_of_Joan_of_Arc",
+      "https://en.wikipedia.org/wiki/Joan_of_Arc"
+    ],
+    "verify_note": "확인됨",
+    "caption": "잔 다르크의 재판이 25년 뒤에 무효가 됐다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1431년 5월 30일, 잔 다르크는 이단이라는 죄로 19세의 나이에 화형을 당했어요.\n\n1456년 교회 재판소가 재판을 다시 조사했고, 원래의 재판이 속임수와 절차상 오류로 얼룩졌으며 정치적 동기에 좌우됐다고 판단해 모든 죄목을 무효로 했어요.\n\n1920년에는 교황 베네딕토 15세가 그녀를 성인으로 선포했고, 2년 뒤인 1922년에는 프랑스의 수호성인 중 한 명으로 선언됐어요.",
+    "source": "출처: HISTORY, Britannica, Wikipedia(Canonization of Joan of Arc)",
+    "hashtags": "#잔다르크 #프랑스 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "1431년의 화형",
+        "body": "1431년 5월 30일, 잔 다르크는 이단이라는 죄로 열아홉 살에 화형을 당했어요."
+      },
+      {
+        "title": "25년 뒤의 재심",
+        "body": "1456년 재심 법정은 재판이 속임수와 절차상 오류로 얼룩졌다며 판결을 뒤집었고, 1920년 그녀는 성인이 됐어요."
+      }
+    ],
+    "hook_img": 6541354,
+    "reveal_img": 5950966
+  },
+  {
+    "slug": "shakespeare-signatures",
+    "who": "윌리엄 셰익스피어",
+    "hook": "셰익스피어는 자기 이름을\n**매번 다르게 썼다?**",
+    "hook_say": "셰익스피어가 자기 이름의 철자를 매번 다르게 썼다는 거 알고 계셨나요?",
+    "hook_query": "stratford upon avon tudor",
+    "beats": [
+      {
+        "text": "남은 서명은 **6개**",
+        "say": "그가 직접 쓴 서명은 여섯 개가 남아 있는데, 모두 법률 문서에 있어요.",
+        "query": "old handwritten document quill",
+        "img": 317033
+      },
+      {
+        "text": "철자가 **다 달랐어요**",
+        "say": "여섯 개의 철자가 모두 달랐고, 유언장 한 장 안에서도 두 가지로 썼어요.",
+        "query": "quill ink parchment",
+        "img": 2431674
+      }
+    ],
+    "reveal": "유언장엔 **두 번째 좋은 침대**",
+    "reveal_say": "그리고 유언장에서는 아내에게 두 번째로 좋은 침대를 남겼어요.",
+    "reveal_query": "old wooden bed antique",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.shakespeare.org.uk/explore-shakespeare/shakespedia/william-shakespeare/second-best-bed/",
+      "https://en.wikipedia.org/wiki/Spelling_of_Shakespeare%27s_name",
+      "https://shakespearedocumented.folger.edu/resource/document/william-shakespeares-last-will-and-testament-original-copy-including-three"
+    ],
+    "verify_note": "확인됨(사진은 스트랫퍼드 이미지로 대체 필요)",
+    "caption": "셰익스피어가 자기 이름의 철자를 매번 다르게 썼다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n셰익스피어가 직접 쓴 서명은 여섯 개가 남아 있고, 모두 법률 문서에 있어요. 1612년 5월 11일 벨럿 대 마운트조이 소송 증언서, 1613년 3월 10일 블랙프라이어스 저택 매입 문서, 3월 11일 같은 저택의 저당 문서, 그리고 1616년 3월 25일 유언장(서명 3개)이에요.\n\n그는 여섯 개의 서명에서 이름의 철자를 한 번도 똑같이 쓰지 않았고, 유언장 한 문서 안에서도 'Shakspere'와 'Shakspeare' 두 가지로 서명했어요. 대부분 당시 관행에 따른 약식 표기였어요.\n\n유언장 마지막 장에는 \"아내에게 두 번째로 좋은 침대와 그 가구를 준다\"는 내용이 덧붙어 있어요.",
+    "source": "출처: Shakespeare Birthplace Trust, Folger Shakespeare Library, Wikipedia",
+    "hashtags": "#셰익스피어 #영국 #문학 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "6개의 서명",
+        "body": "셰익스피어가 직접 쓴 서명은 여섯 개가 남아 있고, 철자는 모두 달라요. 유언장 한 장에서도 두 가지로 썼어요."
+      },
+      {
+        "title": "두 번째 좋은 침대",
+        "body": "1616년 3월 25일 유언장에는 아내에게 \"두 번째로 좋은 침대와 그 가구\"를 준다는 내용이 덧붙어 있어요."
+      }
+    ],
+    "hook_img": 2284644,
+    "reveal_img": 4358355
   }
 ]
