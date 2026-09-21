@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "ahn-jung-geun",
+    "who": "안중근",
+    "hook": "안중근과 11명은\n**손가락을 잘랐다?**",
+    "hook_say": "안중근과 동지 열한 명이 손가락을 잘라 독립을 맹세했다는 거 알고 계셨나요?",
+    "hook_query": "korean flag taegeukgi",
+    "beats": [
+      {
+        "text": "1909년 **단지동맹**",
+        "say": "천구백구 년 이월, 러시아 연해주에서 열두 명이 모여 단지동맹을 맺었어요.",
+        "query": "birch forest russia",
+        "img": 4598017
+      },
+      {
+        "text": "왼손 **넷째 손가락**",
+        "say": "그들은 저마다 왼손 넷째 손가락을 끊어 태극기에 대한독립이라고 피로 썼어요.",
+        "query": "korean flag waving",
+        "img": 4428969
+      }
+    ],
+    "reveal": "3년 안에 **처단** 맹세",
+    "reveal_say": "그리고 삼 년 안에 이토 히로부미를 처단하겠다고 맹세했어요.",
+    "reveal_query": "memorial monument korea",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://kookbang.dema.mil.kr/newsWeb/20230126/1/ATCE_CTGR_0020010008/view.do",
+      "https://www.cha.go.kr/cop/bbs/selectBoardArticle.do?nttId=73422&bbsId=BBSMSTR_1008&pageUnit=10&searchtitle=title&mn=NS_01_09_01"
+    ],
+    "verify_note": "확인됨",
+    "caption": "안중근과 동지 11명이 손가락을 잘라 독립을 맹세했다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1909년 2월 7일, 안중근을 비롯한 12명이 러시아 연해주의 자작나무 숲에서 왼손 넷째 손가락을 잘라, 태극기 앞면에 혈서로 '대한독립'이라고 썼어요. 이것이 단지동맹이에요.\n\n그들은 3년 안에 이토 히로부미와 이완용을 처단하겠다고 맹세했고, 이루지 못하면 스스로 목숨을 끊어 책임지겠다고 다짐했어요.\n\n안중근은 그해 10월 26일 하얼빈에서 이토 히로부미를 저격했어요.",
+    "source": "출처: 국방일보, 국가유산청",
+    "hashtags": "#안중근 #독립운동 #대한민국 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "연해주의 맹세",
+        "body": "1909년 2월 7일 안중근 등 12명이 왼손 넷째 손가락을 잘라 태극기에 \"대한독립\"이라고 혈서를 썼어요."
+      },
+      {
+        "title": "3년 안의 목표",
+        "body": "그들은 3년 안에 이토 히로부미와 이완용을 처단하겠다고 맹세했고, 안중근은 그해 10월 26일 하얼빈에서 이토를 저격했어요."
+      }
+    ],
+    "hook_img": 5801956,
+    "reveal_img": 2829526
+  }
+]
