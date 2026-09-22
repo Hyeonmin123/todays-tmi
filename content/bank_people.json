@@ -1,5 +1,51 @@
 [
   {
+    "slug": "roosevelt-bullet-speech",
+    "who": "시어도어 루스벨트",
+    "hook": "루스벨트는 **총에 맞고도**\n연설했다?",
+    "hook_say": "시어도어 루스벨트가 총에 맞고도 연설을 계속했다는 거 알고 계셨나요?",
+    "hook_query": "mount rushmore",
+    "beats": [
+      {
+        "text": "1912년 **선거 유세** 중 피격",
+        "say": "시어도어 루스벨트는 미국의 이십육대 대통령으로 유명하죠. 근데 천구백십이 년 유세 중 밀워키에서 총을 맞았어요.",
+        "query": "vintage political rally crowd",
+        "img": 3420639
+      },
+      {
+        "text": "**연설문**이 총알을 막았다",
+        "say": "주머니 속 연설문과 안경집이 총알을 늦춰 줬어요.",
+        "query": "folded paper manuscript old",
+        "img": 3145649
+      }
+    ],
+    "reveal": "그대로 **90분**\n연설했어요",
+    "reveal_say": "그는 치료보다 연설을 먼저 택했고, 거의 구십분 동안 말을 이어 갔어요. 재밌었다면 친구에게 공유해보세요.",
+    "reveal_query": "moose wildlife",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.history.com/this-day-in-history/october-14/theodore-roosevelt-shot-in-milwaukee",
+      "https://www.trlibrary.com/bullet-speech",
+      "https://wisconsinlife.org/story/shot-in-the-chest-theodore-roosevelt-kept-talking-in-milwaukee/"
+    ],
+    "verify_note": "확인됨(불무스 발언은 '전해져요')",
+    "caption": "총에 맞고도 연설을 끝까지 마친 전직 대통령이 있다는 거 알고 계셨나요? 시어도어 루스벨트예요.\n\n📌 영상에 다 담지 못한 이야기\n\n1912년 10월 14일, 3선에 도전하던 루스벨트가 밀워키에서 유세 연설을 하러 차에 오르던 중, 36세의 존 슈랭크가 쏜 .38구경 권총 총알이 가슴에 맞았어요.\n\n총알은 주머니 속에 접어 둔 50쪽짜리 연설문과 금속 안경집을 지나며 속도가 줄었고, 갈비뼈에 박힌 채 멈췄어요. 루스벨트는 병원에 가기를 거부하고 연단에 올라 거의 90분 동안 연설했어요. 피 묻은 셔츠와 총알 구멍이 난 연설문을 보여 주며 \"불무스(그의 정당의 상징)는 총알 하나로는 쓰러지지 않는다\"고 말했다고 전해져요.\n\n의사들은 총알을 빼지 않기로 했고, 그 총알은 1919년 1월 그가 세상을 떠날 때까지 몸속에 있었어요.",
+    "source": "출처: History.com, Theodore Roosevelt Presidential Library, Wisconsin Life",
+    "hashtags": "#루스벨트 #위인 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "가슴에 총알",
+        "body": "1912년 10월 14일 밀워키, 3선에 도전하던 루스벨트가 유세 직전 가슴에 총을 맞았어요. 연설문과 안경집이 총알을 늦춰 줬어요."
+      },
+      {
+        "title": "그래도 연설",
+        "body": "그는 병원 대신 연단에 올라 거의 90분간 연설했어요. 총알은 1919년 세상을 떠날 때까지 몸속에 있었어요."
+      }
+    ],
+    "hook_img": 301164,
+    "reveal_img": 386742
+  },
+  {
     "slug": "yi-sun-sin-exam-fall",
     "who": "이순신",
     "hook": "이순신도\n**시험에 떨어졌다?**",
@@ -266,52 +312,6 @@
         "body": "왼손잡이라 잉크가 번지지 않게 쓰려던 것으로 알려져요. 남이 읽을 글은 평범하게 썼어요."
       }
     ]
-  },
-  {
-    "slug": "roosevelt-bullet-speech",
-    "who": "시어도어 루스벨트",
-    "hook": "루스벨트는 **총에 맞고도**\n연설했다?",
-    "hook_say": "시어도어 루스벨트가 총에 맞고도 연설을 계속했다는 거 알고 계셨나요?",
-    "hook_query": "mount rushmore",
-    "beats": [
-      {
-        "text": "1912년 **선거 유세** 중 피격",
-        "say": "시어도어 루스벨트는 미국의 이십육대 대통령으로 유명하죠. 근데 천구백십이 년 유세 중 밀워키에서 총을 맞았어요.",
-        "query": "vintage political rally crowd",
-        "img": 3420639
-      },
-      {
-        "text": "**연설문**이 총알을 막았다",
-        "say": "주머니 속 연설문과 안경집이 총알을 늦춰 줬어요.",
-        "query": "folded paper manuscript old",
-        "img": 3145649
-      }
-    ],
-    "reveal": "그대로 **90분**\n연설했어요",
-    "reveal_say": "그는 치료보다 연설을 먼저 택했고, 거의 구십분 동안 말을 이어 갔어요. 재밌었다면 친구에게 공유해보세요.",
-    "reveal_query": "moose wildlife",
-    "cta": "친구에게 공유하기",
-    "sources": [
-      "https://www.history.com/this-day-in-history/october-14/theodore-roosevelt-shot-in-milwaukee",
-      "https://www.trlibrary.com/bullet-speech",
-      "https://wisconsinlife.org/story/shot-in-the-chest-theodore-roosevelt-kept-talking-in-milwaukee/"
-    ],
-    "verify_note": "확인됨(불무스 발언은 '전해져요')",
-    "caption": "총에 맞고도 연설을 끝까지 마친 전직 대통령이 있다는 거 알고 계셨나요? 시어도어 루스벨트예요.\n\n📌 영상에 다 담지 못한 이야기\n\n1912년 10월 14일, 3선에 도전하던 루스벨트가 밀워키에서 유세 연설을 하러 차에 오르던 중, 36세의 존 슈랭크가 쏜 .38구경 권총 총알이 가슴에 맞았어요.\n\n총알은 주머니 속에 접어 둔 50쪽짜리 연설문과 금속 안경집을 지나며 속도가 줄었고, 갈비뼈에 박힌 채 멈췄어요. 루스벨트는 병원에 가기를 거부하고 연단에 올라 거의 90분 동안 연설했어요. 피 묻은 셔츠와 총알 구멍이 난 연설문을 보여 주며 \"불무스(그의 정당의 상징)는 총알 하나로는 쓰러지지 않는다\"고 말했다고 전해져요.\n\n의사들은 총알을 빼지 않기로 했고, 그 총알은 1919년 1월 그가 세상을 떠날 때까지 몸속에 있었어요.",
-    "source": "출처: History.com, Theodore Roosevelt Presidential Library, Wisconsin Life",
-    "hashtags": "#루스벨트 #위인 #역사 #의외의사실 #오늘의TMI",
-    "post_cards": [
-      {
-        "title": "가슴에 총알",
-        "body": "1912년 10월 14일 밀워키, 3선에 도전하던 루스벨트가 유세 직전 가슴에 총을 맞았어요. 연설문과 안경집이 총알을 늦춰 줬어요."
-      },
-      {
-        "title": "그래도 연설",
-        "body": "그는 병원 대신 연단에 올라 거의 90분간 연설했어요. 총알은 1919년 세상을 떠날 때까지 몸속에 있었어요."
-      }
-    ],
-    "hook_img": 301164,
-    "reveal_img": 386742
   },
   {
     "slug": "chaplin-oscar-ovation",
