@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-09-21",
+  "last_published_at": "2026-09-22",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -381,6 +381,13 @@
       "reel_permalink": "https://www.instagram.com/reel/Ddi59qulZRZ/",
       "media_id": "17928828624163280",
       "permalink": "https://www.instagram.com/p/Ddi-9iHm_Ry/"
+    },
+    {
+      "slug": "roosevelt-bullet-speech",
+      "track": "P",
+      "published_at": "2026-09-22T20:15:34+09:00",
+      "media_id": "17963789753981868",
+      "permalink": "https://www.instagram.com/p/DdlmuWvG0Co/"
     }
   ]
 }
