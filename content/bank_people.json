@@ -1,52 +1,5 @@
 [
   {
-    "slug": "einstein-israel-president",
-    "who": "아인슈타인",
-    "hook": "아인슈타인이 대통령 제안을\n**거절**했다?",
-    "hook_say": "아인슈타인이 한 나라의 대통령 자리를 거절한 거 알고 계셨나요?",
-    "hook_query": "albert einstein portrait",
-    "beats": [
-      {
-        "text": "1952년 이스라엘\n**대통령** 제안",
-        "say": "천구백오십이 년, 이스라엘 초대 대통령이 세상을 떠나자, 정부가 아인슈타인에게 대통령을 맡아 달라고 제안했어요.",
-        "query": "israel flag jerusalem",
-        "img": 98134
-      },
-      {
-        "text": "이유는 **경험 부족**",
-        "say": "하지만 아인슈타인은, 자신은 사람을 다루는 경험이 부족하다며 정중히 거절했어요.",
-        "query": "old letter handwriting vintage",
-        "img": 1277562
-      }
-    ],
-    "reveal": "끝까지\n**과학자**로 남았어요",
-    "reveal_say": "결국 그 자리는 다른 사람이 맡았고, 아인슈타인은 끝까지 과학자로 남았어요.",
-    "reveal_query": "physics chalkboard equations",
-    "cta": "친구에게 공유하기",
-    "sources": [
-      "https://www.britannica.com/story/the-time-albert-einstein-was-asked-to-be-president-of-israel",
-      "https://www.snopes.com/articles/465466/einstein-israeli-presidency/"
-    ],
-    "verify_note": "확인됨(1952.11 제안, 거절)",
-    "hook_img": 1165151,
-    "reveal_img": 1144965,
-    "caption": "아인슈타인이 이스라엘 대통령 자리를 제안받고도 거절한 이유, 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1952년 11월 9일, 이스라엘 초대 대통령 하임 바이츠만이 세상을 떠났어요. 그러자 벤구리온 총리의 지시로 아바 에반 주미 대사가 11월 17일 아인슈타인에게 편지를 보내 대통령직을 제안했어요.\n\n편지에는 \"대통령이 되어도 과학 연구는 계속할 수 있다\"는 약속이 담겨 있었지만, 조건이 하나 있었어요. 이스라엘로 이주해야 한다는 것이었죠.\n\n아인슈타인은 이렇게 답했어요. \"이스라엘 국가의 제안에 깊이 감동했고, 동시에 받아들일 수 없어서 슬프고 부끄럽다.\" 그는 자신에게는 사람을 다루는 자연스러운 재능과 경험이 부족하다고 밝혔고, 정부의 결정이 자신의 양심과 충돌할 수 있는 상황을 마주하고 싶지 않다고도 말했어요.\n\n결국 그해 12월 10일, 이츠하크 벤츠비가 대통령으로 선출됐어요.",
-    "source": "출처: Britannica, Snopes",
-    "hashtags": "#아인슈타인 #위인 #역사 #의외의사실 #오늘의TMI",
-    "post_cards": [
-      {
-        "title": "이스라엘의 제안",
-        "img": 98134,
-        "body": "1952년 이스라엘 초대 대통령이 세상을 떠나자, 정부가 아인슈타인에게 대통령직을 제안했어요. 조건은 이스라엘로 이주하는 것이었어요."
-      },
-      {
-        "title": "거절한 이유",
-        "img": 1144965,
-        "body": "사람을 다루는 경험이 부족하고, 정부의 결정이 양심과 충돌할 수 있다는 이유였어요. 그는 끝까지 과학자로 남았어요."
-      }
-    ]
-  },
-  {
     "slug": "yi-sun-sin-exam-fall",
     "who": "이순신",
     "hook": "이순신도\n**시험에 떨어졌다?**",
@@ -55,19 +8,19 @@
     "beats": [
       {
         "text": "28세 첫 **무과 시험**",
-        "say": "스물여덟 살에 처음 치른 무과 시험에서, 말을 타고 달리다 말에서 떨어져 탈락했어요.",
+        "say": "이순신은 임진왜란을 승리로 이끈 조선의 명장으로 유명하죠. 근데 스물여덟살에 치른 무과 시험에서 말에서 떨어져 탈락했어요.",
         "query": "korean traditional archery horse",
         "img": 10079930
       },
       {
         "text": "4년 뒤 **32세**에 급제",
-        "say": "하지만 포기하지 않고 사 년 뒤, 서른두 살에 무과에 급제했어요.",
+        "say": "포기하지 않고 사년 뒤, 서른두살에 무과에 급제했어요.",
         "query": "korean palace gyeongbokgung",
         "img": 7095475
       }
     ],
     "reveal": "**실패**가 끝이 아니었어요",
-    "reveal_say": "그 뒤 이순신은 임진왜란에서 나라를 지킨 명장이 됐어요.",
+    "reveal_say": "그 뒤 이순신은 임진왜란에서 나라를 지킨 명장이 됐어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "korea seoul statue sunset",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -100,19 +53,19 @@
     "beats": [
       {
         "text": "고기 없인 **식사 못 함**",
-        "say": "기록에 따르면 세종은 고기가 없으면 식사를 잘 못 할 정도로 고기를 좋아했어요.",
+        "say": "세종대왕은 한글을 만든 조선의 왕으로 유명하죠. 근데 세종은 고기가 없으면 식사를 못 할 정도로 좋아했어요.",
         "query": "grilled meat barbecue",
         "img": 7423228
       },
       {
         "text": "**당뇨**와 눈병에 시달림",
-        "say": "그래서인지 세종은 갈증이 심한 소갈증, 지금의 당뇨와 눈병에 시달렸다고 전해져요.",
+        "say": "그래서인지 소갈증과 눈병에 시달렸다고 전해져요.",
         "query": "eye glasses vintage",
         "img": 5486962
       }
     ],
     "reveal": "그럼에도\n**한글**을 만들었어요",
-    "reveal_say": "그런 몸으로도 세종은 훈민정음, 한글을 만들어 냈어요.",
+    "reveal_say": "그런 몸으로도 세종은 훈민정음, 한글을 만들어 냈어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "hangul korean alphabet",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -144,19 +97,19 @@
     "beats": [
       {
         "text": "1849년 **특허 6469호**",
-        "say": "링컨은 천팔백사십구 년에 특허를 받았고, 특허 번호는 육천사백육십구 번이에요.",
+        "say": "링컨은 노예 해방을 이끈 미국의 십육대 대통령으로 유명하죠. 근데 링컨은 천팔백사십구 년에 특허를 받았어요.",
         "query": "patent document vintage",
         "img": 1917110
       },
       {
         "text": "배를 **띄우는 장치**",
-        "say": "강의 얕은 곳에 배가 걸리지 않도록, 배 옆에 공기주머니를 달아 띄우는 장치였어요.",
+        "say": "얕은 강에서 배를 띄우는 장치였어요.",
         "query": "steamboat river",
         "img": 3254340
       }
     ],
     "reveal": "지금까지 **유일한** 대통령",
-    "reveal_say": "미국 대통령 중 특허를 가진 사람은 지금까지 링컨이 유일해요.",
+    "reveal_say": "미국 대통령 중 특허를 가진 사람은 지금까지 링컨이 유일해요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "lincoln memorial washington",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -182,97 +135,6 @@
     ]
   },
   {
-    "slug": "napoleon-not-short",
-    "who": "나폴레옹",
-    "hook": "나폴레옹은\n**키가 작지 않았다?**",
-    "hook_say": "나폴레옹이 키가 작았다는 이야기, 사실이 아니라는 거 알고 계셨나요?",
-    "hook_query": "napoleon bonaparte statue",
-    "beats": [
-      {
-        "text": "실제 키는 약 **169cm**",
-        "say": "나폴레옹의 실제 키는 약 백육십구 센티미터로, 당시 프랑스 남성 평균 정도였어요.",
-        "query": "tape measure ruler",
-        "img": 2923809
-      },
-      {
-        "text": "**프랑스 인치**의 착각",
-        "say": "프랑스 단위로 오 피트 이 인치라고 기록된 게, 영국 단위로 읽히면서 작은 키로 오해받았어요.",
-        "query": "old map france vintage",
-        "img": 4426219
-      }
-    ],
-    "reveal": "키 큰 **근위병** 때문에\n더 작아 보였어요",
-    "reveal_say": "게다가 나폴레옹은 키가 큰 근위병들에게 둘러싸여 있어서, 더 작아 보였어요.",
-    "reveal_query": "napoleon painting",
-    "cta": "친구에게 공유하기",
-    "sources": [
-      "https://www.britannica.com/story/was-napoleon-short",
-      "https://www.napoleon.org/en/history-of-the-two-empires/articles/was-napoleon-small/",
-      "https://www.scienceabc.com/eyeopeners/was-napoleon-really-short"
-    ],
-    "verify_note": "확인됨",
-    "hook_img": 6798754,
-    "reveal_img": 67784,
-    "caption": "나폴레옹이 키가 작았다는 이야기는 사실이 아니라는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n나폴레옹이 세상을 떠났을 때 기록된 키는 프랑스 단위로 5피트 2인치였어요. 그런데 당시 프랑스 인치는 약 2.7cm로, 영국 인치(2.54cm)보다 길었어요. 이걸 현대 단위로 바꾸면 약 169cm, 당시 프랑스 남성 평균 정도였어요.\n\n오해가 굳어진 데에는 영국의 영향도 컸어요. 영국 풍자화가 제임스 길레이 등이 나폴레옹을 아주 작고 성난 인물로 그려 이미지를 퍼뜨렸거든요. 게다가 나폴레옹은 일정 키 이상이어야 뽑히는 근위병들에게 둘러싸여 있어서 실제보다 더 작아 보였어요.\n\n'나폴레옹 콤플렉스'라는 말도 이 이미지에서 나왔지만, 정작 그의 키는 평균 정도였답니다.",
-    "source": "출처: Britannica, napoleon.org",
-    "hashtags": "#나폴레옹 #위인 #역사 #의외의사실 #오늘의TMI",
-    "post_cards": [
-      {
-        "title": "실제 키는 약 169cm",
-        "body": "기록된 5피트 2인치는 프랑스 단위라, 현대 단위로 바꾸면 약 169cm예요."
-      },
-      {
-        "title": "작게 보인 이유",
-        "body": "영국 풍자화의 영향과, 키 큰 근위병들에게 둘러싸여 있던 모습 때문에 작게 오해받았어요."
-      }
-    ]
-  },
-  {
-    "slug": "beethoven-deaf-ninth",
-    "who": "베토벤",
-    "hook": "베토벤은\n**못 듣고** 지휘했다?",
-    "hook_say": "귀가 들리지 않는 베토벤이 교향곡을 지휘했다는 거 알고 계셨나요?",
-    "hook_query": "beethoven bust",
-    "beats": [
-      {
-        "text": "1824년 **9번 교향곡** 초연",
-        "say": "천팔백이십사 년, 거의 귀가 먹은 베토벤의 교향곡 구 번이 처음 무대에 올랐어요.",
-        "query": "orchestra concert hall vintage",
-        "img": 1168357
-      },
-      {
-        "text": "박수 소리도 **못 들었다**",
-        "say": "연주가 끝난 줄도 모르고 베토벤이 계속 지휘하자, 옆의 가수가 조심스럽게 관객 쪽으로 돌려세웠어요.",
-        "query": "conductor baton hands",
-        "img": 287324
-      }
-    ],
-    "reveal": "**기립박수**가 쏟아졌어요",
-    "reveal_say": "그러자 베토벤은 관객들의 뜨거운 기립박수를 볼 수 있었어요.",
-    "reveal_query": "audience applause standing ovation",
-    "cta": "친구에게 공유하기",
-    "sources": [
-      "https://en.wikipedia.org/wiki/Symphony_No._9_(Beethoven)",
-      "https://www.history.com/this-day-in-history/may-7/beethoven-ninth-symphony-debuts-vienna"
-    ],
-    "verify_note": "확인됨(공식 지휘자는 따로 있었고 베토벤은 템포를 지시)",
-    "hook_img": 62844,
-    "reveal_img": 6133151,
-    "caption": "귀가 들리지 않는 베토벤이 교향곡 9번 초연 무대에 섰다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1824년 5월 7일, 빈의 케른트너토어 극장에서 교향곡 9번이 처음 연주됐어요. 리허설은 단 두 번뿐이었고, 소프라노 헨리에테 존탁과 알토 카롤리네 웅거가 노래했어요.\n\n이때 베토벤은 거의 10년 가까이 귀가 완전히 들리지 않는 상태였어요. 그는 무대에서 곡의 템포를 알려주고 악보를 넘기는 역할을 맡았어요. 실제 지휘는 미하엘 우믈라우프가 했고, 연주자들에게는 베토벤의 지시를 따르지 말라고 미리 당부해 뒀다고 해요.\n\n연주가 끝났을 때도 베토벤은 소리를 듣지 못해 계속 지휘를 이어가고 있었어요. 그러자 웅거가 조심스럽게 그를 관객 쪽으로 돌려세웠고, 그제야 베토벤은 열광하는 기립박수를 눈으로 볼 수 있었어요.",
-    "source": "출처: History.com, Wikipedia",
-    "hashtags": "#베토벤 #클래식 #역사 #의외의사실 #오늘의TMI",
-    "post_cards": [
-      {
-        "title": "귀먹은 채 무대에",
-        "body": "1824년 5월 7일, 거의 10년간 듣지 못한 베토벤의 교향곡 9번이 빈에서 처음 연주됐어요."
-      },
-      {
-        "title": "기립박수를 본 순간",
-        "body": "연주가 끝난 줄 모르고 지휘를 이어가자, 가수가 관객 쪽으로 돌려세워 박수를 볼 수 있었어요."
-      }
-    ]
-  },
-  {
     "slug": "churchill-nobel-literature",
     "who": "처칠",
     "hook": "처칠은 **노벨상**을 받았다?",
@@ -281,19 +143,19 @@
     "beats": [
       {
         "text": "받은 건 **문학상**",
-        "say": "처칠이 받은 건 평화상이 아니라 노벨 문학상이었어요.",
+        "say": "처칠은 이차 세계대전을 이끈 영국의 총리로 유명하죠. 근데 처칠이 받은 건 평화상이 아니라 노벨 문학상이었어요.",
         "query": "nobel prize medal",
         "img": 2754166
       },
       {
         "text": "1953년 **역사 서술과 연설**",
-        "say": "천구백오십삼 년, 역사와 전기를 훌륭하게 서술하고 뛰어난 연설로 인간의 가치를 옹호했다는 이유였어요.",
+        "say": "천구백오십삼 년, 역사 서술과 뛰어난 연설을 인정받았어요.",
         "query": "old books library",
         "img": 1867381
       }
     ],
     "reveal": "정치가이자 **작가**",
-    "reveal_say": "처칠은 총리이면서 많은 책을 쓴 작가이기도 했어요.",
+    "reveal_say": "처칠은 총리이면서 많은 책을 쓴 작가이기도 했어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "typewriter writing desk",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -325,19 +187,19 @@
     "beats": [
       {
         "text": "후보에만 **5번**",
-        "say": "간디는 노벨 평화상 후보에 다섯 번이나 올랐어요.",
+        "say": "간디는 비폭력 저항으로 인도 독립을 이끈 인물로 유명하죠. 근데 간디는 노벨 평화상 후보에 다섯번이나 올랐어요.",
         "query": "india flag",
         "img": 7382913
       },
       {
         "text": "1948년, **암살** 때문에",
-        "say": "마지막 해인 천구백사십팔 년에는 수상 결정 직전에 암살당했고, 위원회는 적합한 생존 후보가 없다고 밝혔어요.",
+        "say": "천구백사십팔 년엔 수상 직전 암살당해 상을 못 받았어요.",
         "query": "spinning wheel charkha",
         "img": 3078792
       }
     ],
     "reveal": "**가장 큰 누락**이라 인정",
-    "reveal_say": "노벨위원회는 훗날 간디에게 상을 주지 못한 것을 가장 큰 누락이라고 인정했어요.",
+    "reveal_say": "노벨위원회는 훗날 간디에게 상을 주지 못한 것을 가장 큰 누락이라고 인정했어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "nobel prize medal",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -361,51 +223,6 @@
     ]
   },
   {
-    "slug": "marie-curie-two-nobels",
-    "who": "마리 퀴리",
-    "hook": "노벨상을 **두 분야**에서\n받은 유일한 사람?",
-    "hook_say": "노벨 과학상을 서로 다른 두 분야에서 받은 사람이 딱 한 명뿐이라는 거 알고 계셨나요?",
-    "hook_query": "marie curie",
-    "beats": [
-      {
-        "text": "1903년 **물리학상**",
-        "say": "마리 퀴리는 천구백삼 년에 방사능 연구로 노벨 물리학상을 받았고,",
-        "query": "physics laboratory vintage",
-        "img": 4915431
-      },
-      {
-        "text": "1911년 **화학상**",
-        "say": "천구백십일 년에는 폴로늄과 라듐을 분리한 공으로 노벨 화학상까지 받았어요.",
-        "query": "chemistry laboratory glassware",
-        "img": 674467
-      }
-    ],
-    "reveal": "지금까지 **유일한** 기록",
-    "reveal_say": "서로 다른 두 과학 분야에서 노벨상을 받은 사람은 지금도 마리 퀴리가 유일해요.",
-    "reveal_query": "nobel prize medal",
-    "cta": "친구에게 공유하기",
-    "sources": [
-      "https://www.nobelprize.org/stories/women-who-changed-science/marie-curie/",
-      "https://www.britannica.com/biography/Marie-Curie"
-    ],
-    "verify_note": "확인됨. 스톡 인물 사진 부실 -> 실험실 이미지 대체",
-    "hook_img": 2182647,
-    "reveal_img": 2754166,
-    "caption": "서로 다른 두 과학 분야에서 노벨상을 받은 사람은 단 한 명뿐이에요. 마리 퀴리예요.\n\n📌 영상에 다 담지 못한 이야기\n\n1903년, 마리 퀴리는 남편 피에르 퀴리, 앙리 베크렐과 함께 방사능 연구로 노벨 물리학상을 공동 수상했어요. 여성으로서는 최초의 노벨상 수상이었어요.\n\n그리고 1911년에는 새로운 원소 폴로늄과 라듐을 발견하고 라듐을 분리해 낸 공로로 노벨 화학상을 혼자 받았어요.\n\n물리학과 화학, 서로 다른 두 과학 분야에서 노벨상을 받은 사람은 100년이 넘게 지난 지금도 마리 퀴리가 유일해요.",
-    "source": "출처: NobelPrize.org, Britannica",
-    "hashtags": "#마리퀴리 #노벨상 #과학 #의외의사실 #오늘의TMI",
-    "post_cards": [
-      {
-        "title": "1903년 물리학상",
-        "body": "남편 피에르, 베크렐과 함께 방사능 연구로 받았고, 여성 최초의 노벨상이었어요."
-      },
-      {
-        "title": "1911년 화학상",
-        "body": "폴로늄과 라듐을 발견하고 라듐을 분리한 공으로 혼자 받았어요. 두 분야 수상은 지금도 유일해요."
-      }
-    ]
-  },
-  {
     "slug": "davinci-mirror-writing",
     "who": "다빈치",
     "hook": "다빈치는 노트를\n**거울글씨**로 썼다?",
@@ -414,19 +231,19 @@
     "beats": [
       {
         "text": "**거울**에 비춰야 읽힘",
-        "say": "다빈치의 노트는 글자가 좌우로 뒤집혀 있어서, 거울에 비춰야 제대로 읽혀요.",
+        "say": "다빈치는 모나리자를 그린 화가로 유명하죠. 근데 다빈치의 노트는 글자가 뒤집혀 있어서 거울에 비춰야 읽혀요.",
         "query": "mirror reflection vintage",
         "img": 4509194
       },
       {
         "text": "유력한 이유는 **왼손잡이**",
-        "say": "가장 유력한 설명은, 왼손잡이였던 다빈치가 잉크가 번지지 않게 하려고 그렇게 썼다는 거예요.",
+        "say": "왼손잡이라 잉크가 안 번지게 그렇게 썼다는 설이 유력해요.",
         "query": "fountain pen ink writing",
         "img": 3237969
       }
     ],
     "reveal": "남이 볼 글은\n**정상**으로 썼어요",
-    "reveal_say": "다만 다른 사람이 읽을 글은 평범하게 왼쪽에서 오른쪽으로 썼다고 해요.",
+    "reveal_say": "다만 다른 사람이 읽을 글은 평범하게 왼쪽에서 오른쪽으로 썼다고 해요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "ancient manuscript notebook",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -451,52 +268,6 @@
     ]
   },
   {
-    "slug": "washington-one-tooth",
-    "who": "조지 워싱턴",
-    "hook": "워싱턴은 취임식 때\n**이가 하나**뿐이었다?",
-    "hook_say": "미국 초대 대통령 워싱턴이 취임할 때 이가 하나밖에 없었다는 거 알고 계셨나요?",
-    "hook_query": "george washington statue",
-    "beats": [
-      {
-        "text": "취임 당시 **이 1개**",
-        "say": "천칠백팔십구 년 취임식 날, 워싱턴에게 남은 자기 이는 딱 하나뿐이었어요.",
-        "query": "dentist vintage teeth",
-        "img": 887338
-      },
-      {
-        "text": "나무 틀니는 **오해**",
-        "say": "그의 틀니는 나무가 아니라, 하마 상아와 사람 이빨 등으로 만들어졌어요.",
-        "query": "ivory tusk",
-        "img": 2112416
-      }
-    ],
-    "reveal": "**상아**가 얼룩져\n나무처럼 보였어요",
-    "reveal_say": "상아가 금방 얼룩져서 나무처럼 보였던 것이, 오해의 시작으로 추정돼요.",
-    "reveal_query": "mount vernon virginia",
-    "cta": "친구에게 공유하기",
-    "sources": [
-      "https://www.mountvernon.org/george-washington/health/washingtons-teeth",
-      "https://www.livescience.com/61919-george-washington-teeth-not-wood.html",
-      "https://www.smithsonianmag.com/smart-news/george-washington-didnt-have-wooden-teeth-they-were-ivory-180953273/"
-    ],
-    "verify_note": "확인됨",
-    "caption": "미국 초대 대통령 워싱턴이 취임식 날 자기 이가 하나뿐이었다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1789년 4월 30일 첫 대통령 취임식 날, 워싱턴에게 남은 자기 이는 작은어금니 하나뿐이었어요. 나머지는 전부 틀니였죠.\n\n흔히 \"워싱턴은 나무 틀니를 썼다\"고 알려져 있지만 사실이 아니에요. 그의 틀니는 하마 상아에 금 스프링과 놋쇠 나사를 달고, 사람 이빨을 끼운 형태였어요. 치과의사는 남은 자기 이를 뽑지 않으려고 틀니에 구멍을 내 그 이가 들어가게 했다고 해요.\n\n평생 그는 사람·소·당나귀·말의 이빨, 하마와 바다코끼리의 상아, 납·금·은 합금 등 다양한 재료의 틀니를 썼어요. 나무로 오해받은 건 상아가 금세 얼룩져 나무처럼 보였기 때문으로 추정돼요.",
-    "source": "출처: Mount Vernon, Smithsonian, Live Science",
-    "hashtags": "#조지워싱턴 #위인 #역사 #의외의사실 #오늘의TMI",
-    "post_cards": [
-      {
-        "title": "취임식 날, 이는 하나뿐",
-        "body": "1789년 4월 30일 첫 취임식 날, 워싱턴에게 남은 자기 이는 하나뿐이었고 나머지는 틀니였어요."
-      },
-      {
-        "title": "나무가 아니라 상아",
-        "body": "틀니는 하마 상아에 금 스프링, 사람 이빨 등으로 만들어졌어요. 상아가 얼룩지면서 나무로 오해받았다고 추정돼요."
-      }
-    ],
-    "hook_img": 6952099,
-    "reveal_img": 55476
-  },
-  {
     "slug": "roosevelt-bullet-speech",
     "who": "시어도어 루스벨트",
     "hook": "루스벨트는 **총에 맞고도**\n연설했다?",
@@ -505,19 +276,19 @@
     "beats": [
       {
         "text": "1912년 **선거 유세** 중 피격",
-        "say": "천구백십이 년 선거 유세를 앞두고 밀워키에서, 그는 가슴에 총을 맞았어요.",
+        "say": "시어도어 루스벨트는 미국의 이십육대 대통령으로 유명하죠. 근데 천구백십이 년 유세 중 밀워키에서 총을 맞았어요.",
         "query": "vintage political rally crowd",
         "img": 3420639
       },
       {
         "text": "**연설문**이 총알을 막았다",
-        "say": "주머니 속 접힌 연설문과 안경집이 총알을 늦춰 줬어요.",
+        "say": "주머니 속 연설문과 안경집이 총알을 늦춰 줬어요.",
         "query": "folded paper manuscript old",
         "img": 3145649
       }
     ],
     "reveal": "그대로 **90분**\n연설했어요",
-    "reveal_say": "그는 치료보다 연설을 먼저 택했고, 거의 구십 분 동안 말을 이어 갔어요.",
+    "reveal_say": "그는 치료보다 연설을 먼저 택했고, 거의 구십분 동안 말을 이어 갔어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "moose wildlife",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -546,24 +317,24 @@
     "slug": "chaplin-oscar-ovation",
     "who": "찰리 채플린",
     "hook": "채플린은 오스카에서\n**12분** 박수를 받았다?",
-    "hook_say": "채플린이 오스카에서 십이 분 동안 박수를 받았다는 거 알고 계셨나요?",
+    "hook_say": "채플린이 오스카에서 십이분 동안 박수를 받았다는 거 알고 계셨나요?",
     "hook_query": "charlie chaplin",
     "beats": [
       {
         "text": "**20년** 만의 미국 복귀",
-        "say": "채플린은 매카시즘 여파로 미국을 떠나 이십 년 가까이 스위스에서 지냈어요.",
+        "say": "찰리 채플린은 무성영화 시대의 배우이자 감독으로 유명하죠. 근데 매카시즘 여파로 스위스에서 지냈어요.",
         "query": "switzerland lake mountains",
         "img": 4686879
       },
       {
         "text": "1972년 **명예상**",
-        "say": "천구백칠십이 년, 여든두 살의 그는 아카데미 명예상을 받으러 무대에 올랐어요.",
+        "say": "천 구백 칠십 이년, 여든두살에 명예상을 받았어요.",
         "query": "golden trophy statuette",
         "img": 649825
       }
     ],
     "reveal": "역대 최장 **기립박수**",
-    "reveal_say": "그가 무대에 서자 기립박수가 오래 이어졌고, 오스카 역사상 가장 긴 박수로 알려져 있어요.",
+    "reveal_say": "그가 무대에 서자 기립박수가 오래 이어졌고, 오스카 역사상 가장 긴 박수로 알려져 있어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "audience applause standing ovation",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -597,19 +368,19 @@
     "beats": [
       {
         "text": "1508년 **천장화** 의뢰",
-        "say": "천오백팔 년, 교황 율리우스 이 세가 그에게 시스티나 성당 천장화를 맡겼어요.",
+        "say": "미켈란젤로는 다비드상과 시스티나 천장화로 유명하죠. 근데 천오백팔 년 교황이 천장화를 맡겼어요.",
         "query": "sistine chapel ceiling",
         "img": 2519988
       },
       {
         "text": "본업은 **조각**이었어요",
-        "say": "하지만 그는 자신을 무엇보다 조각가로 여겨서, 그림 작업을 내켜 하지 않았어요.",
+        "say": "하지만 그는 조각가로 자부해 그림을 내켜 하지 않았어요.",
         "query": "marble sculpture chisel",
         "img": 1684647
       }
     ],
     "reveal": "그래도 **4년** 만에 완성",
-    "reveal_say": "그럼에도 사 년 동안 매달려, 서양 미술 최고의 걸작 중 하나를 완성했어요.",
+    "reveal_say": "그럼에도 사년 동안 매달려, 서양 미술 최고의 걸작 중 하나를 완성했어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "sistine chapel fresco",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -634,97 +405,6 @@
     "reveal_img": 263573
   },
   {
-    "slug": "columbus-thought-asia",
-    "who": "크리스토퍼 콜럼버스",
-    "hook": "콜럼버스는 끝까지\n**아시아**라고 믿었다?",
-    "hook_say": "콜럼버스가 죽을 때까지 자신이 아시아에 갔다고 믿었다는 거 알고 계셨나요?",
-    "hook_query": "christopher columbus statue",
-    "beats": [
-      {
-        "text": "목표는 **아시아** 항로",
-        "say": "그의 목표는 대서양을 건너 아시아로 가는 더 빠른 항로를 찾는 것이었어요.",
-        "query": "old sailing ship sea",
-        "img": 4509960
-      },
-      {
-        "text": "카리브해를 **동인도**로 착각",
-        "say": "카리브해에 도착한 그는 그곳을 동인도라고 여기고 돌아갔어요.",
-        "query": "caribbean beach palm trees",
-        "img": 5288904
-      }
-    ],
-    "reveal": "죽을 때까지\n**착각**이었어요",
-    "reveal_say": "다른 탐험가들이 새 대륙임을 알아 갔지만, 콜럼버스는 천오백육 년 세상을 떠날 때까지 생각을 바꾸지 않았다고 전해져요.",
-    "reveal_query": "antique world map globe",
-    "cta": "친구에게 공유하기",
-    "sources": [
-      "https://exploration.marinersmuseum.org/subject/christopher-columbus/",
-      "https://kids.britannica.com/students/article/Christopher-Columbus/273745"
-    ],
-    "verify_note": "부분 확인(학자별 해석 차이 명시)",
-    "caption": "콜럼버스가 죽을 때까지 자신이 아시아에 갔다고 믿었다는 이야기, 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n콜럼버스의 원래 목표는 대서양을 건너 아시아로 가는 더 짧은 항로를 찾는 것이었어요. 카리브해에 도착한 그는 그곳을 동인도라고 믿은 채 스페인으로 돌아갔어요.\n\n이후 아메리고 베스푸치 같은 탐험가들은 그곳이 아시아가 아닌 새로운 땅이라는 걸 알아 가기 시작했어요. 하지만 콜럼버스는 1506년 세상을 떠날 때까지 자신의 항해가 아시아에 닿은 것이라는 믿음을 버리지 않았다고 전해져요.\n\n※ 그가 정말 끝까지 그렇게 믿었는지에 대해서는 학자마다 해석이 조금 달라요.",
-    "source": "출처: Mariners' Museum, Britannica Kids",
-    "hashtags": "#콜럼버스 #대항해시대 #역사 #의외의사실 #오늘의TMI",
-    "post_cards": [
-      {
-        "title": "동인도라고 믿었어요",
-        "body": "콜럼버스는 카리브해에 도착한 뒤 그곳이 아시아의 동인도라고 믿고 스페인으로 돌아갔어요."
-      },
-      {
-        "title": "끝까지 바뀌지 않은 생각",
-        "body": "아메리고 베스푸치 같은 탐험가들은 새 땅임을 알아 갔지만, 콜럼버스는 1506년 세상을 떠날 때까지 생각을 바꾸지 않았다고 전해져요."
-      }
-    ],
-    "hook_img": 2422371,
-    "reveal_img": 680230
-  },
-  {
-    "slug": "wright-12-seconds",
-    "who": "라이트 형제",
-    "hook": "인류 첫 비행은 **12초**였다?",
-    "hook_say": "인류 최초의 동력 비행이 십이 초였다는 거 알고 계셨나요?",
-    "hook_query": "wright brothers",
-    "beats": [
-      {
-        "text": "1903년 **키티호크**",
-        "say": "천구백삼 년 십이 월 십칠 일, 미국 노스캐롤라이나 키티호크에서 라이트 형제가 비행에 성공했어요.",
-        "query": "kitty hawk monument",
-        "img": 2723415
-      },
-      {
-        "text": "비행 거리 약 **37m**",
-        "say": "첫 비행은 십이 초 동안 백이십 피트, 약 삼십칠 미터를 날았어요.",
-        "query": "vintage biplane airplane",
-        "img": 3657350
-      }
-    ],
-    "reveal": "그날 **네 번** 날았어요",
-    "reveal_say": "그날 네 번 비행했고, 가장 긴 마지막 비행은 오십구 초 동안 약 이백육십 미터를 날았어요.",
-    "reveal_query": "airplane flying blue sky",
-    "cta": "친구에게 공유하기",
-    "sources": [
-      "https://www.nasa.gov/image-article/wright-brothers-first-flight/",
-      "https://airandspace.si.edu/stories/editorial/wright-brothers-made-history-kitty-hawk",
-      "https://www.history.com/this-day-in-history/december-17/first-airplane-flies"
-    ],
-    "verify_note": "확인됨",
-    "caption": "인류 최초의 동력 비행이 12초였다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1903년 12월 17일 오전 10시 35분, 다섯 명의 목격자가 지켜보는 가운데 오빌 라이트가 조종한 비행기가 레일을 달려 하늘로 떠올랐어요. 비행은 12초 동안 120피트(약 37m)였어요.\n\n형제는 그날 모두 네 번 비행했어요. 마지막 비행은 윌버가 조종해 59초 동안 852피트(약 260m)를 날았어요. 노스캐롤라이나 키티호크에서 인류의 항공 시대가 열린 순간이었죠.",
-    "source": "출처: NASA, Smithsonian National Air and Space Museum, History.com",
-    "hashtags": "#라이트형제 #비행기 #역사 #의외의사실 #오늘의TMI",
-    "post_cards": [
-      {
-        "title": "첫 비행은 12초",
-        "body": "1903년 12월 17일 오전 10시 35분, 오빌 라이트가 조종한 비행기가 12초 동안 약 37m를 날았어요."
-      },
-      {
-        "title": "그날 네 번의 비행",
-        "body": "형제는 그날 네 번 비행했고, 윌버가 조종한 마지막 비행은 59초 동안 약 260m를 날았어요."
-      }
-    ],
-    "hook_img": 794534,
-    "reveal_img": 2617651
-  },
-  {
     "slug": "caesar-pirates-ransom",
     "who": "율리우스 카이사르",
     "hook": "카이사르는 납치범에게\n**몸값을 올리라** 했다?",
@@ -733,19 +413,19 @@
     "beats": [
       {
         "text": "해적이 부른 **20탈란트**",
-        "say": "기원전 칠십오 년, 스물다섯 살의 카이사르는 해적에게 붙잡혀 이십 탈란트를 요구받았어요.",
+        "say": "율리우스 카이사르는 로마의 정치가로 유명하죠. 근데 기원전 칠십오년 해적에게 붙잡혀 이십탈란트를 요구받았어요.",
         "query": "pirate ship",
         "img": 4748373
       },
       {
         "text": "**50탈란트**로 올려라",
-        "say": "그러자 카이사르는 자신을 그렇게 싸게 보느냐며 오십 탈란트로 올리라고 했어요.",
+        "say": "그러자 몸값이 너무 적다며 오십탈란트로 올리라 했어요.",
         "query": "gold coins treasure",
         "img": 2053585
       }
     ],
     "reveal": "풀려난 뒤 **해적 소탕**",
-    "reveal_say": "삼십팔 일 뒤 풀려난 그는 함대를 모아 해적들을 붙잡아, 약속대로 처형했어요.",
+    "reveal_say": "삼십팔일 뒤 풀려난 그는 함대를 모아 해적들을 붙잡아, 약속대로 처형했어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "roman ruins forum",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -779,19 +459,19 @@
     "beats": [
       {
         "text": "빈의 **성 마르크스** 묘지",
-        "say": "천칠백구십일 년 세상을 떠난 모차르트는 빈의 성 마르크스 묘지에 묻혔어요.",
+        "say": "모차르트는 천재 음악가로 유명하죠. 근데 천칠백구십일 년 그는 빈의 성 마르크스 묘지에 묻혔어요.",
         "query": "vienna cemetery",
         "img": 6775053
       },
       {
         "text": "당시 규정대로 **간소한 장례**",
-        "say": "당시 규정에 따라 간소하게 치러져서, 시간이 지나자 정확한 위치를 알기 어려워졌어요.",
+        "say": "당시 규정대로 간소히 치러져 위치를 알기 어려워졌어요.",
         "query": "old cemetery graves",
         "img": 2409337
       }
     ],
     "reveal": "지금 기념비는 **추정 위치**",
-    "reveal_say": "천팔백오십구 년에 세운 기념비는 무덤이 있었으리라 추정되는 자리에 서 있어요.",
+    "reveal_say": "천팔백 오십구년에 세운 기념비는 무덤이 있었으리라 추정되는 자리에 서 있어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "angel statue cemetery monument",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -820,24 +500,24 @@
     "slug": "galileo-1992-error",
     "who": "갈릴레오",
     "hook": "갈릴레오 재판의 **오류**는\n359년 뒤에 인정됐다?",
-    "hook_say": "갈릴레오 재판의 오류가 삼백오십구 년 뒤에야 공식 인정됐다는 거 알고 계셨나요?",
+    "hook_say": "갈릴레오 재판의 오류가 삼백오십 구년 뒤에야 공식 인정됐다는 거 알고 계셨나요?",
     "hook_query": "galileo statue florence",
     "beats": [
       {
         "text": "1633년 **종교재판**",
-        "say": "천육백삼십삼 년, 갈릴레오는 지동설 때문에 종교재판을 받았어요.",
+        "say": "갈릴레오는 지동설을 주장한 과학자로 유명하죠. 근데 천육백삼십삼 년 지동설 때문에 종교재판을 받았어요.",
         "query": "vintage telescope",
         "img": 11624
       },
       {
         "text": "1992년 **오류 인정**",
-        "say": "천구백구십이 년, 교황 요한 바오로 이 세가 당시 재판에 오류가 있었다고 인정했어요.",
+        "say": "천구백구십이 년 교황이 재판 오류를 인정했어요.",
         "query": "st peters basilica vatican",
         "img": 601810
       }
     ],
     "reveal": "**'비극적 오해'**라고 표현",
-    "reveal_say": "교황은 이를 서로에 대한 비극적인 몰이해 때문이라고 표현했어요.",
+    "reveal_say": "교황은 이를 서로에 대한 비극적인 몰이해 때문이라고 표현했어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "starry night sky",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -871,19 +551,19 @@
     "beats": [
       {
         "text": "1945년 **군에 입대**",
-        "say": "천구백사십오 년, 열아홉 살의 공주 엘리자베스는 스스로 전쟁에 기여하겠다며 여군 보조부대에 들어갔어요.",
+        "say": "엘리자베스 이세는 오랫동안 왕위에 있었던 영국 여왕으로 유명하죠. 근데 천구백 사십오년 열아홉살에 여군 보조부대에 들어갔어요.",
         "query": "military uniform vintage",
         "img": 6034928
       },
       {
         "text": "트럭 **운전과 정비**",
-        "say": "군용 트럭을 운전하고 엔진을 고치는 훈련을 받아 운전 시험도 통과했어요.",
+        "say": "군용 트럭 운전과 정비 훈련을 받았어요.",
         "query": "engine mechanic wrench",
         "img": 63201
       }
     ],
     "reveal": "별명은\n**자동차 정비 공주**",
-    "reveal_say": "당시 신문은 그녀를 자동차 정비 공주라고 불렀어요.",
+    "reveal_say": "당시 신문은 그녀를 자동차 정비 공주라고 불렀어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "vintage army truck",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -916,19 +596,19 @@
     "beats": [
       {
         "text": "동래현 **관노** 출신",
-        "say": "장영실은 동래현의 관노였지만, 뛰어난 재주로 천인 신분에서 벗어났어요.",
+        "say": "장영실은 측우기 등을 만든 조선의 과학자로 유명하죠. 근데 관노였던 그는 재주로 신분을 벗어났어요.",
         "query": "hanok traditional korean village",
         "img": 4617978
       },
       {
         "text": "**종3품**까지 승진",
-        "say": "그리고 종삼품이라는 높은 벼슬까지 올랐어요.",
+        "say": "그리고 종삼품 벼슬까지 올랐어요.",
         "query": "korean palace gate",
         "img": 3909995
       }
     ],
     "reveal": "가마 사건으로 **파직**",
-    "reveal_say": "하지만 천사백사십이 년 임금의 가마가 부러진 사건으로 곤장 팔십 대를 맞고 파직됐어요.",
+    "reveal_say": "하지만 천사백 사십이년 임금의 가마가 부러진 사건으로 곤장 팔십대를 맞고 파직됐어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "korean palace sunset",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -953,51 +633,6 @@
     "reveal_img": 7490481
   },
   {
-    "slug": "jeong-yak-yong",
-    "who": "정약용",
-    "hook": "정약용은 유배 중에\n**500권**을 썼다?",
-    "hook_say": "정약용이 유배 생활 중에 오백 권이 넘는 책을 썼다는 거 알고 계셨나요?",
-    "hook_query": "hanok garden korea",
-    "beats": [
-      {
-        "text": "**18년** 유배 생활",
-        "say": "정조가 세상을 떠난 뒤 모함을 받아, 정약용은 십팔 년 동안 유배 생활을 했어요.",
-        "query": "old korean countryside village",
-        "img": 10356809
-      },
-      {
-        "text": "강진 **다산초당**",
-        "say": "전남 강진의 다산초당에서 십 년 넘게 머물며 저술에 몰두했어요.",
-        "query": "thatched roof cottage korea",
-        "img": 5975830
-      }
-    ],
-    "reveal": "**목민심서** 등\n500여 권",
-    "reveal_say": "그 결과 목민심서를 비롯해 오백여 권의 책을 남겼어요.",
-    "reveal_query": "old books traditional korean",
-    "cta": "친구에게 공유하기",
-    "sources": [
-      "http://www.heritage.go.kr/heri/cul/culSelectDetail.do?ccbaCpno=1333601070000",
-      "http://www.atlasnews.co.kr/news/articleView.html?idxno=9452"
-    ],
-    "verify_note": "확인됨",
-    "caption": "정약용이 유배 생활 동안 500여 권의 책을 남겼다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n정조가 세상을 떠난 뒤 신하들의 모함으로 투옥되고 유배된 정약용은 18년 동안 유배 생활을 했어요. 그중 전남 강진의 다산초당에서 10년 넘게 머물며 가장 찬란한 결실을 맺었어요.\n\n그는 이곳에서 『목민심서』, 『경세유표』, 『흠흠신서』를 비롯해 500여 권에 달하는 저서를 남겼고, 제자 18명도 길러냈어요. 그의 연구를 총정리한 『여유당전서』에는 철학, 법제, 의술, 천문, 측량, 건축까지 폭넓은 학문이 담겨 있어요.",
-    "source": "출처: 국가유산청(사적 강진 정약용 유적)",
-    "hashtags": "#정약용 #다산 #조선시대 #의외의사실 #오늘의TMI",
-    "post_cards": [
-      {
-        "title": "18년의 유배",
-        "body": "정조가 세상을 떠난 뒤 모함을 받은 정약용은 18년 동안 유배 생활을 했어요. 강진 다산초당에서만 10년 넘게 머물렀어요."
-      },
-      {
-        "title": "500여 권의 저술",
-        "body": "『목민심서』, 『경세유표』, 『흠흠신서』를 비롯해 500여 권의 책을 남기고 제자 18명을 길러냈어요."
-      }
-    ],
-    "hook_img": 7093068,
-    "reveal_img": 5045049
-  },
-  {
     "slug": "kim-jeong-ho",
     "who": "김정호",
     "hook": "김정호가 **옥사**했다는 건\n근거가 없다?",
@@ -1006,19 +641,19 @@
     "beats": [
       {
         "text": "옥사설은 **1939년**에 등장",
-        "say": "김정호가 옥에서 죽었다는 이야기는 천구백삼십구 년 일제가 발행한 조선어독본에서 처음 나왔어요.",
+        "say": "김정호는 대동여지도를 만든 조선의 지리학자로 유명하죠. 근데 옥사설은 천구백삼십구 년 조선어독본에서 처음 나왔어요.",
         "query": "vintage textbook old",
         "img": 889139
       },
       {
         "text": "기록에는 **흔적 없음**",
-        "say": "고종실록 같은 기록을 살펴봤지만 그런 흔적은 전혀 찾을 수 없었어요.",
+        "say": "실록 등을 살펴봐도 흔적이 없었어요.",
         "query": "old korean documents",
         "img": 1639226
       }
     ],
     "reveal": "**목판**은 지금도 남아 있어요",
-    "reveal_say": "게다가 대동여지도 목판이 지금도 남아 있어서, 불태워졌다는 이야기도 근거가 없어요.",
+    "reveal_say": "목판이 지금도 남아 있어 불태워졌다는 이야기도 근거가 없어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "wood block print carving",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -1043,52 +678,6 @@
     "reveal_img": 2909613
   },
   {
-    "slug": "stephen-hawking",
-    "who": "스티븐 호킹",
-    "hook": "호킹은 **시한부 2년**이었다?",
-    "hook_say": "스티븐 호킹이 스물한 살에 시한부 이 년을 선고받았다는 거 알고 계셨나요?",
-    "hook_query": "stephen hawking",
-    "beats": [
-      {
-        "text": "21세에 **루게릭병** 진단",
-        "say": "천구백육십삼 년, 스물한 살의 호킹은 루게릭병 진단을 받았어요.",
-        "query": "hospital medical",
-        "img": 1704855
-      },
-      {
-        "text": "의사가 말한 **2년**",
-        "say": "의사들은 그에게 남은 시간이 이 년쯤이라고 했어요.",
-        "query": "hourglass sand time",
-        "img": 1489042
-      }
-    ],
-    "reveal": "그 뒤 **55년**을 더 살았어요",
-    "reveal_say": "하지만 호킹은 그 뒤로도 오십오 년을 더 살았고, 이천십팔 년 일흔여섯 살에 세상을 떠났어요.",
-    "reveal_query": "universe galaxy stars",
-    "cta": "친구에게 공유하기",
-    "sources": [
-      "https://www.hcplive.com/view/stephen-hawking-dead",
-      "https://www.scientificamerican.com/article/stephen-hawking-als/",
-      "https://time.com/5199001/stephen-hawking-als/"
-    ],
-    "verify_note": "확인됨(진단 시기·수명은 복수 출처 일치)",
-    "caption": "스티븐 호킹이 21살에 시한부 2년을 선고받았다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n호킹은 1963년 21세에 루게릭병(ALS) 진단을 받았고, 처음에는 2년 정도밖에 살지 못할 것이라는 말을 들었어요. 하지만 그는 그로부터 55년을 더 살았고, 2018년 3월 14일 76세로 세상을 떠났어요.\n\n일반적으로 루게릭병 환자의 기대 수명은 약 3년이고, 진단 후 10년 넘게 사는 사람은 약 10%, 20년 이상 사는 사람은 그 절반 정도에 불과해요. 50년 넘게 병과 함께한 호킹은 매우 드문 사례로 꼽혀요.",
-    "source": "출처: HCPLive, Scientific American, TIME",
-    "hashtags": "#스티븐호킹 #과학 #물리학 #의외의사실 #오늘의TMI",
-    "post_cards": [
-      {
-        "title": "21세의 진단",
-        "body": "호킹은 1963년 21세에 루게릭병 진단을 받았고, 의사들은 2년쯤 살 것이라고 했어요."
-      },
-      {
-        "title": "그 뒤 55년",
-        "body": "그는 55년을 더 살아 2018년 3월 14일 76세로 세상을 떠났어요. 진단 후 20년 넘게 사는 환자는 아주 드물어요."
-      }
-    ],
-    "hook_img": 5480855,
-    "reveal_img": 9768540
-  },
-  {
     "slug": "nightingale-statistician",
     "who": "나이팅게일",
     "hook": "나이팅게일은 **통계학자**였다?",
@@ -1097,7 +686,7 @@
     "beats": [
       {
         "text": "크림 전쟁 **사망 원인** 분석",
-        "say": "크림 전쟁 때 그녀는 영국 군대의 사망 원인 자료를 모아 분석했어요.",
+        "say": "나이팅게일은 근대 간호학의 창시자로 유명하죠. 근데 크림 전쟁 때 그녀는 영국 군대의 사망 원인 자료를 모아 분석했어요.",
         "query": "old hospital ward vintage",
         "img": 378903
       },
@@ -1109,7 +698,7 @@
       }
     ],
     "reveal": "1858년 **첫 여성 회원**",
-    "reveal_say": "천팔백오십팔 년에는 통계학회의 첫 여성 회원으로 뽑혔어요.",
+    "reveal_say": "천팔백 오십팔년에는 통계학회의 첫 여성 회원으로 뽑혔어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "graph chart data",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -1142,19 +731,19 @@
     "beats": [
       {
         "text": "수술을 **못 견뎌** 의대 떠남",
-        "say": "다윈은 에든버러 의대에서 수술을 견디기 힘들어해 결국 의학을 그만뒀어요.",
+        "say": "찰스 다윈은 진화론을 주장한 과학자로 유명하죠. 근데 그는 에든버러 의대에서 수술을 못 견뎌 의학을 그만뒀어요.",
         "query": "old medical school vintage",
         "img": 5058673
       },
       {
         "text": "22세, **비글호** 출항",
-        "say": "이후 천팔백삼십일 년, 스물두 살의 다윈은 비글호를 타고 영국을 떠났어요.",
+        "say": "천팔백 삼십일년 스물두살에 비글호를 타고 떠났어요.",
         "query": "old sailing ship sea",
         "img": 487503
       }
     ],
     "reveal": "5년 항해가 **진화론**의 토대",
-    "reveal_say": "오 년에 걸친 이 항해에서 만난 동식물이 훗날 진화론의 토대가 됐어요.",
+    "reveal_say": "오년에 걸친 이 항해에서 만난 동식물이 훗날 진화론의 토대가 됐어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "galapagos tortoise island",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -1183,24 +772,24 @@
     "slug": "pasteur-first-vaccine",
     "who": "루이 파스퇴르",
     "hook": "첫 광견병 백신 환자는\n**9살 소년**이었다?",
-    "hook_say": "세계 최초로 광견병 백신을 맞은 사람이 아홉 살 소년이었다는 거 알고 계셨나요?",
+    "hook_say": "세계 최초로 광견병 백신을 맞은 사람이 아홉살 소년이었다는 거 알고 계셨나요?",
     "hook_query": "microscope laboratory vintage",
     "beats": [
       {
         "text": "개에게 **14번** 물린 소년",
-        "say": "천팔백팔십오 년 알자스의 소년 조제프 마이스터는 미친개에게 열네 번 물렸어요.",
+        "say": "루이 파스퇴르는 저온살균법을 만든 과학자로 유명하죠. 근데 천팔백 팔십오년 아홉살 소년이 개에게 열네번 물렸어요.",
         "query": "dog vintage",
         "img": 1840071
       },
       {
         "text": "**13번**의 주사",
-        "say": "파스퇴르는 점점 강해지는 백신을 열세 번에 걸쳐 놓았어요.",
+        "say": "파스퇴르는 백신을 열세번에 걸쳐 놓았어요.",
         "query": "syringe vaccine",
         "img": 6164129
       }
     ],
     "reveal": "소년은 **살아남았어요**",
-    "reveal_say": "소년은 광견병에 걸리지 않았고, 새로운 백신의 시대가 열렸어요.",
+    "reveal_say": "소년은 광견병에 걸리지 않았고, 새로운 백신의 시대가 열렸어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "child boy vintage portrait",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -1229,24 +818,24 @@
     "slug": "mendel-pea-plants",
     "who": "멘델",
     "hook": "멘델은 죽은 뒤에 **유명해졌다?**",
-    "hook_say": "유전학의 아버지 멘델이 세상을 떠난 뒤에야 유명해졌다는 거 알고 계셨나요?",
+    "hook_say": "멘델이 세상을 떠난 뒤에야 유명해졌다는 거 알고 계셨나요?",
     "hook_query": "pea plants garden",
     "beats": [
       {
         "text": "수도사가 키운 **완두콩**",
-        "say": "멘델은 수도원에서 완두콩을 이만 그루 넘게 키우며 유전의 법칙을 연구했어요.",
+        "say": "멘델은 유전 법칙을 발견한 사람으로 유명하죠. 근데 완두콩을 이만그루 키우며 연구했어요.",
         "query": "monastery garden",
         "img": 2311526
       },
       {
         "text": "1866년 **논문**은 외면",
-        "say": "천팔백육십육 년에 그 결과를 발표했지만, 당시에는 거의 주목받지 못했어요.",
+        "say": "천팔백 육십육년 발표했지만 주목받지 못했어요.",
         "query": "old scientific paper manuscript",
         "img": 6477385
       }
     ],
     "reveal": "**1900년**에 재발견",
-    "reveal_say": "멘델이 떠난 지 십육 년 뒤인 천구백 년에야, 그의 연구가 다시 발견됐어요.",
+    "reveal_say": "멘델이 떠난 지 십육년 뒤인 천구백년에야, 그의 연구가 다시 발견됐어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "dna helix science",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -1275,24 +864,24 @@
     "slug": "edison-1093-patents",
     "who": "토머스 에디슨",
     "hook": "에디슨의 특허는\n**1,093개**였다?",
-    "hook_say": "에디슨이 미국에서만 천구십삼 개의 특허를 냈다는 거 알고 계셨나요?",
+    "hook_say": "에디슨이 미국에서만 천 구십삼개의 특허를 냈다는 거 알고 계셨나요?",
     "hook_query": "thomas edison",
     "beats": [
       {
         "text": "21세에 낸 **첫 특허**",
-        "say": "스물한 살이던 천팔백육십팔 년에 첫 특허를 출원했어요.",
+        "say": "에디슨은 전구를 발명한 발명가로 유명하죠. 근데 스물한살이던 천팔백 육십팔년에 첫 특허를 출원했어요.",
         "query": "vintage light bulb",
         "img": 4535320
       },
       {
         "text": "미국 특허 **1,093개**",
-        "say": "평생 미국에서 받은 특허가 천구십삼 개로, 이 기록은 팔십이 년 동안 깨지지 않았어요.",
+        "say": "평생 특허가 천 구십삼개로, 팔십이년간 깨지지 않은 기록이에요.",
         "query": "patent document vintage",
         "img": 1917110
       }
     ],
     "reveal": "해외까지 합치면 **2,332개**",
-    "reveal_say": "해외 특허 천이백삼십구 개를 더하면 모두 이천삼백삼십이 개예요.",
+    "reveal_say": "해외 특허를 더하면 모두 이천삼백 삼십이개예요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "old inventor workshop laboratory",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -1326,19 +915,19 @@
     "beats": [
       {
         "text": "**이중초점** 안경도 발명",
-        "say": "그는 렌즈를 반씩 잘라 붙여서 이중초점 안경을 만들었어요.",
+        "say": "벤저민 프랭클린은 미국 건국의 아버지 중 한 명으로 유명하죠. 근데 그는 렌즈를 반씩 잘라 이중초점 안경을 만들었어요.",
         "query": "eyeglasses vintage",
         "img": 1283235
       },
       {
         "text": "**피뢰침**도 그의 작품",
-        "say": "번개를 피하는 피뢰침도 그가 고안한 것으로 알려져 있어요.",
+        "say": "피뢰침도 그가 고안했다고 알려져요.",
         "query": "lightning storm",
         "img": 4702140
       }
     ],
     "reveal": "모두와 **나누려고**",
-    "reveal_say": "하지만 그는 발명을 모두와 나누려고, 어떤 것에도 특허를 내지 않았어요.",
+    "reveal_say": "하지만 그는 발명을 모두와 나누려고, 어떤 것에도 특허를 내지 않았어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "open hands sharing",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -1372,7 +961,7 @@
     "beats": [
       {
         "text": "책 '**용기 있는 사람들**'",
-        "say": "그는 소신을 지킨 미국 상원의원 여덟 명의 이야기를 책으로 썼어요.",
+        "say": "존 F. 케네디는 미국의 삼십오대 대통령으로 유명하죠. 근데 그는 소신을 지킨 미국 상원의원 여덟 명의 이야기를 책으로 썼어요.",
         "query": "capitol building washington",
         "img": 2212102
       },
@@ -1384,7 +973,7 @@
       }
     ],
     "reveal": "1957년 **전기 부문 수상**",
-    "reveal_say": "이 책으로 천구백오십칠 년 퓰리처상 전기 부문을 받았어요.",
+    "reveal_say": "이 책으로 천구백 오십칠년 퓰리처상 전기 부문을 받았어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "books library shelf",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -1410,97 +999,6 @@
     "reveal_img": 1867381
   },
   {
-    "slug": "mlk-improvised-dream",
-    "who": "마틴 루터 킹",
-    "hook": "'I have a dream'은\n**즉흥**이었다?",
-    "hook_say": "마틴 루터 킹의 그 유명한 꿈 연설이 즉흥이었다는 거 알고 계셨나요?",
-    "hook_query": "martin luther king memorial",
-    "beats": [
-      {
-        "text": "1963년 **워싱턴 행진**",
-        "say": "천구백육십삼 년 팔 월 이십팔 일, 킹은 워싱턴 행진에서 연설을 했어요.",
-        "query": "lincoln memorial washington",
-        "img": 1791337
-      },
-      {
-        "text": "**원고에 없던** 부분",
-        "say": "그런데 꿈이라는 유명한 구절은 준비한 원고에 없던 내용이었어요.",
-        "query": "paper manuscript speech",
-        "img": 893537
-      }
-    ],
-    "reveal": "가수의 **한마디**가 계기",
-    "reveal_say": "가수 마할리아 잭슨이 꿈을 이야기하라고 외치자, 킹은 즉흥으로 연설을 이어 갔어요.",
-    "reveal_query": "microphone stage speech",
-    "cta": "친구에게 공유하기",
-    "sources": [
-      "https://www.history.com/this-day-in-history/august-28/mahalia-jackson-the-queen-of-gospel-puts-her-stamp-on-the-march-on-washington",
-      "https://en.wikipedia.org/wiki/I_Have_a_Dream"
-    ],
-    "verify_note": "확인됨",
-    "caption": "\"I have a dream\"이 즉흥이었다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1963년 8월 28일 워싱턴 행진에서 킹이 연설하던 중, 뒤에 앉아 있던 가스펠 가수 마할리아 잭슨이 \"꿈에 대해 이야기해요, 마틴!\"이라고 외쳤어요.\n\n'I have a dream'이라는 유명한 후렴은 킹이 준비한 원고에는 없던 부분이었어요. 그는 원고를 내려놓고, 이전 설교에서 써 본 적이 있는 구절을 바탕으로 즉흥적으로 연설을 이어 갔어요. 이 부분 덕분에 평범할 수도 있었던 연설이 역사상 가장 유명한 연설 중 하나가 됐어요.",
-    "source": "출처: HISTORY, Wikipedia(I Have a Dream)",
-    "hashtags": "#마틴루터킹 #연설 #미국 #의외의사실 #오늘의TMI",
-    "post_cards": [
-      {
-        "title": "원고에 없던 꿈",
-        "body": "1963년 8월 28일 워싱턴 행진 연설에서 \"I have a dream\" 후렴은 준비한 원고에 없던 부분이었어요."
-      },
-      {
-        "title": "가수의 한마디",
-        "body": "가수 마할리아 잭슨이 \"꿈에 대해 이야기해요, 마틴!\"이라고 외치자, 킹은 원고를 내려놓고 즉흥으로 이어 갔어요."
-      }
-    ],
-    "hook_img": 623955,
-    "reveal_img": 7974197
-  },
-  {
-    "slug": "mandela-466-64",
-    "who": "넬슨 만델라",
-    "hook": "만델라는 **27년**을\n감옥에서 보냈다?",
-    "hook_say": "만델라가 이십칠 년 넘게 감옥에 있었다는 거 알고 계셨나요?",
-    "hook_query": "nelson mandela statue",
-    "beats": [
-      {
-        "text": "**1964년** 로벤섬 수감",
-        "say": "천구백육십사 년, 만델라는 남아공 로벤섬 감옥에 수감됐어요.",
-        "query": "robben island cape town",
-        "img": 7087126
-      },
-      {
-        "text": "그해 **466번째** 수감자",
-        "say": "그는 그해 사백육십육 번째로 들어온 수감자여서, 번호에 그 숫자가 들어갔어요.",
-        "query": "prison cell bars",
-        "img": 598851
-      }
-    ],
-    "reveal": "번호는 **상징**이 됐어요",
-    "reveal_say": "그 번호는 훗날 그를 상징하는 이름이 됐어요.",
-    "reveal_query": "south africa flag",
-    "cta": "친구에게 공유하기",
-    "sources": [
-      "https://en.wikipedia.org/wiki/46664",
-      "https://www.nelsonmandela.org/trials-and-prison-chronology",
-      "https://www.aljazeera.com/news/2013/12/6/how-mandela-prison-number-became-a-brand"
-    ],
-    "verify_note": "확인됨",
-    "caption": "만델라가 27년 넘게 감옥에 있었다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n만델라는 27년이 넘는 세월을 감옥에서 보냈어요. 1964년부터 1982년까지는 케이프타운 앞바다의 로벤섬 교도소에 수감됐어요.\n\n그는 1964년에 466번째로 들어온 수감자여서 수감번호가 '466/64'였어요. 이 번호는 1982년 폴스무어 교도소로 옮겨지며 '220/82'로 바뀔 때까지 쓰였어요. 훗날 이 번호는 브랜드처럼 그의 이름과 함께 기억되게 됐어요.",
-    "source": "출처: Nelson Mandela Foundation, Britannica, Al Jazeera",
-    "hashtags": "#만델라 #남아공 #역사 #의외의사실 #오늘의TMI",
-    "post_cards": [
-      {
-        "title": "로벤섬의 수감자",
-        "body": "만델라는 27년이 넘게 감옥에 있었고, 1964년부터 1982년까지는 로벤섬 교도소에 수감됐어요."
-      },
-      {
-        "title": "수감번호 466/64",
-        "body": "1964년 466번째로 들어온 수감자여서 번호가 466/64였고, 이 번호는 훗날 그의 상징이 됐어요."
-      }
-    ],
-    "hook_img": 997558,
-    "reveal_img": 2470354
-  },
-  {
     "slug": "helen-keller-radcliffe",
     "who": "헬렌 켈러",
     "hook": "헬렌 켈러는 **대학을 우등**으로\n졸업했다?",
@@ -1509,19 +1007,19 @@
     "beats": [
       {
         "text": "생후 **19개월**에 시청각 상실",
-        "say": "그녀는 생후 십구 개월에 병을 앓아 보지도 듣지도 못하게 됐어요.",
+        "say": "헬렌 켈러는 보지도 듣지도 못했지만 작가이자 사회운동가로 유명하죠. 근데 생후 십구개월에 시청각을 잃었어요.",
         "query": "child hands touching",
         "img": 9950817
       },
       {
         "text": "**설리번**이 손에 강의를",
-        "say": "대학에서는 스승 앤 설리번이 강의 내용을 그녀의 손바닥에 글자로 전했어요.",
+        "say": "대학에서 스승이 강의를 손바닥에 전했어요.",
         "query": "university library old",
         "img": 3528885
       }
     ],
     "reveal": "1904년 **우등 졸업**",
-    "reveal_say": "천구백사 년, 그녀는 시청각 중복장애인으로는 처음으로 학사 학위를 받았어요.",
+    "reveal_say": "천구백 사년, 그녀는 시청각 중복장애인으로는 처음으로 학사 학위를 받았어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "graduation cap diploma",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -1550,24 +1048,24 @@
     "slug": "vangogh-letters",
     "who": "빈센트 반 고흐",
     "hook": "반 고흐가 쓴 편지는\n**800통이 넘는다?**",
-    "hook_say": "반 고흐가 쓴 편지가 팔백 통이 넘는다는 거 알고 계셨나요?",
+    "hook_say": "반 고흐가 쓴 편지가 팔백통이 넘는다는 거 알고 계셨나요?",
     "hook_query": "van gogh statue bust",
     "beats": [
       {
         "text": "동생 **테오**에게 650통",
-        "say": "그중 육백오십 통 넘게는 사랑하는 동생에게 보냈어요.",
+        "say": "빈센트 반 고흐는 '별이 빛나는 밤'을 그린 화가로 유명하죠. 근데 그중 육백오십통 넘게는 사랑하는 동생에게 보냈어요.",
         "query": "old letters envelope vintage",
         "img": 1390586
       },
       {
         "text": "전해지는 편지 **903통**",
-        "say": "지금까지 전해지는 편지는 구백삼 통이고, 그가 쓴 것이 팔백이십 통이에요.",
+        "say": "지금까지 전해지는 편지는 구백 삼통이고, 그가 쓴 것이 팔백이십통이에요.",
         "query": "antique manuscript ink",
         "img": 2311526
       }
     ],
     "reveal": "편지로 **삶**을 읽어요",
-    "reveal_say": "이 편지들 덕분에 그의 생각과 삶을 지금도 읽을 수 있어요.",
+    "reveal_say": "이 편지들 덕분에 그의 생각과 삶을 지금도 읽을 수 있어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "sunflowers field painting",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -1593,52 +1091,6 @@
     "reveal_img": 8111329
   },
   {
-    "slug": "marie-antoinette-cake",
-    "who": "마리 앙투아네트",
-    "hook": "'케이크를 먹으라'는 말은\n**앙투아네트가 안 했다?**",
-    "hook_say": "빵이 없으면 케이크를 먹으라는 말을 앙투아네트가 하지 않았다는 거 알고 계셨나요?",
-    "hook_query": "versailles palace paris",
-    "beats": [
-      {
-        "text": "**1760년대** 루소의 글에 등장",
-        "say": "이 말은 천칠백육십 년대에 루소가 쓴 고백록에 이미 나와요.",
-        "query": "old french book manuscript",
-        "img": 10102767
-      },
-      {
-        "text": "그때 앙투아네트는 **9살**",
-        "say": "그때 앙투아네트는 아홉 살이었고, 프랑스에 오지도 않은 때였어요.",
-        "query": "vienna austria castle",
-        "img": 740920
-      }
-    ],
-    "reveal": "죽은 뒤에야 **그녀의 말**로",
-    "reveal_say": "이 말은 그녀가 세상을 떠나고 수십 년이 지나서야 그녀의 말로 알려졌어요.",
-    "reveal_query": "cake pastry french",
-    "cta": "친구에게 공유하기",
-    "sources": [
-      "https://www.britannica.com/story/did-marie-antoinette-really-say-let-them-eat-cake",
-      "https://www.history.com/articles/did-marie-antoinette-really-say-let-them-eat-cake",
-      "https://en.wikipedia.org/wiki/Let_them_eat_cake"
-    ],
-    "verify_note": "확인됨",
-    "caption": "마리 앙투아네트가 \"빵이 없으면 케이크를 먹으라\"고 하지 않았다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n이 말이 처음 등장한 건 장 자크 루소의 『고백록』이에요. 루소가 1760년대에 쓰기 시작한 이 책에서, 이름을 밝히지 않은 '위대한 공주'가 농민들에게 빵이 없다는 말을 듣고 브리오슈를 먹으면 되지 않느냐고 말했다고 해요.\n\n당시 마리 앙투아네트는 아홉 살로 오스트리아에 살고 있었고, 프랑스에 오지도 않은 때였어요. 게다가 『고백록』은 루소가 세상을 떠난 뒤인 1782년에 출간됐어요. 이 말이 앙투아네트의 말로 알려진 것은 그녀가 세상을 떠나고 수십 년이 지난 뒤예요.\n\n실제 왕족이 이 말을 했다는 증거는 거의 없어요.",
-    "source": "출처: Britannica, HISTORY, Wikipedia(Let them eat cake)",
-    "hashtags": "#마리앙투아네트 #프랑스 #역사 #의외의사실 #오늘의TMI",
-    "post_cards": [
-      {
-        "title": "루소의 글에 먼저",
-        "body": "이 말은 루소가 1760년대에 쓰기 시작한 『고백록』에 이미 등장하고, 이름은 밝히지 않은 '위대한 공주'의 말이었어요."
-      },
-      {
-        "title": "그녀의 말이 된 이유",
-        "body": "그때 앙투아네트는 아홉 살이었고, 이 말이 그녀의 말로 알려진 건 세상을 떠나고 수십 년 뒤였어요."
-      }
-    ],
-    "hook_img": 4838031,
-    "reveal_img": 5900100
-  },
-  {
     "slug": "socrates-no-writings",
     "who": "소크라테스",
     "hook": "소크라테스는 **글을 한 줄도**\n남기지 않았다?",
@@ -1647,7 +1099,7 @@
     "beats": [
       {
         "text": "우리가 아는 건 **제자의 기록**",
-        "say": "그의 모습은 제자 플라톤과 크세노폰의 글을 통해 전해져요.",
+        "say": "소크라테스는 고대 그리스를 대표하는 철학자로 유명하죠. 근데 그의 모습은 제자 플라톤과 크세노폰의 글을 통해 전해져요.",
         "query": "ancient greek ruins columns",
         "img": 5977410
       },
@@ -1659,7 +1111,7 @@
       }
     ],
     "reveal": "기원전 **399년** 독배",
-    "reveal_say": "그는 기원전 삼백구십구 년 재판에서 사형을 선고받아 독배를 마셨어요.",
+    "reveal_say": "그는 기원전 삼백구십 구년 재판에서 사형을 선고받아 독배를 마셨어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "greek statue philosopher",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -1688,24 +1140,24 @@
     "slug": "joan-of-arc-1456",
     "who": "잔 다르크",
     "hook": "잔 다르크의 재판은\n25년 뒤 **무효**가 됐다?",
-    "hook_say": "잔 다르크의 재판이 이십오 년 뒤에 무효가 됐다는 거 알고 계셨나요?",
+    "hook_say": "잔 다르크의 재판이 이십오년 뒤에 무효가 됐다는 거 알고 계셨나요?",
     "hook_query": "joan of arc statue",
     "beats": [
       {
         "text": "1431년, 열아홉에 **화형**",
-        "say": "천사백삼십일 년 오 월, 열아홉 살의 잔 다르크는 이단이라는 죄로 화형을 당했어요.",
+        "say": "잔 다르크는 프랑스를 구한 소녀 영웅으로 유명하죠. 근데 천사백 삼십일년 열아홉살에 이단으로 화형당했어요.",
         "query": "medieval cathedral france",
         "img": 1021517
       },
       {
         "text": "1456년 **재심**",
-        "say": "천사백오십육 년 재심 법정은 재판이 속임수와 절차상 오류로 얼룩졌다며 판결을 뒤집었어요.",
+        "say": "천사백 오십육년 재심에서 판결이 뒤집혔어요.",
         "query": "old court hall gothic",
         "img": 6508068
       }
     ],
     "reveal": "1920년 **성인**으로",
-    "reveal_say": "그리고 천구백이십 년, 교황 베네딕토 십오 세가 그녀를 성인으로 선포했어요.",
+    "reveal_say": "그리고 천구백 이십년, 교황 베네딕토 십오세가 그녀를 성인으로 선포했어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "stained glass cathedral",
     "cta": "친구에게 공유하기",
     "sources": [
@@ -1739,19 +1191,19 @@
     "beats": [
       {
         "text": "남은 서명은 **6개**",
-        "say": "그가 직접 쓴 서명은 여섯 개가 남아 있는데, 모두 법률 문서에 있어요.",
+        "say": "윌리엄 셰익스피어는 로미오와 줄리엣을 쓴 극작가로 유명하죠. 근데 남은 서명 여섯개가 모두 법률 문서에 있어요.",
         "query": "old handwritten document quill",
         "img": 317033
       },
       {
         "text": "철자가 **다 달랐어요**",
-        "say": "여섯 개의 철자가 모두 달랐고, 유언장 한 장 안에서도 두 가지로 썼어요.",
+        "say": "철자가 다 달랐고 유언장 한장에도 두가지로 썼어요.",
         "query": "quill ink parchment",
         "img": 2431674
       }
     ],
     "reveal": "유언장엔 **두 번째 좋은 침대**",
-    "reveal_say": "그리고 유언장에서는 아내에게 두 번째로 좋은 침대를 남겼어요.",
+    "reveal_say": "그리고 유언장에서는 아내에게 두번째로 좋은 침대를 남겼어요. 재밌었다면 친구에게 공유해보세요.",
     "reveal_query": "old wooden bed antique",
     "cta": "친구에게 공유하기",
     "sources": [
