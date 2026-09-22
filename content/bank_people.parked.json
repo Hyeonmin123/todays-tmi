@@ -43,5 +43,370 @@
     ],
     "hook_img": 5801956,
     "reveal_img": 2829526
+  },
+  {
+    "slug": "napoleon-not-short",
+    "who": "나폴레옹",
+    "hook": "나폴레옹은\n**키가 작지 않았다?**",
+    "hook_say": "나폴레옹이 키가 작았다는 이야기, 사실이 아니라는 거 알고 계셨나요?",
+    "hook_query": "napoleon bonaparte statue",
+    "beats": [
+      {
+        "text": "실제 키는 약 **169cm**",
+        "say": "나폴레옹의 실제 키는 약 백육십구 센티미터로, 당시 프랑스 남성 평균 정도였어요.",
+        "query": "tape measure ruler",
+        "img": 2923809
+      },
+      {
+        "text": "**프랑스 인치**의 착각",
+        "say": "프랑스 단위로 오 피트 이 인치라고 기록된 게, 영국 단위로 읽히면서 작은 키로 오해받았어요.",
+        "query": "old map france vintage",
+        "img": 4426219
+      }
+    ],
+    "reveal": "키 큰 **근위병** 때문에\n더 작아 보였어요",
+    "reveal_say": "게다가 나폴레옹은 키가 큰 근위병들에게 둘러싸여 있어서, 더 작아 보였어요.",
+    "reveal_query": "napoleon painting",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.britannica.com/story/was-napoleon-short",
+      "https://www.napoleon.org/en/history-of-the-two-empires/articles/was-napoleon-small/",
+      "https://www.scienceabc.com/eyeopeners/was-napoleon-really-short"
+    ],
+    "verify_note": "확인됨",
+    "hook_img": 6798754,
+    "reveal_img": 67784,
+    "caption": "나폴레옹이 키가 작았다는 이야기는 사실이 아니라는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n나폴레옹이 세상을 떠났을 때 기록된 키는 프랑스 단위로 5피트 2인치였어요. 그런데 당시 프랑스 인치는 약 2.7cm로, 영국 인치(2.54cm)보다 길었어요. 이걸 현대 단위로 바꾸면 약 169cm, 당시 프랑스 남성 평균 정도였어요.\n\n오해가 굳어진 데에는 영국의 영향도 컸어요. 영국 풍자화가 제임스 길레이 등이 나폴레옹을 아주 작고 성난 인물로 그려 이미지를 퍼뜨렸거든요. 게다가 나폴레옹은 일정 키 이상이어야 뽑히는 근위병들에게 둘러싸여 있어서 실제보다 더 작아 보였어요.\n\n'나폴레옹 콤플렉스'라는 말도 이 이미지에서 나왔지만, 정작 그의 키는 평균 정도였답니다.",
+    "source": "출처: Britannica, napoleon.org",
+    "hashtags": "#나폴레옹 #위인 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "실제 키는 약 169cm",
+        "body": "기록된 5피트 2인치는 프랑스 단위라, 현대 단위로 바꾸면 약 169cm예요."
+      },
+      {
+        "title": "작게 보인 이유",
+        "body": "영국 풍자화의 영향과, 키 큰 근위병들에게 둘러싸여 있던 모습 때문에 작게 오해받았어요."
+      }
+    ]
+  },
+  {
+    "slug": "beethoven-deaf-ninth",
+    "who": "베토벤",
+    "hook": "베토벤은\n**못 듣고** 지휘했다?",
+    "hook_say": "귀가 들리지 않는 베토벤이 교향곡을 지휘했다는 거 알고 계셨나요?",
+    "hook_query": "beethoven bust",
+    "beats": [
+      {
+        "text": "1824년 **9번 교향곡** 초연",
+        "say": "천팔백이십사 년, 거의 귀가 먹은 베토벤의 교향곡 구 번이 처음 무대에 올랐어요.",
+        "query": "orchestra concert hall vintage",
+        "img": 1168357
+      },
+      {
+        "text": "박수 소리도 **못 들었다**",
+        "say": "연주가 끝난 줄도 모르고 베토벤이 계속 지휘하자, 옆의 가수가 조심스럽게 관객 쪽으로 돌려세웠어요.",
+        "query": "conductor baton hands",
+        "img": 287324
+      }
+    ],
+    "reveal": "**기립박수**가 쏟아졌어요",
+    "reveal_say": "그러자 베토벤은 관객들의 뜨거운 기립박수를 볼 수 있었어요.",
+    "reveal_query": "audience applause standing ovation",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Symphony_No._9_(Beethoven)",
+      "https://www.history.com/this-day-in-history/may-7/beethoven-ninth-symphony-debuts-vienna"
+    ],
+    "verify_note": "확인됨(공식 지휘자는 따로 있었고 베토벤은 템포를 지시)",
+    "hook_img": 62844,
+    "reveal_img": 6133151,
+    "caption": "귀가 들리지 않는 베토벤이 교향곡 9번 초연 무대에 섰다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1824년 5월 7일, 빈의 케른트너토어 극장에서 교향곡 9번이 처음 연주됐어요. 리허설은 단 두 번뿐이었고, 소프라노 헨리에테 존탁과 알토 카롤리네 웅거가 노래했어요.\n\n이때 베토벤은 거의 10년 가까이 귀가 완전히 들리지 않는 상태였어요. 그는 무대에서 곡의 템포를 알려주고 악보를 넘기는 역할을 맡았어요. 실제 지휘는 미하엘 우믈라우프가 했고, 연주자들에게는 베토벤의 지시를 따르지 말라고 미리 당부해 뒀다고 해요.\n\n연주가 끝났을 때도 베토벤은 소리를 듣지 못해 계속 지휘를 이어가고 있었어요. 그러자 웅거가 조심스럽게 그를 관객 쪽으로 돌려세웠고, 그제야 베토벤은 열광하는 기립박수를 눈으로 볼 수 있었어요.",
+    "source": "출처: History.com, Wikipedia",
+    "hashtags": "#베토벤 #클래식 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "귀먹은 채 무대에",
+        "body": "1824년 5월 7일, 거의 10년간 듣지 못한 베토벤의 교향곡 9번이 빈에서 처음 연주됐어요."
+      },
+      {
+        "title": "기립박수를 본 순간",
+        "body": "연주가 끝난 줄 모르고 지휘를 이어가자, 가수가 관객 쪽으로 돌려세워 박수를 볼 수 있었어요."
+      }
+    ]
+  },
+  {
+    "slug": "washington-one-tooth",
+    "who": "조지 워싱턴",
+    "hook": "워싱턴은 취임식 때\n**이가 하나**뿐이었다?",
+    "hook_say": "미국 초대 대통령 워싱턴이 취임할 때 이가 하나밖에 없었다는 거 알고 계셨나요?",
+    "hook_query": "george washington statue",
+    "beats": [
+      {
+        "text": "취임 당시 **이 1개**",
+        "say": "천칠백팔십구 년 취임식 날, 워싱턴에게 남은 자기 이는 딱 하나뿐이었어요.",
+        "query": "dentist vintage teeth",
+        "img": 887338
+      },
+      {
+        "text": "나무 틀니는 **오해**",
+        "say": "그의 틀니는 나무가 아니라, 하마 상아와 사람 이빨 등으로 만들어졌어요.",
+        "query": "ivory tusk",
+        "img": 2112416
+      }
+    ],
+    "reveal": "**상아**가 얼룩져\n나무처럼 보였어요",
+    "reveal_say": "상아가 금방 얼룩져서 나무처럼 보였던 것이, 오해의 시작으로 추정돼요.",
+    "reveal_query": "mount vernon virginia",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.mountvernon.org/george-washington/health/washingtons-teeth",
+      "https://www.livescience.com/61919-george-washington-teeth-not-wood.html",
+      "https://www.smithsonianmag.com/smart-news/george-washington-didnt-have-wooden-teeth-they-were-ivory-180953273/"
+    ],
+    "verify_note": "확인됨",
+    "caption": "미국 초대 대통령 워싱턴이 취임식 날 자기 이가 하나뿐이었다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1789년 4월 30일 첫 대통령 취임식 날, 워싱턴에게 남은 자기 이는 작은어금니 하나뿐이었어요. 나머지는 전부 틀니였죠.\n\n흔히 \"워싱턴은 나무 틀니를 썼다\"고 알려져 있지만 사실이 아니에요. 그의 틀니는 하마 상아에 금 스프링과 놋쇠 나사를 달고, 사람 이빨을 끼운 형태였어요. 치과의사는 남은 자기 이를 뽑지 않으려고 틀니에 구멍을 내 그 이가 들어가게 했다고 해요.\n\n평생 그는 사람·소·당나귀·말의 이빨, 하마와 바다코끼리의 상아, 납·금·은 합금 등 다양한 재료의 틀니를 썼어요. 나무로 오해받은 건 상아가 금세 얼룩져 나무처럼 보였기 때문으로 추정돼요.",
+    "source": "출처: Mount Vernon, Smithsonian, Live Science",
+    "hashtags": "#조지워싱턴 #위인 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "취임식 날, 이는 하나뿐",
+        "body": "1789년 4월 30일 첫 취임식 날, 워싱턴에게 남은 자기 이는 하나뿐이었고 나머지는 틀니였어요."
+      },
+      {
+        "title": "나무가 아니라 상아",
+        "body": "틀니는 하마 상아에 금 스프링, 사람 이빨 등으로 만들어졌어요. 상아가 얼룩지면서 나무로 오해받았다고 추정돼요."
+      }
+    ],
+    "hook_img": 6952099,
+    "reveal_img": 55476
+  },
+  {
+    "slug": "columbus-thought-asia",
+    "who": "크리스토퍼 콜럼버스",
+    "hook": "콜럼버스는 끝까지\n**아시아**라고 믿었다?",
+    "hook_say": "콜럼버스가 죽을 때까지 자신이 아시아에 갔다고 믿었다는 거 알고 계셨나요?",
+    "hook_query": "christopher columbus statue",
+    "beats": [
+      {
+        "text": "목표는 **아시아** 항로",
+        "say": "그의 목표는 대서양을 건너 아시아로 가는 더 빠른 항로를 찾는 것이었어요.",
+        "query": "old sailing ship sea",
+        "img": 4509960
+      },
+      {
+        "text": "카리브해를 **동인도**로 착각",
+        "say": "카리브해에 도착한 그는 그곳을 동인도라고 여기고 돌아갔어요.",
+        "query": "caribbean beach palm trees",
+        "img": 5288904
+      }
+    ],
+    "reveal": "죽을 때까지\n**착각**이었어요",
+    "reveal_say": "다른 탐험가들이 새 대륙임을 알아 갔지만, 콜럼버스는 천오백육 년 세상을 떠날 때까지 생각을 바꾸지 않았다고 전해져요.",
+    "reveal_query": "antique world map globe",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://exploration.marinersmuseum.org/subject/christopher-columbus/",
+      "https://kids.britannica.com/students/article/Christopher-Columbus/273745"
+    ],
+    "verify_note": "부분 확인(학자별 해석 차이 명시)",
+    "caption": "콜럼버스가 죽을 때까지 자신이 아시아에 갔다고 믿었다는 이야기, 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n콜럼버스의 원래 목표는 대서양을 건너 아시아로 가는 더 짧은 항로를 찾는 것이었어요. 카리브해에 도착한 그는 그곳을 동인도라고 믿은 채 스페인으로 돌아갔어요.\n\n이후 아메리고 베스푸치 같은 탐험가들은 그곳이 아시아가 아닌 새로운 땅이라는 걸 알아 가기 시작했어요. 하지만 콜럼버스는 1506년 세상을 떠날 때까지 자신의 항해가 아시아에 닿은 것이라는 믿음을 버리지 않았다고 전해져요.\n\n※ 그가 정말 끝까지 그렇게 믿었는지에 대해서는 학자마다 해석이 조금 달라요.",
+    "source": "출처: Mariners' Museum, Britannica Kids",
+    "hashtags": "#콜럼버스 #대항해시대 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "동인도라고 믿었어요",
+        "body": "콜럼버스는 카리브해에 도착한 뒤 그곳이 아시아의 동인도라고 믿고 스페인으로 돌아갔어요."
+      },
+      {
+        "title": "끝까지 바뀌지 않은 생각",
+        "body": "아메리고 베스푸치 같은 탐험가들은 새 땅임을 알아 갔지만, 콜럼버스는 1506년 세상을 떠날 때까지 생각을 바꾸지 않았다고 전해져요."
+      }
+    ],
+    "hook_img": 2422371,
+    "reveal_img": 680230
+  },
+  {
+    "slug": "wright-12-seconds",
+    "who": "라이트 형제",
+    "hook": "인류 첫 비행은 **12초**였다?",
+    "hook_say": "인류 최초의 동력 비행이 십이 초였다는 거 알고 계셨나요?",
+    "hook_query": "wright brothers",
+    "beats": [
+      {
+        "text": "1903년 **키티호크**",
+        "say": "천구백삼 년 십이 월 십칠 일, 미국 노스캐롤라이나 키티호크에서 라이트 형제가 비행에 성공했어요.",
+        "query": "kitty hawk monument",
+        "img": 2723415
+      },
+      {
+        "text": "비행 거리 약 **37m**",
+        "say": "첫 비행은 십이 초 동안 백이십 피트, 약 삼십칠 미터를 날았어요.",
+        "query": "vintage biplane airplane",
+        "img": 3657350
+      }
+    ],
+    "reveal": "그날 **네 번** 날았어요",
+    "reveal_say": "그날 네 번 비행했고, 가장 긴 마지막 비행은 오십구 초 동안 약 이백육십 미터를 날았어요.",
+    "reveal_query": "airplane flying blue sky",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.nasa.gov/image-article/wright-brothers-first-flight/",
+      "https://airandspace.si.edu/stories/editorial/wright-brothers-made-history-kitty-hawk",
+      "https://www.history.com/this-day-in-history/december-17/first-airplane-flies"
+    ],
+    "verify_note": "확인됨",
+    "caption": "인류 최초의 동력 비행이 12초였다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1903년 12월 17일 오전 10시 35분, 다섯 명의 목격자가 지켜보는 가운데 오빌 라이트가 조종한 비행기가 레일을 달려 하늘로 떠올랐어요. 비행은 12초 동안 120피트(약 37m)였어요.\n\n형제는 그날 모두 네 번 비행했어요. 마지막 비행은 윌버가 조종해 59초 동안 852피트(약 260m)를 날았어요. 노스캐롤라이나 키티호크에서 인류의 항공 시대가 열린 순간이었죠.",
+    "source": "출처: NASA, Smithsonian National Air and Space Museum, History.com",
+    "hashtags": "#라이트형제 #비행기 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "첫 비행은 12초",
+        "body": "1903년 12월 17일 오전 10시 35분, 오빌 라이트가 조종한 비행기가 12초 동안 약 37m를 날았어요."
+      },
+      {
+        "title": "그날 네 번의 비행",
+        "body": "형제는 그날 네 번 비행했고, 윌버가 조종한 마지막 비행은 59초 동안 약 260m를 날았어요."
+      }
+    ],
+    "hook_img": 794534,
+    "reveal_img": 2617651
+  },
+  {
+    "slug": "stephen-hawking",
+    "who": "스티븐 호킹",
+    "hook": "호킹은 **시한부 2년**이었다?",
+    "hook_say": "스티븐 호킹이 스물한 살에 시한부 이 년을 선고받았다는 거 알고 계셨나요?",
+    "hook_query": "stephen hawking",
+    "beats": [
+      {
+        "text": "21세에 **루게릭병** 진단",
+        "say": "천구백육십삼 년, 스물한 살의 호킹은 루게릭병 진단을 받았어요.",
+        "query": "hospital medical",
+        "img": 1704855
+      },
+      {
+        "text": "의사가 말한 **2년**",
+        "say": "의사들은 그에게 남은 시간이 이 년쯤이라고 했어요.",
+        "query": "hourglass sand time",
+        "img": 1489042
+      }
+    ],
+    "reveal": "그 뒤 **55년**을 더 살았어요",
+    "reveal_say": "하지만 호킹은 그 뒤로도 오십오 년을 더 살았고, 이천십팔 년 일흔여섯 살에 세상을 떠났어요.",
+    "reveal_query": "universe galaxy stars",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.hcplive.com/view/stephen-hawking-dead",
+      "https://www.scientificamerican.com/article/stephen-hawking-als/",
+      "https://time.com/5199001/stephen-hawking-als/"
+    ],
+    "verify_note": "확인됨(진단 시기·수명은 복수 출처 일치)",
+    "caption": "스티븐 호킹이 21살에 시한부 2년을 선고받았다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n호킹은 1963년 21세에 루게릭병(ALS) 진단을 받았고, 처음에는 2년 정도밖에 살지 못할 것이라는 말을 들었어요. 하지만 그는 그로부터 55년을 더 살았고, 2018년 3월 14일 76세로 세상을 떠났어요.\n\n일반적으로 루게릭병 환자의 기대 수명은 약 3년이고, 진단 후 10년 넘게 사는 사람은 약 10%, 20년 이상 사는 사람은 그 절반 정도에 불과해요. 50년 넘게 병과 함께한 호킹은 매우 드문 사례로 꼽혀요.",
+    "source": "출처: HCPLive, Scientific American, TIME",
+    "hashtags": "#스티븐호킹 #과학 #물리학 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "21세의 진단",
+        "body": "호킹은 1963년 21세에 루게릭병 진단을 받았고, 의사들은 2년쯤 살 것이라고 했어요."
+      },
+      {
+        "title": "그 뒤 55년",
+        "body": "그는 55년을 더 살아 2018년 3월 14일 76세로 세상을 떠났어요. 진단 후 20년 넘게 사는 환자는 아주 드물어요."
+      }
+    ],
+    "hook_img": 5480855,
+    "reveal_img": 9768540
+  },
+  {
+    "slug": "mlk-improvised-dream",
+    "who": "마틴 루터 킹",
+    "hook": "'I have a dream'은\n**즉흥**이었다?",
+    "hook_say": "마틴 루터 킹의 그 유명한 꿈 연설이 즉흥이었다는 거 알고 계셨나요?",
+    "hook_query": "martin luther king memorial",
+    "beats": [
+      {
+        "text": "1963년 **워싱턴 행진**",
+        "say": "천구백육십삼 년 팔 월 이십팔 일, 킹은 워싱턴 행진에서 연설을 했어요.",
+        "query": "lincoln memorial washington",
+        "img": 1791337
+      },
+      {
+        "text": "**원고에 없던** 부분",
+        "say": "그런데 꿈이라는 유명한 구절은 준비한 원고에 없던 내용이었어요.",
+        "query": "paper manuscript speech",
+        "img": 893537
+      }
+    ],
+    "reveal": "가수의 **한마디**가 계기",
+    "reveal_say": "가수 마할리아 잭슨이 꿈을 이야기하라고 외치자, 킹은 즉흥으로 연설을 이어 갔어요.",
+    "reveal_query": "microphone stage speech",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://www.history.com/this-day-in-history/august-28/mahalia-jackson-the-queen-of-gospel-puts-her-stamp-on-the-march-on-washington",
+      "https://en.wikipedia.org/wiki/I_Have_a_Dream"
+    ],
+    "verify_note": "확인됨",
+    "caption": "\"I have a dream\"이 즉흥이었다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n1963년 8월 28일 워싱턴 행진에서 킹이 연설하던 중, 뒤에 앉아 있던 가스펠 가수 마할리아 잭슨이 \"꿈에 대해 이야기해요, 마틴!\"이라고 외쳤어요.\n\n'I have a dream'이라는 유명한 후렴은 킹이 준비한 원고에는 없던 부분이었어요. 그는 원고를 내려놓고, 이전 설교에서 써 본 적이 있는 구절을 바탕으로 즉흥적으로 연설을 이어 갔어요. 이 부분 덕분에 평범할 수도 있었던 연설이 역사상 가장 유명한 연설 중 하나가 됐어요.",
+    "source": "출처: HISTORY, Wikipedia(I Have a Dream)",
+    "hashtags": "#마틴루터킹 #연설 #미국 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "원고에 없던 꿈",
+        "body": "1963년 8월 28일 워싱턴 행진 연설에서 \"I have a dream\" 후렴은 준비한 원고에 없던 부분이었어요."
+      },
+      {
+        "title": "가수의 한마디",
+        "body": "가수 마할리아 잭슨이 \"꿈에 대해 이야기해요, 마틴!\"이라고 외치자, 킹은 원고를 내려놓고 즉흥으로 이어 갔어요."
+      }
+    ],
+    "hook_img": 623955,
+    "reveal_img": 7974197
+  },
+  {
+    "slug": "mandela-466-64",
+    "who": "넬슨 만델라",
+    "hook": "만델라는 **27년**을\n감옥에서 보냈다?",
+    "hook_say": "만델라가 이십칠 년 넘게 감옥에 있었다는 거 알고 계셨나요?",
+    "hook_query": "nelson mandela statue",
+    "beats": [
+      {
+        "text": "**1964년** 로벤섬 수감",
+        "say": "천구백육십사 년, 만델라는 남아공 로벤섬 감옥에 수감됐어요.",
+        "query": "robben island cape town",
+        "img": 7087126
+      },
+      {
+        "text": "그해 **466번째** 수감자",
+        "say": "그는 그해 사백육십육 번째로 들어온 수감자여서, 번호에 그 숫자가 들어갔어요.",
+        "query": "prison cell bars",
+        "img": 598851
+      }
+    ],
+    "reveal": "번호는 **상징**이 됐어요",
+    "reveal_say": "그 번호는 훗날 그를 상징하는 이름이 됐어요.",
+    "reveal_query": "south africa flag",
+    "cta": "친구에게 공유하기",
+    "sources": [
+      "https://en.wikipedia.org/wiki/46664",
+      "https://www.nelsonmandela.org/trials-and-prison-chronology",
+      "https://www.aljazeera.com/news/2013/12/6/how-mandela-prison-number-became-a-brand"
+    ],
+    "verify_note": "확인됨",
+    "caption": "만델라가 27년 넘게 감옥에 있었다는 거 알고 계셨나요?\n\n📌 영상에 다 담지 못한 이야기\n\n만델라는 27년이 넘는 세월을 감옥에서 보냈어요. 1964년부터 1982년까지는 케이프타운 앞바다의 로벤섬 교도소에 수감됐어요.\n\n그는 1964년에 466번째로 들어온 수감자여서 수감번호가 '466/64'였어요. 이 번호는 1982년 폴스무어 교도소로 옮겨지며 '220/82'로 바뀔 때까지 쓰였어요. 훗날 이 번호는 브랜드처럼 그의 이름과 함께 기억되게 됐어요.",
+    "source": "출처: Nelson Mandela Foundation, Britannica, Al Jazeera",
+    "hashtags": "#만델라 #남아공 #역사 #의외의사실 #오늘의TMI",
+    "post_cards": [
+      {
+        "title": "로벤섬의 수감자",
+        "body": "만델라는 27년이 넘게 감옥에 있었고, 1964년부터 1982년까지는 로벤섬 교도소에 수감됐어요."
+      },
+      {
+        "title": "수감번호 466/64",
+        "body": "1964년 466번째로 들어온 수감자여서 번호가 466/64였고, 이 번호는 훗날 그의 상징이 됐어요."
+      }
+    ],
+    "hook_img": 997558,
+    "reveal_img": 2470354
   }
 ]
