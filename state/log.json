@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-09-23",
+  "last_published_at": "2026-09-24",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -408,6 +408,13 @@
       "permalink": "https://www.instagram.com/p/Ddn3jDcm-Z2/",
       "reel_media_id": "18021630815872109",
       "reel_permalink": "https://www.instagram.com/reel/Ddn3kvYjL9e/"
+    },
+    {
+      "slug": "lincoln-only-patent",
+      "track": "P",
+      "published_at": "2026-09-24T08:35:08+09:00",
+      "media_id": "18088612499303232",
+      "permalink": "https://www.instagram.com/p/DdpgKL_lpe2/"
     }
   ]
 }
