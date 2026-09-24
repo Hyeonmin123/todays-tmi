@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-09-24",
+  "last_published_at": "2026-09-25",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -435,6 +435,13 @@
       "permalink": "https://www.instagram.com/p/DdqhyMdm7U4/",
       "reel_media_id": "18110283518272082",
       "reel_permalink": "https://www.instagram.com/reel/Ddqh2l7FCfp/"
+    },
+    {
+      "slug": "davinci-mirror-writing",
+      "track": "P",
+      "published_at": "2026-09-25T08:51:00+09:00",
+      "media_id": "18092416226173436",
+      "permalink": "https://www.instagram.com/p/DdsGxMljU3J/"
     }
   ]
 }
