@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-09-27",
+  "last_published_at": "2026-09-28",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -489,6 +489,13 @@
       "permalink": "https://www.instagram.com/p/DdyPPM3lpcg/",
       "reel_media_id": "18067486841755887",
       "reel_permalink": "https://www.instagram.com/reel/DdyPQ5hgJD_/"
+    },
+    {
+      "slug": "elizabeth-mechanic",
+      "track": "P",
+      "published_at": "2026-09-28T08:45:15+09:00",
+      "media_id": "17976948699135177",
+      "permalink": "https://www.instagram.com/p/Ddz0fmuD3NW/"
     }
   ]
 }
