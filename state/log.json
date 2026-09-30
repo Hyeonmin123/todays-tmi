@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-09-29",
+  "last_published_at": "2026-09-30",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -525,6 +525,13 @@
       "permalink": "https://www.instagram.com/p/Dd3chQxls-x/",
       "reel_media_id": "17971930305157094",
       "reel_permalink": "https://www.instagram.com/reel/Dd3cjQ7CSvn/"
+    },
+    {
+      "slug": "darwin-beagle",
+      "track": "P",
+      "published_at": "2026-09-30T09:18:11+09:00",
+      "media_id": "17873480901594786",
+      "permalink": "https://www.instagram.com/p/Dd5B2c7mfLe/"
     }
   ]
 }
