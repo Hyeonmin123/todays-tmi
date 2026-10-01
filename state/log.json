@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-09-30",
+  "last_published_at": "2026-10-01",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -543,6 +543,13 @@
       "permalink": "https://www.instagram.com/p/Dd6AXuymzUE/",
       "reel_media_id": "18571392580072125",
       "reel_permalink": "https://www.instagram.com/reel/Dd6Ad-Tjxye/"
+    },
+    {
+      "slug": "mendel-pea-plants",
+      "track": "P",
+      "published_at": "2026-10-01T09:29:12+09:00",
+      "media_id": "18011772107764493",
+      "permalink": "https://www.instagram.com/p/Dd7n6IVmaZC/"
     }
   ]
 }
