@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-10-01",
+  "last_published_at": "2026-10-02",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -552,6 +552,13 @@
       "permalink": "https://www.instagram.com/p/Dd7n6IVmaZC/",
       "reel_media_id": "18065195879792284",
       "reel_permalink": "https://www.instagram.com/reel/Dd7n7_CD8PT/"
+    },
+    {
+      "slug": "edison-1093-patents",
+      "track": "P",
+      "published_at": "2026-10-02T09:39:30+09:00",
+      "media_id": "17921656632221359",
+      "permalink": "https://www.instagram.com/p/Dd-N4xcmv2i/"
     }
   ]
 }
