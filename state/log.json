@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-10-03",
+  "last_published_at": "2026-10-04",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -570,6 +570,13 @@
       "permalink": "https://www.instagram.com/p/DeAwtYVmDhO/",
       "reel_media_id": "17916000738260104",
       "reel_permalink": "https://www.instagram.com/reel/DeAwvIpDwH4/"
+    },
+    {
+      "slug": "kennedy-pulitzer",
+      "track": "P",
+      "published_at": "2026-10-04T08:43:23+09:00",
+      "media_id": "18580962331069977",
+      "permalink": "https://www.instagram.com/p/DeDRDQgERX9/"
     }
   ]
 }
