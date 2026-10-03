@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-10-02",
+  "last_published_at": "2026-10-03",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -561,6 +561,13 @@
       "permalink": "https://www.instagram.com/p/Dd-N4xcmv2i/",
       "reel_media_id": "18122136077304247",
       "reel_permalink": "https://www.instagram.com/reel/Dd-N8JXlMvv/"
+    },
+    {
+      "slug": "franklin-no-patents",
+      "track": "P",
+      "published_at": "2026-10-03T09:22:18+09:00",
+      "media_id": "17890229688456739",
+      "permalink": "https://www.instagram.com/p/DeAwtYVmDhO/"
     }
   ]
 }
