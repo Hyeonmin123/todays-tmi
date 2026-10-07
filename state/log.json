@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-10-05",
+  "last_published_at": "2026-10-07",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -588,6 +588,13 @@
       "permalink": "https://www.instagram.com/p/DeF3N09mCHD/",
       "reel_media_id": "18132585499674313",
       "reel_permalink": "https://www.instagram.com/reel/DeF3PMulVlS/"
+    },
+    {
+      "slug": "vangogh-letters",
+      "track": "P",
+      "published_at": "2026-10-07T09:34:48+09:00",
+      "media_id": "18422802931156720",
+      "permalink": "https://www.instagram.com/p/DeLFUqOoPR3/"
     }
   ]
 }
