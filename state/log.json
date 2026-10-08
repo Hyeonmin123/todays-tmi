@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-10-07",
+  "last_published_at": "2026-10-08",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -597,6 +597,13 @@
       "permalink": "https://www.instagram.com/p/DeLFUqOoPR3/",
       "reel_media_id": "18128541682822314",
       "reel_permalink": "https://www.instagram.com/reel/DeLFWSVCi7B/"
+    },
+    {
+      "slug": "socrates-no-writings",
+      "track": "P",
+      "published_at": "2026-10-08T09:55:14+09:00",
+      "media_id": "18074674838731801",
+      "permalink": "https://www.instagram.com/p/DeNsc-6GH1Q/"
     }
   ]
 }
