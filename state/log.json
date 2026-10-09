@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-10-08",
+  "last_published_at": "2026-10-09",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -606,6 +606,13 @@
       "permalink": "https://www.instagram.com/p/DeNsc-6GH1Q/",
       "reel_media_id": "18110827274139445",
       "reel_permalink": "https://www.instagram.com/reel/DeNserPDALK/"
+    },
+    {
+      "slug": "joan-of-arc-1456",
+      "track": "P",
+      "published_at": "2026-10-09T10:09:37+09:00",
+      "media_id": "18122441753316067",
+      "permalink": "https://www.instagram.com/p/DeQS41vjVFK/"
     }
   ]
 }
