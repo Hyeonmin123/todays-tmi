@@ -1,5 +1,5 @@
 {
-  "last_published_at": "2026-10-09",
+  "last_published_at": "2026-10-10",
   "published": [
     {
       "slug": "cleopatra-timeline",
@@ -615,6 +615,13 @@
       "permalink": "https://www.instagram.com/p/DeQS41vjVFK/",
       "reel_media_id": "17998995608823439",
       "reel_permalink": "https://www.instagram.com/reel/DeQS641AInv/"
+    },
+    {
+      "slug": "shakespeare-signatures",
+      "track": "P",
+      "published_at": "2026-10-10T09:41:31+09:00",
+      "media_id": "18153873364525700",
+      "permalink": "https://www.instagram.com/p/DeS0ePEmwUh/"
     }
   ]
 }
